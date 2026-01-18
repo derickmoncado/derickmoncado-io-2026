@@ -1,0 +1,18 @@
+/* Home page - body content */
+.main-body {
+    display: flex;
+    gap: 48px;
+
+    aside,
+    .body-content {
+        background-color: #fff;
+    }
+
+    aside {
+        width: 25%;
+    }
+
+    .body-content {
+        width: 75%;
+    }
+}

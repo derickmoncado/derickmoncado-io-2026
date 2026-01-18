@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./main.scss";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
+import styles from "./page.module.scss";
 
 export const metadata: Metadata = {
 	title: "React & Next.js Boilerplate - your page title goes here!",
@@ -16,8 +17,13 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<Header />
-				<main>{children}</main>
+				{/* <Header /> */}
+				<main>
+					<div className={`${styles["main-body"]} container`}>
+						<aside>[nav component here]</aside>
+						<div className={styles["body-content"]}>{children}</div>
+					</div>
+				</main>
 				<Footer />
 			</body>
 		</html>

@@ -1,0 +1,92 @@
+@use "./variables"as *;
+@use "./mixins"as *;
+
+// global styles
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 18px;
+
+    main {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        padding: 50px 0;
+    }
+}
+
+a {
+    color: $primary-color;
+    text-decoration: underline;
+}
+
+svg {
+    display: inline-block;
+}
+
+// general container
+.container {
+    @include container;
+}
+
+// for the carousel
+.embla {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    padding: 100px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.embla__controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.embla__buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.embla__button {
+    border: 1px solid #111;
+    background: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.embla__button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.embla__dots {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.embla__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.embla__dot--selected {
+    background: #111;
+}

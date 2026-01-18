@@ -10,6 +10,8 @@ html {
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #1E1F35;
 
     main {
         width: 100%;
@@ -22,6 +24,10 @@ body {
 a {
     color: $primary-color;
     text-decoration: underline;
+}
+
+p {
+    color: #737783;
 }
 
 svg {

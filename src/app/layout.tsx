@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./main.scss";
-import Header from "../components/header/header";
+import Navigation from "../components/navigation/navigation";
 import Footer from "../components/footer/footer";
 import styles from "./page.module.scss";
 
@@ -20,7 +20,9 @@ export default function RootLayout({
 				{/* <Header /> */}
 				<main>
 					<div className={`${styles["main-body"]} container`}>
-						<aside>[nav component here]</aside>
+						<aside>
+							<Navigation />
+						</aside>
 						<div className={styles["body-content"]}>{children}</div>
 					</div>
 				</main>

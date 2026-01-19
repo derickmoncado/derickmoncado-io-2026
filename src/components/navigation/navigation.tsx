@@ -7,7 +7,16 @@ import { House, ChevronRight, CircleUser, Mail, Package } from "lucide-react";
 
 export default function Navigation() {
 	const currentPath = usePathname();
-	const getActiveClass = (path: string) => (currentPath === path ? styles.active : undefined);
+	const getActiveClass = (path: string) => {
+		if (currentPath === path) {
+			return styles["is-active"];
+		}
+
+		return undefined;
+	};
+
+	// condensed version just for reference
+	// const getActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
 
 	return (
 		<div className={styles["navigation"]}>
@@ -22,29 +31,29 @@ export default function Navigation() {
 
 				<nav className={styles["navigation__inner__nav"]}>
 					<ul>
-						<li>
-							<Link href="/" className={getActiveClass("/")}>
+						<li className={getActiveClass("/")}>
+							<Link href="/">
 								<House />
 								<p>Home</p>
 								<ChevronRight />
 							</Link>
 						</li>
-						<li>
-							<Link href="/page-1" className={getActiveClass("/page-1")}>
+						<li className={getActiveClass("/page-1")}>
+							<Link href="/page-1">
 								<CircleUser />
 								<p>About</p>
 								<ChevronRight />
 							</Link>
 						</li>
-						<li>
-							<Link href="/page-2" className={getActiveClass("/page-2")}>
+						<li className={getActiveClass("/page-2")}>
+							<Link href="/page-2">
 								<Mail />
 								<p>Contact</p>
 								<ChevronRight />
 							</Link>
 						</li>
-						<li>
-							<Link href="page-3" className={getActiveClass("page-3")}>
+						<li className={getActiveClass("/page-3")}>
+							<Link href="/page-3">
 								<Package />
 								<p>My Gear</p>
 								<ChevronRight />

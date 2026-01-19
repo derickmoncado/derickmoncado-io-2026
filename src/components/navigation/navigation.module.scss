@@ -60,26 +60,47 @@
                     position: relative;
                     padding: 8px 16px;
 
-                    &:hover {
-                        background-color: #E9EAEF;
-                        border-radius: 30px;
-
-                        a {
-                            color: #1E1F35;
-                        }
-                    }
-
                     a {
                         color: #1E1F35;
                         text-decoration: none;
                         font-weight: 500;
                         display: flex;
                         align-items: center;
-                        gap: 8px;
+                        gap: 12px;
 
                         p {
                             margin-right: auto;
                             color: inherit;
+                        }
+
+                        svg:last-child {
+                            display: none;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #E9EAEF;
+                        border-radius: 30px;
+
+                        a {
+                            color: #1E1F35;
+
+                            svg:last-child {
+                                display: inline-block;
+                            }
+                        }
+                    }
+
+                    &.is-active {
+                        background-color: #E9EAEF;
+                        border-radius: 30px;
+
+                        a {
+                            color: #1E1F35;
+
+                            svg:last-child {
+                                display: inline-block;
+                            }
                         }
                     }
                 }

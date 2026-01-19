@@ -3,7 +3,7 @@
 import styles from "./navigation.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Coffee } from "lucide-react";
+import { House, ChevronRight } from "lucide-react";
 
 export default function Navigation() {
 	const currentPath = usePathname();
@@ -24,22 +24,24 @@ export default function Navigation() {
 					<ul>
 						<li>
 							<Link href="/" className={getActiveClass("/")}>
-								Home
+								<House />
+								<p>Home</p>
+								<ChevronRight />
 							</Link>
 						</li>
 						<li>
 							<Link href="/page-1" className={getActiveClass("/page-1")}>
-								About
+								<p>About</p>
 							</Link>
 						</li>
 						<li>
 							<Link href="/page-2" className={getActiveClass("/page-2")}>
-								Contact
+								<p>Contact</p>
 							</Link>
 						</li>
 						<li>
 							<Link href="page-3" className={getActiveClass("page-3")}>
-								My Gear
+								<p>My Gear</p>
 							</Link>
 						</li>
 					</ul>

@@ -66,28 +66,28 @@ export default function Navigation() {
 							<p>Connect</p>
 						</li>
 						<li>
-							<Link href="https://www.youtube.com/@derickmoncado">
+							<Link href="https://www.youtube.com/@derickmoncado" target="_blank">
 								<Youtube />
 								<p>YouTube</p>
 								<ExternalLink />
 							</Link>
 						</li>
 						<li>
-							<Link href="https://www.threads.com/@derickmoncado.jpg">
+							<Link href="https://www.threads.com/@derickmoncado.jpg" target="_blank">
 								<MessageCircle />
 								<p>Threads</p>
 								<ExternalLink />
 							</Link>
 						</li>
 						<li>
-							<Link href="https://www.instagram.com/derickmoncado.jpg/">
+							<Link href="https://www.instagram.com/derickmoncado.jpg/" target="_blank">
 								<Instagram />
 								<p>Instagram</p>
 								<ExternalLink />
 							</Link>
 						</li>
 						<li>
-							<Link href="https://www.linkedin.com/in/derickmoncado/">
+							<Link href="https://www.linkedin.com/in/derickmoncado/" target="_blank">
 								<Linkedin />
 								<p>LinkedIn</p>
 								<ExternalLink />

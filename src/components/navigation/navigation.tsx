@@ -3,7 +3,7 @@
 import styles from "./navigation.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { House, ChevronRight, CircleUser, Mail, Package } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Package, Linkedin, Instagram, Youtube, MessageCircle, ExternalLink } from "lucide-react";
 
 export default function Navigation() {
 	const currentPath = usePathname();
@@ -30,7 +30,7 @@ export default function Navigation() {
 				</div>
 
 				<nav className={styles["navigation__inner__nav"]}>
-					<ul>
+					<ul className={styles["main-nav"]}>
 						<li className={getActiveClass("/")}>
 							<Link href="/">
 								<House />
@@ -57,6 +57,40 @@ export default function Navigation() {
 								<Package />
 								<p>My Gear</p>
 								<ChevronRight />
+							</Link>
+						</li>
+					</ul>
+
+					<ul className={styles["socials"]}>
+						<li className={styles["preheading"]}>
+							<p>Connect</p>
+						</li>
+						<li>
+							<Link href="https://www.youtube.com/@derickmoncado">
+								<Youtube />
+								<p>YouTube</p>
+								<ExternalLink />
+							</Link>
+						</li>
+						<li>
+							<Link href="https://www.threads.com/@derickmoncado.jpg">
+								<MessageCircle />
+								<p>Threads</p>
+								<ExternalLink />
+							</Link>
+						</li>
+						<li>
+							<Link href="https://www.instagram.com/derickmoncado.jpg/">
+								<Instagram />
+								<p>Instagram</p>
+								<ExternalLink />
+							</Link>
+						</li>
+						<li>
+							<Link href="https://www.linkedin.com/in/derickmoncado/">
+								<Linkedin />
+								<p>LinkedIn</p>
+								<ExternalLink />
 							</Link>
 						</li>
 					</ul>

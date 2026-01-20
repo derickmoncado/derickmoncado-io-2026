@@ -2,6 +2,8 @@
 
 import styles from "./navigation.module.scss";
 import Link from "next/link";
+import Image from "next/image";
+import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
 import { House, ChevronRight, CircleUser, Mail, Package, Linkedin, Instagram, Youtube, MessageCircle, ExternalLink } from "lucide-react";
 
@@ -94,7 +96,15 @@ export default function Navigation() {
 							</Link>
 						</li>
 					</ul>
+
+					<div className=""></div>
 				</nav>
+
+				<div className={styles["navigation__inner__codecademy"]}>
+					<p>Learn to code with</p>
+					<Image src={CodecademyLogo} alt="Codecademy Logo" width={100} height={20} priority />
+					<p>Click above for 50% all plans!</p>
+				</div>
 			</div>
 		</div>
 	);

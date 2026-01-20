@@ -1,6 +1,8 @@
 .navigation {
 
     &__inner {
+        display: flex;
+        flex-direction: column;
 
         &__profile {
             border-bottom: 2px solid #f0f0f0;
@@ -47,6 +49,7 @@
         }
 
         &__nav {
+            margin-bottom: 100px;
 
             ul {
                 list-style: none;

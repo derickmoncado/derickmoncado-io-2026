@@ -102,8 +102,10 @@ export default function Navigation() {
 
 				<div className={styles["navigation__inner__codecademy"]}>
 					<p>Learn to code with</p>
-					<Image src={CodecademyLogo} alt="Codecademy Logo" width={100} height={20} priority />
-					<p>Click above for 50% all plans!</p>
+					<Link href="https://www.pntra.com/t/8-12462-377154-213588" target="_blank">
+						<Image src={CodecademyLogo} alt="Codecademy Logo" priority />
+					</Link>
+					<p>Click for 50% off of all plans!</p>
 				</div>
 			</div>
 		</div>

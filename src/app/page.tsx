@@ -1,5 +1,6 @@
 "use client";
 
+import Hero from "@/components/hero/hero";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
@@ -39,8 +40,8 @@ export default function Home() {
 	}, [emblaApi, onInit, onSelect]);
 
 	return (
-		<div>
-			<p>body content goes here</p>
-		</div>
+		<>
+			<Hero />
+		</>
 	);
 }

@@ -1,0 +1,24 @@
+.hero {
+
+    &__content {
+        @media (min-width: 1024px) {
+            display: flex;
+        }
+
+        &__details {
+            border: 1px solid red;
+
+            @media (min-width: 1024px) {
+                width: 60%;
+            }
+        }
+
+        &__image {
+            border: 1px solid blue;
+
+            @media (min-width: 1024px) {
+                width: 40%;
+            }
+        }
+    }
+}

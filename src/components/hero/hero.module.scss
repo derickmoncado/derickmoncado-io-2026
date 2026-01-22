@@ -19,6 +19,7 @@
                 align-items: center;
                 gap: 10px;
                 letter-spacing: normal;
+                margin-bottom: 15px;
 
                 .status {
                     color: #1E1F35;
@@ -42,6 +43,41 @@
                     }
                 }
             }
+
+            &__text {
+                margin-bottom: 30px;
+
+                h1 {
+                    font-size: 48px;
+                    letter-spacing: -2.5px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    letter-spacing: -1.3px;
+                    margin-bottom: 10px;
+                    font-weight: 500;
+                }
+            }
+
+            &__ctas {
+                display: flex;
+                gap: 15px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding: 6px 18px;
+                    background-color: #1E1F35;
+                    color: #fff;
+                    border-radius: 22px;
+                    font-size: 16px;
+
+                    svg {
+                        padding-left: 10px;
+                    }
+                }
+            }
         }
 
         &__image {
@@ -49,6 +85,14 @@
 
             @media (min-width: 1024px) {
                 width: 40%;
+            }
+
+            &__frame {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background: #E9EAEF;
+                border: 1px solid #dbdbdb;
             }
         }
     }
@@ -62,7 +106,7 @@
 
     70% {
         transform: scale(1.1);
-        box-shadow: 0 0 0 6px rgba(46, 204, 113, 0);
+        box-shadow: 0 0 0 8px rgba(46, 204, 113, 0);
     }
 
     100% {

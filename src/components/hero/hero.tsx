@@ -19,13 +19,13 @@ export default function Hero() {
 						<h1>Hey, I’m Derick</h1>
 						<h2>Developer, Designer, and Content Creator</h2>
 						<p>
-							I’m based in Southern California and have over 12 years
+							I’m based in Southern California and have over 12 years experience
 							<br />
-							experience in design, web, and application development
+							in design, web, and application development
 						</p>
 					</div>
 					<div className={styles["hero__content__details__ctas"]}>
-						<Link href="https://www.youtube.com/@derickmoncado">
+						<Link href="https://www.youtube.com/@derickmoncado" target="_blank">
 							Watch Me
 							<ArrowUpRight />
 						</Link>

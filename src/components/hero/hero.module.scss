@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins"as *;
+
 .hero {
 
     &__content {
@@ -65,18 +67,12 @@
                 display: flex;
                 gap: 15px;
 
-                a {
-                    display: flex;
-                    align-items: center;
-                    padding: 6px 18px;
-                    background-color: #1E1F35;
-                    color: #fff;
-                    border-radius: 22px;
-                    font-size: 16px;
+                a:first-child {
+                    @include primary-cta;
+                }
 
-                    svg {
-                        padding-left: 10px;
-                    }
+                a:last-child {
+                    @include secondary-cta;
                 }
             }
         }

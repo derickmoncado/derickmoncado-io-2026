@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
-import { House, ChevronRight, CircleUser, Mail, Package, Linkedin, Instagram, Youtube, MessageCircle, ExternalLink } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Package, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight } from "lucide-react";
 
 export default function Navigation() {
 	const currentPath = usePathname();
@@ -71,28 +71,28 @@ export default function Navigation() {
 							<Link href="https://www.youtube.com/@derickmoncado" target="_blank">
 								<Youtube />
 								<p>YouTube</p>
-								<ExternalLink />
+								<ArrowUpRight />
 							</Link>
 						</li>
 						<li>
 							<Link href="https://www.threads.com/@derickmoncado.jpg" target="_blank">
 								<MessageCircle />
 								<p>Threads</p>
-								<ExternalLink />
+								<ArrowUpRight />
 							</Link>
 						</li>
 						<li>
 							<Link href="https://www.instagram.com/derickmoncado.jpg/" target="_blank">
 								<Instagram />
 								<p>Instagram</p>
-								<ExternalLink />
+								<ArrowUpRight />
 							</Link>
 						</li>
 						<li>
 							<Link href="https://www.linkedin.com/in/derickmoncado/" target="_blank">
 								<Linkedin />
 								<p>LinkedIn</p>
-								<ExternalLink />
+								<ArrowUpRight />
 							</Link>
 						</li>
 					</ul>

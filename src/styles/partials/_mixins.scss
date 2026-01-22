@@ -8,16 +8,41 @@
     margin: 0 auto;
 }
 
-// Primary Button
-@mixin primary-btn {
-    background-color: $primary-color;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+// Primary CTA
+@mixin primary-cta {
+    display: flex;
+    align-items: center;
+    padding: 6px 18px;
+    background-color: #1E1F35;
+    color: #fff;
+    border-radius: 22px;
+    font-size: 16px;
+
+    svg {
+        padding-left: 10px;
+    }
 
     &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: lighten(#1E1F35, 15%);
+    }
+}
+
+// Secondary CTA
+@mixin secondary-cta {
+    display: flex;
+    align-items: center;
+    padding: 6px 18px;
+    background-color: none;
+    border: 1px solid #1E1F35;
+    color: inherit;
+    border-radius: 22px;
+    font-size: 16px;
+
+    svg {
+        padding-left: 10px;
+    }
+
+    &:hover {
+        background-color: lighten(#1E1F35, 80%);
     }
 }

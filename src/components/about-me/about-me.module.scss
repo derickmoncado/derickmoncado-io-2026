@@ -1,0 +1,12 @@
+@use "../../styles/partials/mixins"as *;
+
+.about-me {
+
+    &__content {
+        color: red;
+
+        @media (min-width: 1024px) {
+            //display: flex;
+        }
+    }
+}

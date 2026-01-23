@@ -1,5 +1,6 @@
 "use client";
 
+import AboutMe from "@/components/about-me/about-me";
 import Hero from "@/components/hero/hero";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
@@ -42,6 +43,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
+			<AboutMe />
 		</>
 	);
 }

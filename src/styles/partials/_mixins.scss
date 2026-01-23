@@ -46,3 +46,11 @@
         background-color: lighten(#1E1F35, 80%);
     }
 }
+
+// H2
+@mixin h2 {
+    font-size: 24px;
+    letter-spacing: -1.2px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}

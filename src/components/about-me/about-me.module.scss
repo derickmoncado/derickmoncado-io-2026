@@ -3,10 +3,61 @@
 .about-me {
 
     &__content {
-        color: red;
 
-        @media (min-width: 1024px) {
-            //display: flex;
+        &__intro {
+
+            h2 {
+                @include h2;
+            }
+
+            p {
+                font-size: 22px;
+                letter-spacing: -0.8px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                color: #1e1f35;
+
+                span {
+                    color: #858585;
+                }
+            }
+        }
+
+        &__blocks {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            @media (min-width: 1200px) {
+                flex-direction: row;
+            }
+
+            &__block {
+                border: 1px solid #ddd;
+                border-radius: 30px;
+                padding: 20px 25px;
+
+                @media (min-width: 1200px) {
+                    width: 33.33%;
+                }
+
+                .stat {
+                    font-size: 32px;
+                    letter-spacing: -1.2px;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    color: inherit;
+                }
+
+                .heading {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: inherit;
+                    margin-bottom: 10px;
+                }
+
+                .blurb {}
+            }
         }
     }
 }

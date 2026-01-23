@@ -23,6 +23,10 @@ body {
 
 section {
     margin-bottom: 100px;
+
+    &:last-child {
+        margin: 0;
+    }
 }
 
 a {

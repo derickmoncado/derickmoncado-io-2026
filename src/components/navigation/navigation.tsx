@@ -68,32 +68,32 @@ export default function Navigation() {
 							<p>Connect</p>
 						</li>
 						<li>
-							<Link href="https://www.youtube.com/@derickmoncado" target="_blank">
+							<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								<Youtube />
 								<p>YouTube</p>
 								<ArrowUpRight />
-							</Link>
+							</a>
 						</li>
 						<li>
-							<Link href="https://www.threads.com/@derickmoncado.jpg" target="_blank">
+							<a href="https://www.threads.com/@derickmoncado.jpg" target="_blank" rel="noopener noreferrer">
 								<MessageCircle />
 								<p>Threads</p>
 								<ArrowUpRight />
-							</Link>
+							</a>
 						</li>
 						<li>
-							<Link href="https://www.instagram.com/derickmoncado.jpg/" target="_blank">
+							<a href="https://www.instagram.com/derickmoncado.jpg/" target="_blank" rel="noopener noreferrer">
 								<Instagram />
 								<p>Instagram</p>
 								<ArrowUpRight />
-							</Link>
+							</a>
 						</li>
 						<li>
-							<Link href="https://www.linkedin.com/in/derickmoncado/" target="_blank">
+							<a href="https://www.linkedin.com/in/derickmoncado/" target="_blank" rel="noopener noreferrer">
 								<Linkedin />
 								<p>LinkedIn</p>
 								<ArrowUpRight />
-							</Link>
+							</a>
 						</li>
 					</ul>
 

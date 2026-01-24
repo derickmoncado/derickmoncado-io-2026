@@ -47,7 +47,7 @@ export default function AboutMe() {
 					</div>
 					<div className={styles["about-me__content__details__para2"]}>
 						<div className={styles["about-me__content__details__para2__text-socials"]}>
-							<p>When I'm not debugging or messing around in chatGPT, you can catch me at the gym, a snobby coffee shop, gaming, [attempting] Spanish, or messing with my camera gear.</p>
+							<p>When I'm not debugging or messing around in chatGPT, you can catch me at the gym, a snobby coffee shop, gaming, [attempting] to speak Spanish, or messing with my camera gear.</p>
 							<p>
 								Interested in working together? Feel free to reach out, happy to connect, collab, or just talk shop. <a href="mailto:hello@derickmoncado.io">hello@derickmoncado.io</a>.
 							</p>

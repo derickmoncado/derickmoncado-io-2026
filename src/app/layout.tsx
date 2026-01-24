@@ -26,7 +26,7 @@ export default function RootLayout({
 						<div className={styles["body-content"]}>{children}</div>
 					</div>
 				</main>
-				<Footer />
+				{/* <Footer /> */}
 			</body>
 		</html>
 	);

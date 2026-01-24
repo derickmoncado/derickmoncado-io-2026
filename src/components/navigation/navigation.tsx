@@ -105,7 +105,7 @@ export default function Navigation() {
 					<Link href="https://www.pntra.com/t/8-12462-377154-213588" target="_blank">
 						<Image src={CodecademyLogo} alt="Codecademy Logo" priority />
 					</Link>
-					<p>Click for 50% off of all plans!</p>
+					<p>Click for 50% OFF of all plans!</p>
 				</div>
 			</div>
 		</div>

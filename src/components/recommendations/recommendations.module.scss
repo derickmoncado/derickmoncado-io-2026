@@ -17,60 +17,67 @@
         // Carousel
         &__carousel {
             overflow: hidden;
+            position: relative;
 
-            &__container {
+            &__inner {
+                border: 1px solid green;
                 display: flex;
-                gap: 1.5rem;
+                gap: 30px;
+
+                .slide {
+                    flex: 0 0 100%;
+                    border-radius: 30px;
+                    padding: 30px;
+                    border: 1px solid #E4E4E4;
+
+                    &__meta {
+                        color: green;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.25rem;
+                        font-weight: 600;
+
+                        &__name {
+                            font-size: 1rem;
+                        }
+
+                        &__title {
+                            font-size: 0.95rem;
+                            font-weight: 500;
+                            color: #5b554f;
+                        }
+                    }
+
+                    &__quote {
+                        color: blue;
+                    }
+                }
             }
 
-            &__slide {
-                flex: 0 0 100%;
-                border-radius: 30px;
-                padding: 30px;
-                border: 1px solid #E4E4E4;
-            }
-
-            &__quote {}
-
-            &__meta {
+            &__controls {
                 display: flex;
-                flex-direction: column;
-                gap: 0.25rem;
-                font-weight: 600;
-            }
+                gap: 15px;
+                position: absolute;
+                z-index: 1;
+                top: 30px;
+                right: 30px;
 
-            &__name {
-                font-size: 1rem;
-            }
+                button {
+                    background-color: #e7e8ea;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
 
-            &__title {
-                font-size: 0.95rem;
-                font-weight: 500;
-                color: #5b554f;
-            }
-        }
-
-        &__controls {
-            display: flex;
-            gap: 0.75rem;
-        }
-
-        &__button {
-            border: 1px solid #2b2520;
-            background: transparent;
-            border-radius: 999px;
-            padding: 0.5rem 1.4rem;
-            font-size: 0.9rem;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: transform 120ms ease, opacity 120ms ease;
-
-            &:disabled {
-                opacity: 0.4;
-                cursor: not-allowed;
-                transform: none;
+                    &:disabled {
+                        opacity: 0.4;
+                        cursor: not-allowed;
+                        transform: none;
+                    }
+                }
             }
         }
 

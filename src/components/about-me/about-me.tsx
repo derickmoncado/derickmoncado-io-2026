@@ -11,7 +11,7 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>
 					<p>
-						I'm Derick, a <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, aesthetic <span>art</span>, gaming and great <span>design</span>.
+						A <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, stylish <span>art</span>, and great <span>design</span>.
 					</p>
 				</div>
 
@@ -42,7 +42,7 @@ export default function AboutMe() {
 							<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								YouTube channel
 							</a>
-							. Before programming I was a graphic designer. However after seeing David Fincher's magnum opus The Social Network in 2010, I was inspired to pursue web development and picked up a book from the Head First series by O’Reilly on HTML & CSS. After that, the rest is history.
+							. Before programming I was a graphic designer. However after seeing David Fincher's magnum opus The Social Network in 2010, I was inspired to pursue web development and picked up a book from the <em>Head First</em> series by O’Reilly on HTML & CSS. After that, the rest is history.
 						</p>
 					</div>
 					<div className={styles["about-me__content__details__para2"]}>

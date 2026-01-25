@@ -83,8 +83,13 @@ export default function Recommendations() {
 						{recommendations.map((recommendation) => (
 							<article key={recommendation.name} className={styles["slide"]}>
 								<div className={styles["slide__meta"]}>
-									<span className={styles["slide__name"]}>{recommendation.name}</span>
-									<span className={styles["slide__title"]}>{recommendation.title}</span>
+									<div className={styles["slide__meta__profile"]}>
+										<div className={styles["slide__meta__profile__img"]} style={{ backgroundImage: `url(${recommendation.image})` }}></div>
+										<div className={styles["slide__meta__profile__name"]}>
+											<p className={styles["name"]}>{recommendation.name}</p>
+											<p className={styles["title"]}>{recommendation.title}</p>
+										</div>
+									</div>
 								</div>
 								<p className={styles["slide__quote"]}>&ldquo;{recommendation.quote}&rdquo;</p>
 							</article>
@@ -103,7 +108,7 @@ export default function Recommendations() {
 
 				<div className={styles["recommendations__content__dots"]}>
 					{scrollSnaps.map((_, index) => (
-						<button key={index} type="button" onClick={() => scrollTo(index)} className={`${styles["recommendations__content__dot"]} ${index === selectedIndex ? styles["recommendations__content__dot--active"] : ""}`} aria-label={`Go to recommendation ${index + 1}`} />
+						<button key={index} type="button" onClick={() => scrollTo(index)} className={`${styles["recommendations__content__dots__dot"]} ${index === selectedIndex ? styles["recommendations__content__dots__dot--active"] : ""}`} aria-label={`Go to recommendation ${index + 1}`} />
 					))}
 				</div>
 			</div>

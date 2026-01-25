@@ -20,37 +20,51 @@
             position: relative;
 
             &__inner {
-                border: 1px solid green;
                 display: flex;
                 gap: 30px;
 
                 .slide {
                     flex: 0 0 100%;
                     border-radius: 30px;
-                    padding: 30px;
+                    padding: 40px;
                     border: 1px solid #E4E4E4;
 
                     &__meta {
-                        color: green;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 0.25rem;
-                        font-weight: 600;
 
-                        &__name {
-                            font-size: 1rem;
-                        }
 
-                        &__title {
-                            font-size: 0.95rem;
-                            font-weight: 500;
-                            color: #5b554f;
+                        &__profile {
+                            display: flex;
+                            gap: 20px;
+                            margin-bottom: 30px;
+
+                            &__img {
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &__name {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                .name {
+                                    letter-spacing: -.5px;
+                                    color: #1e1f35;
+                                    font-weight: 600;
+                                }
+
+                                .title {
+                                    font-size: 16px;
+                                }
+                            }
                         }
                     }
 
-                    &__quote {
-                        color: blue;
-                    }
+                    &__quote {}
                 }
             }
 
@@ -59,8 +73,8 @@
                 gap: 15px;
                 position: absolute;
                 z-index: 1;
-                top: 30px;
-                right: 30px;
+                top: 40px;
+                right: 40px;
 
                 button {
                     background-color: #e7e8ea;
@@ -83,21 +97,21 @@
 
         &__dots {
             display: flex;
-            gap: 0.5rem;
-        }
+            gap: 10px;
+            justify-content: center;
 
-        &__dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 999px;
-            border: 1px solid #2b2520;
-            background: transparent;
-            cursor: pointer;
-            transition: transform 120ms ease, background 120ms ease;
+            &__dot {
+                width: 12px;
+                height: 12px;
+                border-radius: 999px;
+                border: 1px solid #1E1F35;
+                background: transparent;
+                cursor: pointer;
+                transition: transform 120ms ease, background 120ms ease;
 
-            &--active {
-                background: #2b2520;
-                transform: scale(1.15);
+                &--active {
+                    background: #1E1F35;
+                }
             }
         }
     }

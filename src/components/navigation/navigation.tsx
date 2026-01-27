@@ -54,8 +54,8 @@ export default function Navigation() {
 								<ChevronRight />
 							</Link>
 						</li>
-						<li className={getActiveClass("/page-3")}>
-							<Link href="/page-3">
+						<li className={getActiveClass("/my-gear")}>
+							<Link href="/my-gear">
 								<Package />
 								<p>My Gear</p>
 								<ChevronRight />

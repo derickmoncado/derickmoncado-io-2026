@@ -1,0 +1,39 @@
+@use "../../styles/partials/mixins"as *;
+
+.my-gear {
+
+    &__content {
+
+        &__heading {
+
+            h2 {
+                @include h2;
+            }
+
+            p {
+                font-size: 22px;
+                letter-spacing: -0.8px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                color: #1e1f35;
+
+                span {
+                    color: #858585;
+                }
+            }
+        }
+
+        &__links {
+            border: 1px solid red;
+
+            .link {
+                display: block;
+                border: 2px solid blue;
+
+                &__inner {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

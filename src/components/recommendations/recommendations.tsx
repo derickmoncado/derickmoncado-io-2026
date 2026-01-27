@@ -15,7 +15,7 @@ export default function Recommendations() {
 		},
 		{
 			name: "Corbin Crutchley",
-			title: "VP of Software Engineering | GitHub Star | Microsoft MVP | Author of The Framework Field Guide",
+			title: "VP of Software Engineering | GitHub Star | Microsoft MVP",
 			quote: "Working with Derick has been an absolute pleasure during the 8 months I spent with him at CooperVision. During our time together, I helped mentor him through the best practices in Angular. While our codebase included fairly complex abstractions that can be difficult to grasp without prior usage, Derick seemingly always knew the right questions to ask. His thirst for knowledge drove him to inquire not just about the task at hand, but diving deeper into the fundamentals and the 'why' behind the best practices. Guaranteed, if you find yourself with the opportunity to work with Derick, you'll see first-hand how quickly he's able to learn, grow, and thrive with new environments and codebases.",
 			image: "/images/recommendations/corbin-crutchley.jpg",
 		},

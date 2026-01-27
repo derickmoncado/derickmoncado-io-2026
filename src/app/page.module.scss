@@ -8,16 +8,18 @@
         background-color: #fff;
         border-radius: 30px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 20px;
+        box-sizing: border-box;
+        min-width: 0;
     }
 
     aside {
-        width: 25%;
+        flex: 0 0 25%;
         padding: 40px;
         height: 915px;
     }
 
     .body-content {
-        width: 75%;
+        flex: 1 1 0;
         padding: 60px;
     }
 }

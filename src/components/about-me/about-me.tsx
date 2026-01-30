@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function AboutMe() {
 	return (
-		<section className={styles["about-me"]}>
+		<section className={styles["about-me"]} id="about-me">
 			<div className={styles["about-me__content"]}>
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>

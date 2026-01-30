@@ -40,12 +40,12 @@ export default function Navigation() {
 								<ChevronRight />
 							</Link>
 						</li>
-						<li className={getActiveClass("/page-1")}>
-							<Link href="/page-1">
+						<li className={getActiveClass("/#about-me")}>
+							<a href="/#about-me">
 								<CircleUser />
 								<p>About</p>
 								<ChevronRight />
-							</Link>
+							</a>
 						</li>
 						<li className={getActiveClass("/page-2")}>
 							<Link href="/page-2">

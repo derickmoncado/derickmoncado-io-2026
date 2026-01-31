@@ -31,7 +31,7 @@
                     border: 1px solid #E4E4E4;
 
                     &__meta {
-
+                        display: inline-block;
 
                         &__profile {
                             display: flex;
@@ -56,6 +56,10 @@
                                     letter-spacing: -.5px;
                                     color: #1e1f35;
                                     font-weight: 600;
+
+                                    svg {
+                                        width: 16px;
+                                    }
                                 }
 
                                 .title {

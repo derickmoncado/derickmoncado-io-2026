@@ -9,6 +9,7 @@ import { House, ChevronRight, CircleUser, Mail, Package, Linkedin, Instagram, Yo
 
 export default function Navigation() {
 	const currentPath = usePathname();
+
 	const getActiveClass = (path: string) => {
 		if (currentPath === path) {
 			return styles["is-active"];

@@ -1,0 +1,15 @@
+@use "../../styles/partials/mixins"as *;
+
+.recent-content {
+
+    &__heading {
+
+        h2 {
+            @include h2;
+        }
+    }
+
+    &__videos {
+        border: 1px solid red;
+    }
+}

@@ -42,9 +42,14 @@ button {
 
 p {
     color: #737783;
+    letter-spacing: -0.3px;
 
     a {
         color: #1E1F35;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 

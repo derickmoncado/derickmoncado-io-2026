@@ -38,7 +38,7 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__details"]}>
 					<div className={styles["about-me__content__details__para1"]}>
 						<p>
-							Yoo, I’m Derick, based out of Southern California I enjoy covering topics such as coding, tech, lifestyle, and anything else I find interesting on my 
+							Yo, I’m Derick, based out of Southern California I enjoy covering topics such as coding, tech, lifestyle, and anything else I find interesting on my 
 							<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								YouTube channel
 							</a>

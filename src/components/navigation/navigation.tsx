@@ -24,13 +24,13 @@ export default function Navigation() {
 	return (
 		<div className={styles["navigation"]}>
 			<div className={styles["navigation__inner"]}>
-				<div className={styles["navigation__inner__profile"]}>
+				<Link href="/" className={styles["navigation__inner__profile"]}>
 					<div className={styles["navigation__inner__profile__img"]}></div>
 					<div className={styles["navigation__inner__profile__name"]}>
 						<h1>Derick Moncado</h1>
 						<p>Software Engineer</p>
 					</div>
-				</div>
+				</Link>
 
 				<nav className={styles["navigation__inner__nav"]}>
 					<ul className={styles["main-nav"]}>

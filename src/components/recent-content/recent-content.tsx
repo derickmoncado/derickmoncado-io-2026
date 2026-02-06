@@ -31,6 +31,7 @@ export default function RecentContent() {
 					signal: controller.signal,
 				});
 				const data = (await res.json()) as ApiResponse;
+				console.log(data.items); // let's see what we get
 				if (!res.ok || data.error) {
 					throw new Error(data.error || "Failed to load videos");
 				}
@@ -60,28 +61,12 @@ export default function RecentContent() {
 			</div>
 			<div className={styles["recent-content__videos"]}>
 				{status === "loading" && <p>Loading videos...</p>}
-				{status === "error" && (
-					<p>Could not load videos right now. Try again later.</p>
-				)}
-				{status === "ready" && videos.length === 0 && (
-					<p>No recent videos found.</p>
-				)}
+				{status === "error" && <p>Could not load videos right now. Try again later.</p>}
+				{status === "ready" && videos.length === 0 && <p>No recent videos found.</p>}
 				{videos.map((video) => (
-					<a
-						key={video.id}
-						href={video.url}
-						target="_blank"
-						rel="noreferrer"
-						className={styles["recent-content__video-card"]}
-					>
-						<div className={styles["recent-content__thumb"]}>
-							{video.thumbnail ? (
-								<img src={video.thumbnail} alt={video.title} />
-							) : (
-								<div className={styles["recent-content__thumb-placeholder"]} />
-							)}
-						</div>
-						<div className={styles["recent-content__meta"]}>
+					<a key={video.id} href={video.url} target="_blank" rel="noreferrer" className={styles["video-card"]}>
+						<div className={styles["video-card__thumb"]}>{video.thumbnail ? <img src={video.thumbnail} alt={video.title} /> : <div className={styles["video-card__thumb-placeholder"]} />}</div>
+						<div className={styles["video-card__meta"]}>
 							<h3>{video.title}</h3>
 							<p>{new Date(video.publishedAt).toLocaleDateString()}</p>
 						</div>

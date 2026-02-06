@@ -16,6 +16,28 @@ type ApiResponse = {
 	error?: string;
 };
 
+function getOrdinal(day: number): string {
+	if (day >= 11 && day <= 13) return "th";
+	switch (day % 10) {
+		case 1:
+			return "st";
+		case 2:
+			return "nd";
+		case 3:
+			return "rd";
+		default:
+			return "th";
+	}
+}
+
+function formatFullDate(dateString: string): string {
+	const date = new Date(dateString);
+	const month = date.toLocaleString("en-US", { month: "long" });
+	const day = date.getDate();
+	const year = date.getFullYear();
+	return `${month} ${day}${getOrdinal(day)} ${year}`;
+}
+
 export default function RecentContent() {
 	const [videos, setVideos] = useState<RecentVideo[]>([]);
 	const [status, setStatus] = useState<"idle" | "loading" | "error" | "ready">("idle");
@@ -68,7 +90,7 @@ export default function RecentContent() {
 						<div className={styles["video-card__thumb"]}>{video.thumbnail ? <img src={video.thumbnail} alt={video.title} /> : <div className={styles["video-card__thumb-placeholder"]} />}</div>
 						<div className={styles["video-card__meta"]}>
 							<h3>{video.title}</h3>
-							<p>{new Date(video.publishedAt).toLocaleDateString()}</p>
+							<p>Posted {formatFullDate(video.publishedAt)}</p>
 						</div>
 					</a>
 				))}

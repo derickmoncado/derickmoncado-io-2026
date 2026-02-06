@@ -64,6 +64,8 @@ export async function GET() {
 					title: string;
 					publishedAt: string;
 					thumbnails: {
+						maxres?: { url: string };
+						standard?: { url: string };
 						high?: { url: string };
 						medium?: { url: string };
 						default?: { url: string };
@@ -90,10 +92,12 @@ export async function GET() {
 			title: item.snippet.title,
 			publishedAt: item.snippet.publishedAt,
 			thumbnail:
+				item.snippet.thumbnails.maxres?.url ||
+				item.snippet.thumbnails.standard?.url ||
 				item.snippet.thumbnails.high?.url ||
 				item.snippet.thumbnails.medium?.url ||
 				item.snippet.thumbnails.default?.url ||
-				"",
+				`https://i.ytimg.com/vi/${item.id}/hqdefault.jpg`,
 			url: `https://www.youtube.com/watch?v=${item.id}`,
 		}));
 

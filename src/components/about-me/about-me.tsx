@@ -11,7 +11,7 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>
 					<p>
-						A <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, stylish <span>art</span>, and great <span>design</span>.
+						I'm a <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, stylish <span>art</span>, and great <span>design</span>.
 					</p>
 				</div>
 

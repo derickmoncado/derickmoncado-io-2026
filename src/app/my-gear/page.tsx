@@ -16,7 +16,7 @@ export default function MyGear() {
 				</div>
 
 				<div className={styles["my-gear__content__links"]}>
-					<Link className={styles["link"]} href="#">
+					<Link className={styles["link"]} href="/my-gear/desk">
 						<div className={styles["link__inner"]}>
 							<div className={styles["link__inner__image"]}></div>
 							<div className={styles["link__inner__details"]}>

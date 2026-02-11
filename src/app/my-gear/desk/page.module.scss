@@ -1,0 +1,93 @@
+@use "../../../styles/partials/mixins"as *;
+
+.desk-setup {
+
+    &__content {
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 24px;
+            background: #fff;
+            color: #1e1f35;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        &__heading {
+
+            h2 {
+                @include h2;
+            }
+
+            p {
+                font-size: 22px;
+                letter-spacing: -0.8px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                color: #1e1f35;
+
+                span {
+                    color: #858585;
+                }
+            }
+        }
+
+        &__accordions {
+
+            .accordion {
+                display: block;
+                border: 1px solid #ddd;
+                border-radius: 30px;
+                padding: 20px;
+                margin-bottom: 20px;
+
+                &__inner {
+                    display: flex;
+                    gap: 25px;
+                    position: relative;
+
+                    &__image {
+                        width: 180px;
+                        background: #E9EAEF;
+                        border: 1px solid #dbdbdb;
+                        border-radius: 22px;
+                    }
+
+                    &__details {
+
+                        h2 {
+                            font-size: 22px;
+                            letter-spacing: -0.8px;
+                            font-weight: 500;
+                            color: #1e1f35;
+                        }
+
+                        p {
+                            margin-bottom: 25px;
+                        }
+
+                        &__last-updated {
+                            display: inline-block;
+                            color: #1e1f35;
+                            font-size: 12px;
+                            padding: 6px 14px;
+                            border: 1px solid #e4e4e4;
+                            border-radius: 16px;
+                            letter-spacing: normal;
+                        }
+
+                        svg {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

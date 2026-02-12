@@ -12,7 +12,7 @@
 @mixin primary-cta {
     display: flex;
     align-items: center;
-    padding: 8px 20px;
+    padding: 8px 24px;
     background-color: #1E1F35;
     color: #fff;
     border-radius: 22px;
@@ -20,10 +20,13 @@
 
     svg {
         padding-left: 10px;
+        width: 26px;
+        height: auto;
     }
 
     &:hover {
         background-color: lighten(#1E1F35, 15%);
+        cursor: pointer;
     }
 }
 
@@ -31,7 +34,7 @@
 @mixin secondary-cta {
     display: flex;
     align-items: center;
-    padding: 8px 20px;
+    padding: 8px 24px;
     background-color: none;
     border: 1px solid #1E1F35;
     color: inherit;
@@ -40,10 +43,13 @@
 
     svg {
         padding-left: 10px;
+        width: 26px;
+        height: auto;
     }
 
     &:hover {
         background-color: lighten(#1E1F35, 80%);
+        cursor: pointer;
     }
 }
 

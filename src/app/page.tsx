@@ -1,6 +1,7 @@
 "use client";
 
 import AboutMe from "@/components/about-me/about-me";
+import Downloads from "@/components/downloads/downloads";
 import Hero from "@/components/hero/hero";
 import RecentContent from "@/components/recent-content/recent-content";
 import Recommendations from "@/components/recommendations/recommendations";
@@ -11,6 +12,7 @@ export default function Home() {
 			<Hero />
 			<RecentContent />
 			<AboutMe />
+			<Downloads />
 			<Recommendations />
 		</>
 	);

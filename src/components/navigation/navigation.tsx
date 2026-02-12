@@ -55,13 +55,13 @@ export default function Navigation() {
 								<ChevronRight />
 							</Link>
 						</li>
-						<li className={getActiveClass("/my-gear")}>
+						{/* <li className={getActiveClass("/my-gear")}>
 							<Link href="/my-gear">
 								<Package />
 								<p>My Gear</p>
 								<ChevronRight />
 							</Link>
-						</li>
+						</li> */}
 					</ul>
 
 					<ul className={styles["socials"]}>

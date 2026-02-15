@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import styles from "./contact-me.module.scss";
 
 export default function ContactMe() {
@@ -34,7 +35,9 @@ export default function ContactMe() {
 							</div>
 						</div>
 
-						<button type="submit">Submit</button>
+						<button type="submit">
+							Send Message <ArrowRight />
+						</button>
 					</form>
 				</div>
 			</div>

@@ -5,7 +5,7 @@ import styles from "./downloads.module.scss";
 
 export default function Downloads() {
 	return (
-		<section className={styles["downloads"]}>
+		<section className={styles["downloads"]} id="downloads">
 			<div className={styles["downloads__content"]}>
 				<div className={styles["downloads__content__heading"]}>
 					<h2>Downloads</h2>
@@ -13,7 +13,7 @@ export default function Downloads() {
 
 				<div className={styles["downloads__content__form"]}>
 					<p>
-						Get my free <b>Software Engineer Resume Template</b> below!—no spam, I promise
+						Get my free <b>Software Engineer Resume Templates</b> below!—no spam, I promise
 					</p>
 
 					<form>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
-import { House, ChevronRight, CircleUser, Mail, Package, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Package, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight, Download } from "lucide-react";
 
 export default function Navigation() {
 	const currentPath = usePathname();
@@ -41,19 +41,26 @@ export default function Navigation() {
 								<ChevronRight />
 							</Link>
 						</li>
-						<li className={getActiveClass("#about-me")}>
+						<li>
 							<a href="#about-me">
 								<CircleUser />
 								<p>About</p>
 								<ChevronRight />
 							</a>
 						</li>
-						<li className={getActiveClass("/page-2")}>
-							<Link href="/page-2">
+						<li>
+							<a href="#downloads">
+								<Download />
+								<p>Downloads</p>
+								<ChevronRight />
+							</a>
+						</li>
+						<li>
+							<a href="#contact-me">
 								<Mail />
 								<p>Contact</p>
 								<ChevronRight />
-							</Link>
+							</a>
 						</li>
 						{/* <li className={getActiveClass("/my-gear")}>
 							<Link href="/my-gear">

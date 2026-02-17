@@ -5,7 +5,7 @@ import styles from "./contact-me.module.scss";
 
 export default function ContactMe() {
 	return (
-		<section className={styles["contact-me"]}>
+		<section className={styles["contact-me"]} id="contact-me">
 			<div className={styles["contact-me__content"]}>
 				<div className={styles["contact-me__content__heading"]}>
 					<h2>Contact Me</h2>

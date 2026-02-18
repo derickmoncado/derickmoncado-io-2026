@@ -5,18 +5,54 @@ import Link from "next/link";
 import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
-import { House, ChevronRight, CircleUser, Mail, Package, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight, Download } from "lucide-react";
+import { useEffect, useState } from "react";
+import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight, Download } from "lucide-react";
+
+const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
 
 export default function Navigation() {
 	const currentPath = usePathname();
+	const [activeHash, setActiveHash] = useState<string>("");
 
-	const getActiveClass = (path: string) => {
-		if (currentPath === path) {
-			return styles["is-active"];
+	useEffect(() => {
+		if (currentPath !== "/") {
+			return;
 		}
 
-		return undefined;
-	};
+		const updateActiveHash = () => {
+			const currentHash = window.location.hash;
+
+			if (SECTION_HASHES.includes(currentHash as (typeof SECTION_HASHES)[number])) {
+				setActiveHash(currentHash);
+				return;
+			}
+
+			// When there is no hash, infer the active section from scroll position.
+			const currentScroll = window.scrollY + window.innerHeight * 0.3;
+			let fallbackHash = "#home";
+
+			for (const hash of SECTION_HASHES) {
+				const section = document.querySelector(hash);
+
+				if (section instanceof HTMLElement && section.offsetTop <= currentScroll) {
+					fallbackHash = hash;
+				}
+			}
+
+			setActiveHash(fallbackHash);
+		};
+
+		updateActiveHash();
+		window.addEventListener("hashchange", updateActiveHash);
+		window.addEventListener("scroll", updateActiveHash, { passive: true });
+
+		return () => {
+			window.removeEventListener("hashchange", updateActiveHash);
+			window.removeEventListener("scroll", updateActiveHash);
+		};
+	}, [currentPath]);
+
+	const getActiveClass = (hash: string) => (currentPath === "/" && activeHash === hash ? styles["is-active"] : undefined);
 
 	// condensed version just for reference
 	// const getActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
@@ -34,28 +70,28 @@ export default function Navigation() {
 
 				<nav className={styles["navigation__inner__nav"]}>
 					<ul className={styles["main-nav"]}>
-						<li className={getActiveClass("/")}>
-							<Link href="/">
+						<li className={getActiveClass("#home")}>
+							<a href="#home">
 								<House />
 								<p>Home</p>
 								<ChevronRight />
-							</Link>
+							</a>
 						</li>
-						<li>
+						<li className={getActiveClass("#about-me")}>
 							<a href="#about-me">
 								<CircleUser />
 								<p>About</p>
 								<ChevronRight />
 							</a>
 						</li>
-						<li>
+						<li className={getActiveClass("#downloads")}>
 							<a href="#downloads">
 								<Download />
 								<p>Downloads</p>
 								<ChevronRight />
 							</a>
 						</li>
-						<li>
+						<li className={getActiveClass("#contact-me")}>
 							<a href="#contact-me">
 								<Mail />
 								<p>Contact</p>

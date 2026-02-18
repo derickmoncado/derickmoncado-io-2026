@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<section className={styles["hero"]}>
+		<section className={styles["hero"]} id="home">
 			<div className={styles["hero__content"]}>
 				<div className={styles["hero__content__details"]}>
 					<div className={styles["hero__content__details__collab"]}>
@@ -29,10 +29,10 @@ export default function Hero() {
 							Watch Me
 							<ArrowUpRight />
 						</Link>
-						<Link href="">
+						<a href="#contact-me">
 							Contact Me
 							<Mail />
-						</Link>
+						</a>
 					</div>
 				</div>
 

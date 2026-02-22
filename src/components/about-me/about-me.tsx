@@ -74,7 +74,21 @@ export default function AboutMe() {
 								</li>
 							</ul>
 						</div>
-						<div className={styles["about-me__content__details__para2__video"]}>video here</div>
+						<div className={styles["about-me__content__details__para2__video"]}>
+							<video
+								className={styles["about-me__content__details__para2__video__media"]}
+								autoPlay
+								muted
+								loop
+								playsInline
+								preload="auto"
+								aria-hidden="true"
+								tabIndex={-1}
+								disablePictureInPicture
+							>
+								<source src="/videos/about-me-video.mp4" type="video/mp4" />
+							</video>
+						</div>
 					</div>
 				</div>
 			</div>

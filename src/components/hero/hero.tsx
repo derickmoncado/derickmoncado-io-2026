@@ -29,7 +29,7 @@ export default function Hero() {
 							Watch Me
 							<ArrowUpRight />
 						</Link>
-						<a href="#contact-me">
+						<a href="mailto:hello@derickmoncado.io">
 							Contact Me
 							<Mail />
 						</a>

@@ -14,7 +14,7 @@ export default function Home() {
 			<RecentContent />
 			<AboutMe />
 			<Recommendations />
-			<Downloads />
+			{/* <Downloads /> */}
 			<ContactMe />
 		</>
 	);

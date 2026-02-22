@@ -84,13 +84,13 @@ export default function Navigation() {
 								<ChevronRight />
 							</a>
 						</li>
-						<li className={getActiveClass("#downloads")}>
+						{/* <li className={getActiveClass("#downloads")}>
 							<a href="#downloads">
 								<Download />
 								<p>Downloads</p>
 								<ChevronRight />
 							</a>
-						</li>
+						</li> */}
 						<li className={getActiveClass("#contact-me")}>
 							<a href="#contact-me">
 								<Mail />

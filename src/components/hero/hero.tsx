@@ -37,7 +37,11 @@ export default function Hero() {
 				</div>
 
 				<div className={styles["hero__content__image"]}>
-					<div className={styles["hero__content__image__frame"]}></div>
+					<div className={styles["hero__content__image__frame"]}>
+						<video className={styles["hero__content__image__video"]} autoPlay muted loop playsInline preload="auto" aria-hidden="true" tabIndex={-1} disablePictureInPicture>
+							<source src="/videos/hero-clip.mp4" />
+						</video>
+					</div>
 				</div>
 			</div>
 		</section>

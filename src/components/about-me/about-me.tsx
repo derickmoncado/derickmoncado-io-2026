@@ -11,14 +11,14 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>
 					<p>
-						I'm a <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, stylish <span>art</span>, and great <span>design</span>.
+						I'm a <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, <span>gaming</span>, <span>videography</span>, and great <span>design</span>.
 					</p>
 				</div>
 
 				<div className={styles["about-me__content__blocks"]}>
 					<div className={styles["about-me__content__blocks__block"]}>
 						<p className={styles.stat}>12+</p>
-						<p className={styles.heading}>Years of experince</p>
+						<p className={styles.heading}>Years of experience</p>
 						<p className={styles.blurb}>From startups, to agencies, to freelance to Big Tech, I’ve done it all.</p>
 					</div>
 
@@ -38,7 +38,7 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__details"]}>
 					<div className={styles["about-me__content__details__para1"]}>
 						<p>
-							Yo, I’m Derick, based out of Southern California I enjoy covering topics such as coding, tech, lifestyle, and anything else I find interesting on my 
+							Yo, I’m Derick, based out of Southern California and currently working in the gaming industry, I enjoy covering topics such as coding, tech, lifestyle, and anything else I find interesting on my 
 							<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								YouTube channel
 							</a>
@@ -75,17 +75,7 @@ export default function AboutMe() {
 							</ul>
 						</div>
 						<div className={styles["about-me__content__details__para2__video"]}>
-							<video
-								className={styles["about-me__content__details__para2__video__media"]}
-								autoPlay
-								muted
-								loop
-								playsInline
-								preload="auto"
-								aria-hidden="true"
-								tabIndex={-1}
-								disablePictureInPicture
-							>
+							<video className={styles["about-me__content__details__para2__video__media"]} autoPlay muted loop playsInline preload="auto" aria-hidden="true" tabIndex={-1} disablePictureInPicture>
 								<source src="/videos/about-me-video.mp4" type="video/mp4" />
 							</video>
 						</div>

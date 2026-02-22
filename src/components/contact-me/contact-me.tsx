@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { Mail } from "lucide-react";
 import styles from "./contact-me.module.scss";
 
 export default function ContactMe() {
@@ -12,7 +12,10 @@ export default function ContactMe() {
 				</div>
 
 				<div className={styles["contact-me__content__form"]}>
-					<form>
+					<a className={styles["contact-me__content__form__email-link"]} href="mailto:hello@derickmoncado.io">
+						<Mail /> hello@derickmoncado.io
+					</a>
+					{/* <form>
 						<div className={styles["field-group"]}>
 							<div className={`${styles.field} ${styles["field--half"]}`}>
 								<label htmlFor="full-name">Full Name</label>
@@ -38,7 +41,7 @@ export default function ContactMe() {
 						<button type="submit">
 							Send Message <ArrowRight />
 						</button>
-					</form>
+					</form> */}
 				</div>
 			</div>
 		</section>

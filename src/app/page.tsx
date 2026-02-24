@@ -11,8 +11,8 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			<RecentContent />
 			<AboutMe />
+			<RecentContent />
 			<Recommendations />
 			{/* <Downloads /> */}
 			<ContactMe />

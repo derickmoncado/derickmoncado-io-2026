@@ -8,7 +8,7 @@
     aside,
     .body-content {
         background-color: #fff;
-        border-radius: 30px;
+        border-radius: 75px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 20px;
         box-sizing: border-box;
         min-width: 0;
@@ -21,6 +21,11 @@
         height: auto;
         max-height: none;
         overflow: visible;
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 1000;
     }
 
     .body-content {

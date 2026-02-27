@@ -170,16 +170,14 @@ export default function Navigation() {
 						</li>
 					</ul>
 
-					<div className=""></div>
+					<div className={styles["navigation__inner__codecademy"]}>
+						<p>Learn to code with</p>
+						<Link href="https://www.pntra.com/t/8-12462-377154-213588" target="_blank">
+							<Image src={CodecademyLogo} alt="Codecademy Logo" priority />
+						</Link>
+						<p>Click for 50% OFF of all plans!</p>
+					</div>
 				</nav>
-
-				<div className={styles["navigation__inner__codecademy"]}>
-					<p>Learn to code with</p>
-					<Link href="https://www.pntra.com/t/8-12462-377154-213588" target="_blank">
-						<Image src={CodecademyLogo} alt="Codecademy Logo" priority />
-					</Link>
-					<p>Click for 50% OFF of all plans!</p>
-				</div>
 			</div>
 		</div>
 	);

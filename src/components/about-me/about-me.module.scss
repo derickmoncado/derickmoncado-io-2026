@@ -28,7 +28,7 @@
             flex-direction: column;
             gap: 15px;
 
-            @media (width >= 1200px) {
+            @media (width >=1350) {
                 flex-direction: row;
             }
 
@@ -38,7 +38,7 @@
                 padding: 20px 25px;
                 margin-bottom: 50px;
 
-                @media (width >= 1200px) {
+                @media (width >=1350) {
                     width: 33.33%;
                 }
 
@@ -67,7 +67,7 @@
 
             &__para2 {
 
-                @media (width >= 1200px) {
+                @media (width >=1350) {
                     display: flex;
                     gap: 50px;
                 }
@@ -78,7 +78,7 @@
 
                 &__text-socials {
 
-                    @media (width >= 1200px) {
+                    @media (width >=1350) {
                         width: 60%;
                     }
 
@@ -116,7 +116,7 @@
                     height: 250px;
                     aspect-ratio: 3 / 4;
 
-                    @media (width >= 1200px) {
+                    @media (width >=1350) {
                         width: 40%;
                     }
 

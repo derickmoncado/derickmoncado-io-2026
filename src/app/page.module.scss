@@ -5,7 +5,7 @@
     align-items: flex-start;
     gap: 15px;
 
-    @media (width >=1350px) {
+    @media (width >=1350) {
         gap: 48px;
     }
 
@@ -36,12 +36,12 @@
         width: 100%;
         padding: 40px;
 
-        @media (width >=1350px) {
+        @media (width >=1350) {
             padding: 60px;
         }
     }
 
-    @media (width >=1350px) {
+    @media (width >=1350) {
         flex-direction: row;
 
         aside {

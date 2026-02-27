@@ -6,13 +6,14 @@ import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight, Download } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight } from "lucide-react";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
 
 export default function Navigation() {
 	const currentPath = usePathname();
 	const [activeHash, setActiveHash] = useState<string>("");
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	useEffect(() => {
 		if (currentPath !== "/") {
@@ -52,6 +53,21 @@ export default function Navigation() {
 		};
 	}, [currentPath]);
 
+	useEffect(() => {
+		const closeOnDesktop = () => {
+			if (window.innerWidth >= 768) {
+				setIsMenuOpen(false);
+			}
+		};
+
+		closeOnDesktop();
+		window.addEventListener("resize", closeOnDesktop);
+
+		return () => {
+			window.removeEventListener("resize", closeOnDesktop);
+		};
+	}, []);
+
 	const getActiveClass = (hash: string) => (currentPath === "/" && activeHash === hash ? styles["is-active"] : undefined);
 
 	// condensed version just for reference
@@ -68,17 +84,30 @@ export default function Navigation() {
 					</div>
 				</Link>
 
-				<nav className={styles["navigation__inner__nav"]}>
+				<button
+					type="button"
+					className={styles["navigation__inner__toggle"]}
+					onClick={() => setIsMenuOpen((prev) => !prev)}
+					aria-expanded={isMenuOpen}
+					aria-controls="site-navigation"
+					aria-label="Toggle navigation menu"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<nav id="site-navigation" className={`${styles["navigation__inner__nav"]} ${isMenuOpen ? styles["is-open"] : ""}`}>
 					<ul className={styles["main-nav"]}>
 						<li className={getActiveClass("#home")}>
-							<a href="#home">
+							<a href="#home" onClick={() => setIsMenuOpen(false)}>
 								<House />
 								<p>Home</p>
 								<ChevronRight />
 							</a>
 						</li>
 						<li className={getActiveClass("#about-me")}>
-							<a href="#about-me">
+							<a href="#about-me" onClick={() => setIsMenuOpen(false)}>
 								<CircleUser />
 								<p>About</p>
 								<ChevronRight />
@@ -92,7 +121,7 @@ export default function Navigation() {
 							</a>
 						</li> */}
 						<li className={getActiveClass("#contact-me")}>
-							<a href="#contact-me">
+							<a href="#contact-me" onClick={() => setIsMenuOpen(false)}>
 								<Mail />
 								<p>Contact</p>
 								<ChevronRight />

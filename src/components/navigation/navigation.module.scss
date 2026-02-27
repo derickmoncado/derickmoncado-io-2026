@@ -2,24 +2,26 @@
 
     &__inner {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        gap: 24px;
+        gap: 16px;
+        position: relative;
 
         &__profile {
             display: flex;
-            gap: 20px;
-            flex: 0 1 360px;
+            gap: 16px;
+            flex: 1 1 auto;
+            min-width: 0;
 
             &__img {
-                width: 60px;
-                height: 60px;
+                width: 52px;
+                height: 52px;
                 border-radius: 50%;
                 background-image: url('../../../public/images/headshot.jpg');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 position: relative;
+                flex-shrink: 0;
 
                 &::after {
                     content: '';
@@ -29,7 +31,6 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    //border: 3px solid rgba(244, 219, 16, 0.7);
                 }
             }
 
@@ -37,31 +38,74 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                min-width: 0;
 
                 h1 {
                     font-size: inherit;
                 }
 
                 p {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }
 
+        &__toggle {
+            width: 46px;
+            height: 46px;
+            border: 0;
+            border-radius: 12px;
+            background: #e9eaef;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            flex-shrink: 0;
+
+            span {
+                display: block;
+                width: 20px;
+                height: 2px;
+                background-color: #1e1f35;
+                border-radius: 999px;
+                transition: transform 0.2s ease, opacity 0.2s ease;
+            }
+
+            &:hover {
+                background: lighten(#e9eaef, 3%);
+            }
+
+            &:focus-visible {
+                outline: 2px solid #1e1f35;
+                outline-offset: 2px;
+            }
+        }
+
         &__nav {
-            flex: 1 1 auto;
-            margin-bottom: 0;
-            width: 100%;
+            position: absolute;
+            top: calc(100% + 12px);
+            right: 0;
+            width: min(320px, 100%);
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: rgba(17, 24, 39, 0.15) 0px 12px 30px;
+            border: 1px solid #eef0f4;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-6px);
+            transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+            z-index: 1200;
 
             ul {
                 list-style: none;
                 margin: 0;
-                padding: 0;
+                padding: 12px;
                 display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-                gap: 40px;
+                flex-direction: column;
+                gap: 2px;
 
                 li {
                     position: relative;
@@ -70,13 +114,16 @@
                         color: #737783;
                         text-decoration: none;
                         font-weight: 500;
-                        padding: 8px 0;
+                        padding: 12px 14px;
+                        border-radius: 14px;
                         display: flex;
                         align-items: center;
                         gap: 12px;
 
                         svg {
-                            display: none;
+                            width: 18px;
+                            height: 18px;
+                            flex-shrink: 0;
                         }
 
                         p {
@@ -85,57 +132,48 @@
                         }
 
                         svg:last-child {
-                            display: none;
+                            width: 16px;
                         }
                     }
 
                     &:hover {
-                        background-color: lighten(#E9EAEF, 4%);
-                        border-radius: 30px;
-
                         a {
-                            color: #1E1F35;
+                            color: #1e1f35;
+                            background-color: #f4f5f8;
                         }
                     }
 
                     &.is-active {
-                        background-color: #E9EAEF;
-                        border-radius: 30px;
-
                         a {
-                            color: #1E1F35;
-
-                            svg:last-child {
-                                display: none;
-                            }
+                            color: #1e1f35;
+                            background-color: #e9eaef;
                         }
                     }
                 }
 
                 &.socials {
-                    display: none;
-                    margin-top: 20px;
+                    border-top: 1px solid #eef0f4;
+                    margin-top: 4px;
+                    padding-top: 10px;
 
                     li {
-
                         &.preheading {
-
                             p {
                                 font-size: 12px;
                                 text-transform: uppercase;
                                 letter-spacing: 2px;
-                                padding: 8px 16px;
-                                color: #1E1F35;
-                            }
-                        }
-
-                        a {
-                            svg:last-child {
-                                width: 16px;
+                                padding: 8px 14px;
+                                color: #1e1f35;
                             }
                         }
                     }
                 }
+            }
+
+            &.is-open {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
             }
         }
 
@@ -143,29 +181,55 @@
             display: none;
         }
 
-        @media (width >= 1350px) {
-            flex-direction: column;
-            gap: 0;
+        @media (width >= 768px) {
+            gap: 24px;
 
             &__profile {
-                border-bottom: 2px solid #f0f0f0;
-                flex: 0 1 auto;
-                padding-bottom: 35px;
-                margin-bottom: 30px;
+                flex: 0 1 360px;
+
+                &__img {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                &__name {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &__toggle {
+                display: none;
             }
 
             &__nav {
-                margin-bottom: 100px;
+                position: static;
+                flex: 1 1 auto;
+                width: 100%;
+                margin-bottom: 0;
+                background: transparent;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                overflow: visible;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
 
                 ul {
-                    margin: 0 0 30px 0;
+                    padding: 0;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 40px;
 
                     li {
                         a {
-                            padding: 8px 16px;
+                            padding: 8px 0;
 
                             svg {
-                                display: inline-block;
+                                display: none;
                             }
 
                             svg:last-child {
@@ -173,46 +237,36 @@
                             }
                         }
 
-                        &.is-active {
+                        &:hover {
+                            background-color: lighten(#e9eaef, 4%);
+                            border-radius: 30px;
+
                             a {
-                                svg:last-child {
-                                    display: inline-block;
-                                }
+                                background: transparent;
+                            }
+                        }
+
+                        &.is-active {
+                            background-color: #e9eaef;
+                            border-radius: 30px;
+
+                            a {
+                                background: transparent;
                             }
                         }
                     }
 
                     &.socials {
-                        display: flex;
-                        margin-top: 0;
-
-                        li {
-                            a {
-                                svg:last-child {
-                                    display: inline-block;
-                                }
-                            }
-                        }
+                        display: none;
+                        margin-top: 20px;
+                        border-top: 0;
+                        padding-top: 0;
                     }
                 }
             }
 
             &__codecademy {
-                display: block;
-                text-align: center;
-                font-size: 12px;
-
-                p {
-                    letter-spacing: normal;
-                }
-
-                a {
-                    img {
-                        width: 70%;
-                        margin: 8px auto;
-                        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-                    }
-                }
+                display: none;
             }
         }
     }

@@ -3,7 +3,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 48px;
+    gap: 15px;
+
+    @media (width >=1350px) {
+        gap: 48px;
+    }
 
     aside,
     .body-content {
@@ -30,10 +34,14 @@
 
     .body-content {
         width: 100%;
-        padding: 60px;
+        padding: 40px;
+
+        @media (width >=1350px) {
+            padding: 60px;
+        }
     }
 
-    @media (width >= 1350px) {
+    @media (width >=1350px) {
         flex-direction: row;
 
         aside {

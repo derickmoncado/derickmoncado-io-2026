@@ -94,7 +94,7 @@
                     width: calc(50% - 10px);
                 }
 
-                @media (max-width: 767px) {
+                @media (width <= 767px) {
                     .field--half {
                         width: 100%;
                     }

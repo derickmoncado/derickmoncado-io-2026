@@ -33,7 +33,7 @@
         padding: 60px;
     }
 
-    @media (min-width: 1350px) {
+    @media (width >= 1350px) {
         flex-direction: row;
 
         aside {

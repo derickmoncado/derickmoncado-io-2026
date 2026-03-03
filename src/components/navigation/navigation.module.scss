@@ -242,9 +242,11 @@
                     flex-direction: row;
                     justify-content: flex-end;
                     align-items: center;
-                    gap: 40px;
+                    gap: 20px;
 
                     li {
+                        padding: 0px 20px;
+
                         a {
                             padding: 8px 0;
 

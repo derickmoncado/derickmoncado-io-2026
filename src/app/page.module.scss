@@ -16,6 +16,10 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 20px;
         box-sizing: border-box;
         min-width: 0;
+
+        @media (width >=1350) {
+            border-radius: 40px;
+        }
     }
 
     aside {

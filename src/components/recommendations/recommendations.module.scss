@@ -1,4 +1,5 @@
 @use "../../styles/partials/mixins"as *;
+@use "../../styles/partials/variables"as *;
 
 .recommendations {
 
@@ -58,7 +59,7 @@
 
                                 .name {
                                     letter-spacing: -.5px;
-                                    color: #1e1f35;
+                                    color: $primary-color;
                                     font-weight: 600;
 
                                     svg {
@@ -111,13 +112,13 @@
                 width: 12px;
                 height: 12px;
                 border-radius: 999px;
-                border: 1px solid #1E1F35;
+                border: 1px solid $primary-color;
                 background: transparent;
                 cursor: pointer;
                 transition: transform 120ms ease, background 120ms ease;
 
                 &--active {
-                    background: #1E1F35;
+                    background: $primary-color;
                 }
             }
         }

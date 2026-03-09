@@ -1,4 +1,5 @@
 @use "../../styles/partials/mixins"as *;
+@use "../../styles/partials/variables"as *;
 
 .hero {
 
@@ -26,7 +27,7 @@
                 margin-bottom: 15px;
 
                 .status {
-                    color: #1E1F35;
+                    color: $primary-color;
                     font-size: 12px;
                     padding: 6px 14px;
                     border: 1px solid #ddd;

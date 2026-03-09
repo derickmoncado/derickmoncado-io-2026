@@ -13,7 +13,7 @@ export default function Hero() {
 						<p className={styles.status}>
 							<span></span>Open to Collaborations
 						</p>
-						<p>As of February 2026</p>
+						<p>as of March 2026</p>
 					</div>
 					<div className={styles["hero__content__details__text"]}>
 						<h1>Hey, I’m Derick</h1>

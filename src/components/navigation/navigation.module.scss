@@ -1,3 +1,5 @@
+@use "../../styles/partials/variables"as *;
+
 .navigation {
 
     &__inner {
@@ -68,7 +70,7 @@
                 display: block;
                 width: 20px;
                 height: 2px;
-                background-color: #1e1f35;
+                background-color: $primary-color;
                 border-radius: 999px;
                 transition: transform 0.2s ease, opacity 0.2s ease;
             }
@@ -78,7 +80,7 @@
             }
 
             &:focus-visible {
-                outline: 2px solid #1e1f35;
+                outline: 2px solid $primary-color;
                 outline-offset: 2px;
             }
         }
@@ -140,14 +142,14 @@
 
                     &:hover {
                         a {
-                            color: #1e1f35;
+                            color: $primary-color;
                             background-color: #f4f5f8;
                         }
                     }
 
                     &.is-active {
                         a {
-                            color: #1e1f35;
+                            color: $primary-color;
                         }
                     }
                 }
@@ -164,7 +166,7 @@
                                 text-transform: uppercase;
                                 letter-spacing: 2px;
                                 padding: 8px 14px;
-                                color: #1e1f35;
+                                color: $primary-color;
                             }
                         }
                     }
@@ -308,7 +310,7 @@
                             border-radius: 30px;
 
                             a {
-                                color: #1E1F35;
+                                color: $primary-color;
                             }
                         }
 
@@ -317,7 +319,7 @@
                             border-radius: 30px;
 
                             a {
-                                color: #1E1F35;
+                                color: $primary-color;
 
                                 svg:last-child {
                                     display: inline-block;
@@ -340,7 +342,7 @@
                                     text-transform: uppercase;
                                     letter-spacing: 2px;
                                     padding: 8px 16px;
-                                    color: #1E1F35;
+                                    color: $primary-color;
                                 }
                             }
 

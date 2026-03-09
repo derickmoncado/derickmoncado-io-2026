@@ -2,7 +2,6 @@
 @use "./mixins"as *;
 
 // global styles
-
 html {
     background-color: #E7E8EA;
     scroll-behavior: smooth;
@@ -12,7 +11,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 18px;
     letter-spacing: -0.5px;
-    color: #1E1F35;
+    color: $primary-color;
 
     main {
         width: 100%;
@@ -52,7 +51,7 @@ p {
     letter-spacing: -0.3px;
 
     a {
-        color: #1E1F35;
+        color: $primary-color;
 
         &:hover {
             text-decoration: underline;
@@ -73,64 +72,3 @@ svg {
 .container {
     @include container;
 }
-
-// for the carousel
-// .embla {
-//     overflow: hidden;
-// }
-
-// .embla__container {
-//     display: flex;
-// }
-
-// .embla__slide {
-//     flex: 0 0 100%;
-//     min-width: 0;
-//     padding: 100px;
-//     border: 1px solid #ddd;
-//     text-align: center;
-// }
-
-// .embla__controls {
-//     display: flex;
-//     align-items: center;
-//     gap: 16px;
-//     margin-top: 12px;
-// }
-
-// .embla__buttons {
-//     display: flex;
-//     gap: 8px;
-// }
-
-// .embla__button {
-//     padding: 8px 12px;
-//     cursor: pointer;
-// }
-
-// .embla__button:disabled {
-//     opacity: 0.4;
-//     cursor: not-allowed;
-// }
-
-// .embla__dots {
-//     display: flex;
-//     align-items: center;
-//     gap: 8px;
-//     flex: 1;
-//     justify-content: flex-end;
-// }
-
-// .embla__dot {
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 50%;
-//     border: 1px solid #111;
-//     background: transparent;
-//     padding: 0;
-//     cursor: pointer;
-// }
-
-// .embla__dot--selected {
-//     background: #111;
-// }

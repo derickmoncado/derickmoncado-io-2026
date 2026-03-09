@@ -15,7 +15,7 @@
                 letter-spacing: -0.8px;
                 margin-bottom: 30px;
                 font-weight: 500;
-                color: #1e1f35;
+                color: $primary-color;
 
                 span {
                     color: #858585;
@@ -50,7 +50,7 @@
                             font-size: 22px;
                             letter-spacing: -0.8px;
                             font-weight: 500;
-                            color: #1e1f35;
+                            color: $primary-color;
                         }
 
                         p {
@@ -59,7 +59,7 @@
 
                         &__last-updated {
                             display: inline-block;
-                            color: #1e1f35;
+                            color: $primary-color;
                             font-size: 12px;
                             padding: 6px 14px;
                             border: 1px solid #e4e4e4;

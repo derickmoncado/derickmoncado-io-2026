@@ -27,8 +27,12 @@
                 .slide {
                     flex: 0 0 100%;
                     border-radius: 30px;
-                    padding: 40px;
+                    padding: 125px 40px 40px 40px;
                     border: 1px solid #E4E4E4;
+
+                    @media (width >=768px) {
+                        padding: 40px;
+                    }
 
                     &__meta {
                         display: inline-block;
@@ -68,8 +72,6 @@
                             }
                         }
                     }
-
-                    &__quote {}
                 }
             }
 

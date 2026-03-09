@@ -11,7 +11,7 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>
 					<p>
-						I'm a <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, <span>gaming</span>, <span>videography</span>, and great <span>design</span>.
+						I'm a <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, <span>videography</span>, <span>gaming</span>, and visual <span>design</span>.
 					</p>
 				</div>
 
@@ -38,11 +38,11 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__details"]}>
 					<div className={styles["about-me__content__details__para1"]}>
 						<p>
-							Yo, I’m Derick, based out of Southern California and currently working in the gaming industry, I enjoy covering topics such as coding, tech, lifestyle, and anything else I find interesting on my 
+							Based out of Southern California and currently working in the gaming industry, I enjoy covering topics such as coding, tech, lifestyle, and anything else I find interesting on my 
 							<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								YouTube channel
 							</a>
-							. Before programming I was a graphic designer. However after seeing David Fincher's magnum opus The Social Network in 2010, I was inspired to pursue web development and picked up a book from the <em>Head First</em> series by O’Reilly on HTML & CSS. After that, the rest is history.
+							. Before becoming a software engineer, I was a designer. However after seeing David Fincher's magnum opus The Social Network in 2010, I was inspired to pursue web development and picked up a book from the <em>Head First</em> series by O’Reilly on HTML & CSS. After that, the rest is history.
 						</p>
 					</div>
 					<div className={styles["about-me__content__details__para2"]}>

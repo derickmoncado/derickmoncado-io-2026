@@ -75,9 +75,20 @@
             a {
                 @include secondary-cta;
                 border: none;
-                display: inline-block;
+                display: inline-flex;
+                gap: 8px;
+                padding: 10px 20px;
+                width: 140px;
                 color: #fff;
+                display: flex;
+                justify-content: center;
                 transition: background-color 0.25s ease, box-shadow 0.25s ease, background-image 0.25s ease;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    filter: brightness(0) invert(1);
+                }
 
                 &:hover {
                     box-shadow: 0 6px 10px rgba(149, 157, 165, 0.5);

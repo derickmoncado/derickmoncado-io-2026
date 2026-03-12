@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import styles from "./contact-me.module.scss";
 
 export default function ContactMe() {

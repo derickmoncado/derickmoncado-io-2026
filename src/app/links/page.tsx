@@ -1,13 +1,21 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.scss";
 import ContactMe from "@/components/contact-me/contact-me";
+import { ChevronLeft } from "lucide-react";
 
 export default function LinksPage() {
 	return (
 		<main className={styles["links"]}>
 			<div className={styles["links__content"]}>
+				<div className={styles["links__content__back"]}>
+					<Link href="/">
+						<ChevronLeft /> Back
+					</Link>
+				</div>
+
 				<div className={styles["links__content__hero"]}>
 					<div className={styles["links__content__hero__image"]}>
 						<div className={styles["links__content__hero__image__frame"]}>

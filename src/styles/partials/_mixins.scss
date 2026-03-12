@@ -1,11 +1,23 @@
 @use './variables'as *; // Adjust path as needed
 
 // General container
-@mixin container {
+@mixin container($max-width: 1350px) {
     width: 100%;
-    max-width: 1350px;
+    max-width: $max-width;
     //padding: 0 20px;
     margin: 0 auto;
+}
+
+@mixin bg {
+    background-color: #fff;
+    border-radius: 75px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 20px;
+    box-sizing: border-box;
+    min-width: 0;
+
+    @media (width >=1350) {
+        border-radius: 40px;
+    }
 }
 
 // Primary CTA

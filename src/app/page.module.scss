@@ -1,3 +1,5 @@
+@use "../styles/partials/mixins"as *;
+
 /* Home page - body content */
 .main-body {
     display: flex;
@@ -11,15 +13,7 @@
 
     aside,
     .body-content {
-        background-color: #fff;
-        border-radius: 75px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 20px;
-        box-sizing: border-box;
-        min-width: 0;
-
-        @media (width >=1350) {
-            border-radius: 40px;
-        }
+        @include bg;
     }
 
     aside {

@@ -77,22 +77,44 @@
                 border: none;
                 display: inline-block;
                 color: #fff;
+                transition: background-color 0.25s ease, box-shadow 0.25s ease, background-image 0.25s ease;
+
+                &:hover {
+                    box-shadow: 0 6px 10px rgba(149, 157, 165, 0.5);
+                    background-color: transparent;
+                }
             }
 
             &__youtube {
-                background: #e62117;
+                background-color: #e62117;
+
+                &:hover {
+                    background-color: darken(#e62117, 5%) !important;
+                }
             }
 
             &__threads {
                 background-color: #000;
+
+                &:hover {
+                    background-color: lighten(#000, 15%) !important;
+                }
             }
 
             &__instagram {
                 background-image: linear-gradient(45deg, #feb811, #9e27ad);
+
+                &:hover {
+                    background-image: linear-gradient(45deg, darken(#feb811, 7%), darken(#9e27ad, 7%));
+                }
             }
 
             &__linkedin {
                 background-color: #0a66c2;
+
+                &:hover {
+                    background-color: darken(#0a66c2, 5%) !important;
+                }
             }
         }
     }

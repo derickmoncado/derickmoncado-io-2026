@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import styles from "./page.module.scss";
 
 export default function LinksPage() {
@@ -16,12 +15,25 @@ export default function LinksPage() {
 						</div>
 					</div>
 					<div className={styles["links__content__hero__headline"]}>
-						<h2>@derickmoncado</h2>
+						<h1>@derickmoncado</h1>
 						<p>Developer, Designer, and Content Creator</p>
 					</div>
 				</div>
 
-				<div className={styles["links__content__body"]}>body here</div>
+				<div className={styles["links__content__links"]}>
+					<a href="https://www.youtube.com/@derickmoncado" className={styles["links__content__links__youtube"]} target="_blank" rel="noopener noreferrer">
+						Subscribe
+					</a>
+					<a href="https://www.threads.com/@derickmoncado.jpg" className={styles["links__content__links__threads"]} target="_blank" rel="noopener noreferrer">
+						Follow
+					</a>
+					<a href="https://www.instagram.com/derickmoncado.jpg/" className={styles["links__content__links__instagram"]} target="_blank" rel="noopener noreferrer">
+						Follow
+					</a>
+					<a href="https://www.linkedin.com/in/derickmoncado/" className={styles["links__content__links__linkedin"]} target="_blank" rel="noopener noreferrer">
+						LinkedIn
+					</a>
+				</div>
 			</div>
 		</main>
 	);

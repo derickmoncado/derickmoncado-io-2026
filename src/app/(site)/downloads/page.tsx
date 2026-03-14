@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import styles from "./page.module.scss";
 
 export default function DownloadsPage() {

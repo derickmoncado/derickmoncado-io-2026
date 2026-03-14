@@ -3,7 +3,6 @@
 import styles from "./recommendations.module.scss";
 import useEmblaCarousel from "embla-carousel-react";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
-import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 
 export default function Recommendations() {
@@ -70,11 +69,23 @@ export default function Recommendations() {
 
 	useEffect(() => {
 		if (!emblaApi) return;
-		onInit(emblaApi);
-		onSelect(emblaApi);
+
+		const syncEmblaState = () => {
+			onInit(emblaApi);
+			onSelect(emblaApi);
+		};
+
+		const frameId = requestAnimationFrame(syncEmblaState);
 		emblaApi.on("reInit", onInit);
 		emblaApi.on("reInit", onSelect);
 		emblaApi.on("select", onSelect);
+
+		return () => {
+			cancelAnimationFrame(frameId);
+			emblaApi.off("reInit", onInit);
+			emblaApi.off("reInit", onSelect);
+			emblaApi.off("select", onSelect);
+		};
 	}, [emblaApi, onInit, onSelect]);
 
 	return (

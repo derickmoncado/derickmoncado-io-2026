@@ -2,7 +2,6 @@
 
 import { Linkedin, Instagram, Youtube, MessageCircle } from "lucide-react";
 import styles from "./about-me.module.scss";
-import Link from "next/link";
 
 export default function AboutMe() {
 	return (
@@ -10,9 +9,9 @@ export default function AboutMe() {
 			<div className={styles["about-me__content"]}>
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>
-					<p>
-						I'm a <span>designer-turned-developer</span> who's passionate about clean <span>code</span>, <span>videography</span>, <span>gaming</span>, and visual <span>design</span>.
-					</p>
+						<p>
+							I&apos;m a <span>designer-turned-developer</span> who&apos;s passionate about clean <span>code</span>, <span>videography</span>, <span>gaming</span>, and visual <span>design</span>.
+						</p>
 				</div>
 
 				<div className={styles["about-me__content__blocks"]}>
@@ -31,7 +30,7 @@ export default function AboutMe() {
 					<div className={styles["about-me__content__blocks__block"]}>
 						<p className={styles.stat}>1000s</p>
 						<p className={styles.heading}>Lines of code written</p>
-						<p className={styles.blurb}>Thousands would definitely be an understatement but who’s counting?</p>
+						<p className={styles.blurb}>Thousands would definitely be an understatement but who&apos;s counting?</p>
 					</div>
 				</div>
 
@@ -42,12 +41,12 @@ export default function AboutMe() {
 							<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								YouTube channel
 							</a>
-							. Before becoming a software engineer, I was a designer. However after seeing David Fincher's magnum opus The Social Network in 2010, I was inspired to pursue web development and picked up a book from the <em>Head First</em> series by O’Reilly on HTML & CSS. After that, the rest is history.
+							. Before becoming a software engineer, I was a designer. However after seeing David Fincher&apos;s magnum opus The Social Network in 2010, I was inspired to pursue web development and picked up a book from the <em>Head First</em> series by O’Reilly on HTML & CSS. After that, the rest is history.
 						</p>
 					</div>
 					<div className={styles["about-me__content__details__para2"]}>
 						<div className={styles["about-me__content__details__para2__text-socials"]}>
-							<p>When I'm not debugging or messing around in chatGPT, you can catch me at the gym, a snobby coffee shop, gaming, [attempting] Spanish, or messing with my camera gear.</p>
+							<p>When I&apos;m not debugging or messing around in chatGPT, you can catch me at the gym, a snobby coffee shop, gaming, [attempting] Spanish, or messing with my camera gear.</p>
 							<p>
 								Interested in working together? Feel free to reach out, happy to connect, collab, or just talk shop. <a href="mailto:hello@derickmoncado.io">hello@derickmoncado.io</a>.
 							</p>

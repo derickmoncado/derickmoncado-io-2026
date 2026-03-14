@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./footer.module.scss";
-import Link from "next/link";
 import { Heart } from "lucide-react";
 
 export default function Navigation() {

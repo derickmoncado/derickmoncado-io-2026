@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "../../styles/partials/variables"as *;
 
 .navigation {
@@ -76,7 +77,7 @@
             }
 
             &:hover {
-                background: lighten(#e9eaef, 3%);
+                background: color.adjust(#e9eaef, $lightness: 3%);
             }
 
             &:focus-visible {
@@ -306,7 +307,7 @@
                         }
 
                         &:hover {
-                            background-color: lighten(#E9EAEF, 4%);
+                            background-color: color.adjust(#E9EAEF, $lightness: 4%);
                             border-radius: 30px;
 
                             a {

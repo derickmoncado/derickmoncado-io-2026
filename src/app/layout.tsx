@@ -3,8 +3,8 @@ import { Analytics } from "@vercel/analytics/next";
 import "./main.scss";
 
 export const metadata: Metadata = {
-	title: "React & Next.js Boilerplate - your page title goes here!",
-	description: "This is your meta description",
+	title: "Derick Moncado | Developer, Designer, and Creator",
+	description: "Senior Frontend Engineer at Activision Microsoft, Designer, and Creator based in Los Angles. Videos on software engineering, tech, and lifestyle.",
 };
 
 export default function RootLayout({

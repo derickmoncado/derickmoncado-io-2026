@@ -40,8 +40,13 @@
 
                         &__profile {
                             display: flex;
+                            flex-direction: column;
                             gap: 20px;
                             margin-bottom: 30px;
+
+                            @media (width >=768px) {
+                                flex-direction: row;
+                            }
 
                             &__img {
                                 width: 60px;

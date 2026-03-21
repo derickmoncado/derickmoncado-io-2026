@@ -53,8 +53,12 @@
                 margin-bottom: auto;
 
                 h1 {
-                    font-size: 48px;
+                    font-size: 42px;
                     letter-spacing: -2.5px;
+
+                    @media (width >=768px) {
+                        font-size: 48px;
+                    }
                 }
 
                 h2 {
@@ -76,8 +80,14 @@
 
             &__ctas {
                 display: flex;
-                gap: 20px;
+                flex-direction: column;
+                gap: 15px;
                 margin-bottom: 40px;
+
+                @media (width >=480px) {
+                    flex-direction: row;
+                    gap: 20px;
+                }
 
                 @media (width >=850px) {
                     margin-bottom: 0;

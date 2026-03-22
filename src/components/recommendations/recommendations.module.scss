@@ -19,20 +19,22 @@
         &__carousel {
             overflow: hidden;
             position: relative;
+            transition: height 200ms ease;
 
             &__inner {
                 display: flex;
+                align-items: flex-start;
                 gap: 30px;
-                padding: 1px;
+                //padding: 1px;
 
                 .slide {
                     flex: 0 0 100%;
                     border-radius: 30px;
-                    padding: 125px 40px 40px 40px;
-                    border: 1px solid #E4E4E4;
+                    padding: 40px 0px 0px;
 
                     @media (width >=768px) {
                         padding: 40px;
+                        border: 1px solid #E4E4E4;
                     }
 
                     &__meta {
@@ -87,7 +89,11 @@
                 position: absolute;
                 z-index: 1;
                 top: 40px;
-                right: 40px;
+                right: 0;
+
+                @media (width >=768px) {
+                    right: 40px;
+                }
 
                 button {
                     background-color: #e7e8ea;

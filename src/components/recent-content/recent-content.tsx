@@ -32,13 +32,26 @@ function getOrdinal(day: number): string {
 
 function formatFullDate(dateString: string): string {
 	const date = new Date(dateString);
-	const month = date.toLocaleString("en-US", { month: "long" });
-	const day = date.getDate();
-	const year = date.getFullYear();
+	const month = new Intl.DateTimeFormat("en-US", {
+		month: "long",
+		timeZone: "UTC",
+	}).format(date);
+	const day = date.getUTCDate();
+	const year = date.getUTCFullYear();
 	return `${month} ${day}${getOrdinal(day)} ${year}`;
 }
 
-export default function RecentContent() {
+type RecentContentProps = {
+	limit?: number;
+	title?: string;
+	className?: string;
+};
+
+export default function RecentContent({
+	limit = 3,
+	title = "Recent Content",
+	className,
+}: RecentContentProps) {
 	const [videos, setVideos] = useState<RecentVideo[]>([]);
 	const [status, setStatus] = useState<"idle" | "loading" | "error" | "ready">("idle");
 
@@ -53,12 +66,11 @@ export default function RecentContent() {
 					signal: controller.signal,
 				});
 				const data = (await res.json()) as ApiResponse;
-				console.log(data.items); // let's see what we get
 				if (!res.ok || data.error) {
 					throw new Error(data.error || "Failed to load videos");
 				}
 				if (isMounted) {
-					setVideos(data.items ?? []);
+					setVideos((data.items ?? []).slice(0, limit));
 					setStatus("ready");
 				}
 			} catch (error) {
@@ -74,12 +86,16 @@ export default function RecentContent() {
 			isMounted = false;
 			controller.abort();
 		};
-	}, []);
+	}, [limit]);
+
+	const sectionClassName = [styles["recent-content"], limit === 1 ? styles["recent-content--single"] : "", className]
+		.filter(Boolean)
+		.join(" ");
 
 	return (
-		<section className={styles["recent-content"]}>
+		<section className={sectionClassName}>
 			<div className={styles["recent-content__heading"]}>
-				<h2>Recent Content</h2>
+				<h2>{title}</h2>
 			</div>
 			<div className={styles["recent-content__videos"]}>
 				{status === "loading" && <p>Loading videos...</p>}

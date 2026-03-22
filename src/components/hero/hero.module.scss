@@ -93,6 +93,10 @@
                     margin-bottom: 0;
                 }
 
+                a {
+                    justify-content: center;
+                }
+
                 a:first-child {
                     @include primary-cta;
                 }

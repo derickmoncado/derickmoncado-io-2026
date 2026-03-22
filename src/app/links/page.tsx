@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./page.module.scss";
 import ContactMe from "@/components/contact-me/contact-me";
 import { ChevronLeft } from "lucide-react";
+import RecentContent from "@/components/recent-content/recent-content";
 
 export default function LinksPage() {
 	return (
@@ -54,7 +55,7 @@ export default function LinksPage() {
 				</div>
 
 				<div className={styles["links__content__recent-content"]}>
-					<h2>recent content</h2>
+					<RecentContent limit={1} className={styles["links__content__recent-content__feed"]} />
 				</div>
 			</div>
 		</main>

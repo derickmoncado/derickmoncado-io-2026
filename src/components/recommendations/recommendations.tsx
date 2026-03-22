@@ -48,20 +48,33 @@ export default function Recommendations() {
 	const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 	const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
 	const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+	const [carouselHeight, setCarouselHeight] = useState<number>();
 
 	const [emblaRef, emblaApi] = useEmblaCarousel({ axis: "x", direction: "ltr", loop: true, align: "center" });
+
+	const updateCarouselHeight = useCallback((api: typeof emblaApi) => {
+		if (!api) return;
+
+		const selectedSlide = api.slideNodes()[api.selectedScrollSnap()];
+
+		if (!selectedSlide) return;
+
+		setCarouselHeight(selectedSlide.getBoundingClientRect().height);
+	}, []);
 
 	const onSelect = useCallback((api: typeof emblaApi) => {
 		if (!api) return;
 		setSelectedIndex(api.selectedScrollSnap());
 		setPrevBtnEnabled(api.canScrollPrev());
 		setNextBtnEnabled(api.canScrollNext());
-	}, []);
+		updateCarouselHeight(api);
+	}, [updateCarouselHeight]);
 
 	const onInit = useCallback((api: typeof emblaApi) => {
 		if (!api) return;
 		setScrollSnaps(api.scrollSnapList());
-	}, []);
+		updateCarouselHeight(api);
+	}, [updateCarouselHeight]);
 
 	const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
 	const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
@@ -88,6 +101,16 @@ export default function Recommendations() {
 		};
 	}, [emblaApi, onInit, onSelect]);
 
+	useEffect(() => {
+		if (!emblaApi || typeof ResizeObserver === "undefined") return;
+
+		const observer = new ResizeObserver(() => updateCarouselHeight(emblaApi));
+
+		emblaApi.slideNodes().forEach((slide) => observer.observe(slide));
+
+		return () => observer.disconnect();
+	}, [emblaApi, updateCarouselHeight]);
+
 	return (
 		<section className={styles["recommendations"]}>
 			<div className={styles["recommendations__content"]}>
@@ -95,7 +118,7 @@ export default function Recommendations() {
 					<h2>Recommendations</h2>
 				</div>
 
-				<div ref={emblaRef} className={styles["recommendations__content__carousel"]}>
+				<div ref={emblaRef} className={styles["recommendations__content__carousel"]} style={carouselHeight ? { height: `${carouselHeight}px` } : undefined}>
 					<div className={styles["recommendations__content__carousel__inner"]}>
 						{recommendations.map((recommendation) => (
 							<article key={recommendation.name} className={styles["slide"]}>

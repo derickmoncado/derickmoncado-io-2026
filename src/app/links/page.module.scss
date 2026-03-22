@@ -3,7 +3,11 @@
 @use "../../styles/partials/variables"as *;
 
 .links {
-    padding-top: 200px;
+    padding-top: 160px;
+
+    @media (width >=600px) {
+        padding-top: 200px;
+    }
 
     &__content {
         @include container(992px);
@@ -23,11 +27,11 @@
                 position: absolute;
                 top: -150px;
                 left: 0;
-                padding: 8px 16px 8px 12px;
+                padding: 8px 16px 8px 0;
+                border: none;
 
                 &:hover {
-                    background-color: #000;
-                    color: #fff;
+                    background: none !important;
                 }
 
                 svg {
@@ -42,12 +46,16 @@
 
             &__image {
                 border: 1px solid transparent;
-                margin-bottom: 85px;
+                margin-bottom: 60px;
                 position: relative;
 
+                @media (width >=600px) {
+                    margin-bottom: 85px;
+                }
+
                 &__frame {
-                    width: 250px;
-                    height: 250px;
+                    width: 200px;
+                    height: 200px;
                     position: relative;
                     overflow: hidden;
                     border-radius: 50%;
@@ -55,7 +63,13 @@
                     border: 1px solid #dbdbdb;
                     position: absolute;
                     left: 50%;
-                    transform: translate(-50%, -190px);
+                    transform: translate(-50%, -150px);
+
+                    @media (width >=600px) {
+                        width: 250px;
+                        height: 250px;
+                        transform: translate(-50%, -190px);
+                    }
                 }
 
                 &__video {

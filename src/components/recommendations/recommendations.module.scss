@@ -25,6 +25,11 @@
             overflow: hidden;
             position: relative;
             transition: height 200ms ease;
+            margin-bottom: 20px;
+
+            @media (width >=768px) {
+                margin-bottom: 0;
+            }
 
             &__inner {
                 display: flex;

@@ -9,9 +9,9 @@ export default function AboutMe() {
 			<div className={styles["about-me__content"]}>
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>
-						<p>
-							I&apos;m a <span>designer-turned-developer</span> who&apos;s passionate about clean <span>code</span>, <span>videography</span>, <span>gaming</span>, and visual <span>design</span>.
-						</p>
+					<p>
+						I&apos;m a <span>designer-turned-developer</span> who&apos;s passionate about clean <span>code</span>, visual <span>design</span>, online <span>gaming</span>, and <span>videography</span>.
+					</p>
 				</div>
 
 				<div className={styles["about-me__content__blocks"]}>

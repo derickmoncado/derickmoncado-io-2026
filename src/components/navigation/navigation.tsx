@@ -6,7 +6,7 @@ import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight, Download } from "lucide-react";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
 
@@ -69,6 +69,7 @@ export default function Navigation() {
 	}, []);
 
 	const getActiveClass = (hash: string) => (currentPath === "/" && activeHash === hash ? styles["is-active"] : undefined);
+	const getRouteActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
 
 	// condensed version just for reference
 	// const getActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
@@ -84,14 +85,7 @@ export default function Navigation() {
 					</div>
 				</Link>
 
-				<button
-					type="button"
-					className={styles["navigation__inner__toggle"]}
-					onClick={() => setIsMenuOpen((prev) => !prev)}
-					aria-expanded={isMenuOpen}
-					aria-controls="site-navigation"
-					aria-label="Toggle navigation menu"
-				>
+				<button type="button" className={styles["navigation__inner__toggle"]} onClick={() => setIsMenuOpen((prev) => !prev)} aria-expanded={isMenuOpen} aria-controls="site-navigation" aria-label="Toggle navigation menu">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -113,13 +107,13 @@ export default function Navigation() {
 								<ChevronRight />
 							</a>
 						</li>
-						{/* <li className={getActiveClass("#downloads")}>
-							<a href="#downloads">
+						<li className={getRouteActiveClass("/downloads")}>
+							<Link href="/downloads" onClick={() => setIsMenuOpen(false)}>
 								<Download />
 								<p>Downloads</p>
 								<ChevronRight />
-							</a>
-						</li> */}
+							</Link>
+						</li>
 						<li className={getActiveClass("#contact-me")}>
 							<a href="#contact-me" onClick={() => setIsMenuOpen(false)}>
 								<Mail />

@@ -34,6 +34,24 @@
 
                 button {
                     @include primary-cta;
+                    display: grid;
+                    place-items: center;
+                    flex-shrink: 0;
+
+                    span {
+                        grid-area: 1 / 1;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .button-sizer {
+                        visibility: hidden;
+                    }
+
+                    &.is-submitted {
+                        background: #2ecc71;
+                        color: #ffffff;
+                    }
                 }
             }
         }

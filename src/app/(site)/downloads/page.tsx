@@ -1,6 +1,14 @@
-"use client";
+import type { Metadata } from "next";
 
 import styles from "./page.module.scss";
+
+export const metadata: Metadata = {
+	title: "Downloads | Derick Moncado",
+	robots: {
+		index: false,
+		follow: false,
+	},
+};
 
 export default function DownloadsPage() {
 	return (

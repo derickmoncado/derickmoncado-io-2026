@@ -69,7 +69,7 @@ export default function Navigation() {
 	}, []);
 
 	const getActiveClass = (hash: string) => (currentPath === "/" && activeHash === hash ? styles["is-active"] : undefined);
-	const getRouteActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
+	const getSectionHref = (hash: (typeof SECTION_HASHES)[number]) => `/${hash}`;
 
 	// condensed version just for reference
 	// const getActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
@@ -94,32 +94,32 @@ export default function Navigation() {
 				<nav id="site-navigation" className={`${styles["navigation__inner__nav"]} ${isMenuOpen ? styles["is-open"] : ""}`}>
 					<ul className={styles["main-nav"]}>
 						<li className={getActiveClass("#home")}>
-							<a href="#home" onClick={() => setIsMenuOpen(false)}>
+							<Link href={getSectionHref("#home")} onClick={() => setIsMenuOpen(false)}>
 								<House />
 								<p>Home</p>
 								<ChevronRight />
-							</a>
+							</Link>
 						</li>
 						<li className={getActiveClass("#about-me")}>
-							<a href="#about-me" onClick={() => setIsMenuOpen(false)}>
+							<Link href={getSectionHref("#about-me")} onClick={() => setIsMenuOpen(false)}>
 								<CircleUser />
 								<p>About</p>
 								<ChevronRight />
-							</a>
+							</Link>
 						</li>
-						<li className={getRouteActiveClass("/downloads")}>
-							<Link href="/downloads" onClick={() => setIsMenuOpen(false)}>
+						<li className={getActiveClass("#downloads")}>
+							<Link href={getSectionHref("#downloads")} onClick={() => setIsMenuOpen(false)}>
 								<Download />
 								<p>Downloads</p>
 								<ChevronRight />
 							</Link>
 						</li>
 						<li className={getActiveClass("#contact-me")}>
-							<a href="#contact-me" onClick={() => setIsMenuOpen(false)}>
+							<Link href={getSectionHref("#contact-me")} onClick={() => setIsMenuOpen(false)}>
 								<Mail />
 								<p>Contact</p>
 								<ChevronRight />
-							</a>
+							</Link>
 						</li>
 						{/* <li className={getActiveClass("/my-gear")}>
 							<Link href="/my-gear">

@@ -21,7 +21,7 @@ export default function Downloads() {
 
 				<div className={styles["downloads__content__form"]}>
 					<p>
-						Get my free <b>Software Engineer Resume Templates</b> below!—no spam, I promise
+						Get my <u>free</u> <b>Software Engineer Resume Templates</b> below—no spam, I promise
 					</p>
 
 					<form onSubmit={handleSubmit}>

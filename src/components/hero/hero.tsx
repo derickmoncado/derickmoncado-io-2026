@@ -17,7 +17,7 @@ export default function Hero() {
 					</div>
 					<div className={styles["hero__content__details__text"]}>
 						<h1>Hey, I’m Derick</h1>
-						<h2>Developer, Designer, and Content Creator</h2>
+						<h2>Developer, Designer, and Creator</h2>
 						<p>
 							I’m based in Southern California and have over 12 years
 							<br />

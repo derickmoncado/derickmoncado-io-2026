@@ -10,7 +10,7 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>
 					<p>
-						I&apos;m a <span>designer-turned-developer</span> who&apos;s passionate about clean <span>code</span>, visual <span>design</span>, online <span>gaming</span>, and <span>videography</span>.
+						I&apos;m a <span>designer-turned-developer</span> who&apos;s passionate about <span>coding</span>, visual <span>design</span>, online <span>gaming</span>, <span>self-development</span>, and <span>videography</span>.
 					</p>
 				</div>
 
@@ -24,7 +24,7 @@ export default function AboutMe() {
 					<div className={styles["about-me__content__blocks__block"]}>
 						<p className={styles.stat}>100+</p>
 						<p className={styles.heading}>Projects completed</p>
-						<p className={styles.blurb}>Websites, web apps, print design, packaging, flyers, videos... the list goes on.</p>
+						<p className={styles.blurb}>Websites, web apps, print design, branding & identity, videos... the list goes on.</p>
 					</div>
 
 					<div className={styles["about-me__content__blocks__block"]}>
@@ -37,11 +37,15 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__details"]}>
 					<div className={styles["about-me__content__details__para1"]}>
 						<p>
-							Based out of Southern California and currently working in the gaming industry, I enjoy covering topics such as coding, tech, lifestyle, and anything else I find interesting on my 
+							Based out of Southern California and currently working in the gaming industry, I enjoy covering topics such as, tech, lifestyle, gaming, self-development, and anything else I find interesting on my 
 							<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								YouTube channel
 							</a>
-							. Before becoming a software engineer, I was a designer. However after seeing David Fincher&apos;s magnum opus The Social Network in 2010, I was inspired to pursue web development and picked up a book from the <em>Head First</em> series by O’Reilly on HTML & CSS. After that, the rest is history.
+							. Before becoming a software engineer, I was a designer. However after seeing David Fincher&apos;s magnum opus{" "}
+							<a href="https://en.wikipedia.org/wiki/The_Social_Network" target="_blank" rel="noopener noreferrer">
+								The Social Network
+							</a>{" "}
+							in 2010, I was inspired to pursue web development and picked up a book from the <em>Head First</em> series by O’Reilly on HTML & CSS. After that, the rest is history.
 						</p>
 					</div>
 					<div className={styles["about-me__content__details__para2"]}>

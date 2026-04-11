@@ -1,5 +1,17 @@
 @use "../../styles/partials/mixins"as *;
 
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .downloads {
 
     &__content {
@@ -17,7 +29,7 @@
             padding: 30px;
             border: 1px solid #E4E4E4;
 
-            p {
+            p:first-child {
                 margin-bottom: 20px;
             }
 
@@ -60,11 +72,30 @@
                     }
                 }
             }
-        }
 
-        &__status {
-            margin-top: 12px;
-            font-size: 0.875rem;
+            .error-message,
+            .success-message {
+                margin-top: 12px;
+                font-size: 16px;
+                animation: fade-in-up 0.2s ease-out;
+            }
+
+            .error-message {
+                color: #ff0000;
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .downloads {
+        &__content {
+            &__form {
+                .error-message,
+                .success-message {
+                    animation: none;
+                }
+            }
         }
     }
 }

@@ -90,8 +90,8 @@ export default function Downloads() {
 						</button>
 					</form>
 
-					{status === "error" ? <p className={styles["downloads__status"]}>{errorMessage}</p> : null}
-					{isSubmitted ? <p className={styles["downloads__status"]}>All yours 🤝 Check your inbox for the download link.</p> : null}
+					{status === "error" ? <p className={styles["error-message"]}>🔴 {errorMessage}: Something went wrong :(</p> : null}
+					{isSubmitted ? <p className={styles["success-message"]}>All yours 🤝 Check your inbox for the download link! If you don't see it, double check your spam or junk folder.</p> : null}
 				</div>
 			</div>
 		</section>

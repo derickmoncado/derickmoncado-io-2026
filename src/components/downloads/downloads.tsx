@@ -91,7 +91,7 @@ export default function Downloads() {
 					</form>
 
 					{status === "error" ? <p className={styles["error-message"]}>🔴 {errorMessage}: Something went wrong :(</p> : null}
-					{isSubmitted ? <p className={styles["success-message"]}>All yours 🤝 Check your inbox for the download link! If you don't see it, double check your spam or junk folder.</p> : null}
+					{isSubmitted ? <p className={styles["success-message"]}>All yours 🤝 Check your inbox for the download link! If you don&apos;t see it, double check your spam or junk folder.</p> : null}
 				</div>
 			</div>
 		</section>

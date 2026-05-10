@@ -6,7 +6,7 @@ import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign, Download } from "lucide-react";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
 

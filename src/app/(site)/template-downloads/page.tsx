@@ -37,7 +37,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>
@@ -48,7 +48,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>
@@ -59,7 +59,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>
@@ -78,7 +78,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>
@@ -89,7 +89,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>
@@ -100,7 +100,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>
@@ -119,7 +119,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/modern-and-professional-sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>
@@ -130,7 +130,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/modern-and-professional-sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>
@@ -141,7 +141,7 @@ export default function TemplateDownloadsPage() {
 							<li>
 								<a href="#" download>
 									<div className={styles["template-downloads__card__media"]}>
-										<Image src="/images/resume.png" alt="Resume preview" width={140} height={220} />
+										<Image src="/images/modern-and-professional-sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 										<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 											<Download />
 										</div>

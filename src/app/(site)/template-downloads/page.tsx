@@ -17,15 +17,22 @@ export default function TemplateDownloadsPage() {
 		<section className={styles["template-downloads"]}>
 			<div className={styles["template-downloads__content"]}>
 				<div className={styles["template-downloads__content__heading"]}>
-					<h2>Template Downloads</h2>
+					<h2>
+						Downloads <Download />
+					</h2>
 					<p>
-						Choose which template to download below, either a clean and modern <span>sans-serif</span> style, or a classic and professional <span>serif</span>. All also come in PDF format. Enjoy 🤝
+						Choose which software engineer's resume template to download below, either a clean and modern <span>sans-serif</span>, or a classic and professional <span>serif</span>.
+					</p>
+					<p>
+						This is your starter template, tweak it, customize it, rename and move things around as you see fit. All are fully editable and optimized for ATS scanners in systems like <i>Workday</i>. Enjoy 🤝 you've got this.
 					</p>
 				</div>
 
 				<div className={styles["template-downloads__content__body"]}>
 					<div className={styles["template-downloads__content__body__row"]}>
-						<h3>&ldquo;Tried and true&rdquo; Stanford Classic</h3>
+						<h3>
+							&ldquo;Tried and true&rdquo; <span>Stanford Classic</span>
+						</h3>
 						<ul>
 							<li>
 								<a href="#" download>
@@ -64,7 +71,9 @@ export default function TemplateDownloadsPage() {
 					</div>
 
 					<div className={styles["template-downloads__content__body__row"]}>
-						<h3>Clean and modern Serif</h3>
+						<h3>
+							Clean and modern <span>Serif</span>
+						</h3>
 						<ul>
 							<li>
 								<a href="#" download>
@@ -103,7 +112,9 @@ export default function TemplateDownloadsPage() {
 					</div>
 
 					<div className={styles["template-downloads__content__body__row"]}>
-						<h3>Professional and modern Sans Serif</h3>
+						<h3>
+							Modern and professional <span>Sans Serif</span>
+						</h3>
 						<ul>
 							<li>
 								<a href="#" download>

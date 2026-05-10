@@ -13,7 +13,7 @@
                 margin-bottom: 30px;
             }
 
-            p {
+            p:first-of-type {
                 font-size: 22px;
                 letter-spacing: -0.8px;
                 margin-bottom: 30px;
@@ -45,6 +45,10 @@
                     margin-bottom: 15px;
                     font-weight: 500;
                     color: $primary-color;
+
+                    span {
+                        color: #858585;
+                    }
                 }
 
                 ul {

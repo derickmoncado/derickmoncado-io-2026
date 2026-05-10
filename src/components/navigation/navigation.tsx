@@ -6,7 +6,7 @@ import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, MessageCircle, ArrowUpRight } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign } from "lucide-react";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
 
@@ -84,14 +84,7 @@ export default function Navigation() {
 					</div>
 				</Link>
 
-				<button
-					type="button"
-					className={styles["navigation__inner__toggle"]}
-					onClick={() => setIsMenuOpen((prev) => !prev)}
-					aria-expanded={isMenuOpen}
-					aria-controls="site-navigation"
-					aria-label="Toggle navigation menu"
-				>
+				<button type="button" className={styles["navigation__inner__toggle"]} onClick={() => setIsMenuOpen((prev) => !prev)} aria-expanded={isMenuOpen} aria-controls="site-navigation" aria-label="Toggle navigation menu">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -149,7 +142,7 @@ export default function Navigation() {
 						</li>
 						<li>
 							<a href="https://www.threads.com/@derickmoncado.jpg" target="_blank" rel="noopener noreferrer">
-								<MessageCircle />
+								<AtSign />
 								<p>Threads</p>
 								<ArrowUpRight />
 							</a>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, Instagram, Youtube, MessageCircle } from "lucide-react";
+import { Linkedin, Instagram, Youtube, AtSign } from "lucide-react";
 import styles from "./about-me.module.scss";
 
 export default function AboutMe() {
@@ -56,22 +56,22 @@ export default function AboutMe() {
 							</p>
 							<ul>
 								<li>
-									<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
+									<a href="https://www.youtube.com/@derickmoncado" target="_blank" title="YouTube" rel="noopener noreferrer">
 										<Youtube />
 									</a>
 								</li>
 								<li>
-									<a href="https://www.threads.com/@derickmoncado.jpg" target="_blank" rel="noopener noreferrer">
-										<MessageCircle />
+									<a href="https://www.threads.com/@derickmoncado.jpg" target="_blank" title="Threads" rel="noopener noreferrer">
+										<AtSign />
 									</a>
 								</li>
 								<li>
-									<a href="https://www.instagram.com/derickmoncado.jpg/" target="_blank" rel="noopener noreferrer">
+									<a href="https://www.instagram.com/derickmoncado.jpg/" target="_blank" title="Instagram" rel="noopener noreferrer">
 										<Instagram />
 									</a>
 								</li>
 								<li>
-									<a href="https://www.linkedin.com/in/derickmoncado/" target="_blank" rel="noopener noreferrer">
+									<a href="https://www.linkedin.com/in/derickmoncado/" target="_blank" title="LinkedIn" rel="noopener noreferrer">
 										<Linkedin />
 									</a>
 								</li>

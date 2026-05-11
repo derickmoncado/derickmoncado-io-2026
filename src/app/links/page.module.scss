@@ -12,6 +12,7 @@
     &__content {
         @include container(992px);
         @include bg;
+        border-radius: 40px;
         text-align: center;
         padding: 40px;
         position: relative;
@@ -54,8 +55,8 @@
                 }
 
                 &__frame {
-                    width: 200px;
-                    height: 200px;
+                    width: 180px;
+                    height: 180px;
                     position: relative;
                     overflow: hidden;
                     border-radius: 50%;

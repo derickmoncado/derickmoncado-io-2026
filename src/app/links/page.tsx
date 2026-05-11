@@ -27,7 +27,7 @@ export default function LinksPage() {
 					</div>
 					<div className={styles["links__content__hero__headline"]}>
 						<h1>@derickmoncado</h1>
-						<p>Developer, Designer, and Content Creator</p>
+						<p>Developer, Designer, and Creator</p>
 					</div>
 				</div>
 

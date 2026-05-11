@@ -19,7 +19,7 @@ export default function Hero() {
 						<h1>Hey, I’m Derick</h1>
 						<h2>Developer, Designer, and Creator</h2>
 						<p>
-							I’m based in Southern California and have over 12 years&nbsp; 
+							I’m based in Southern California and have over 12 years&nbsp;
 							<br />
 							experience in design, web, and application development
 						</p>
@@ -37,6 +37,11 @@ export default function Hero() {
 				</div>
 
 				<div className={styles["hero__content__image"]}>
+					<div className={styles["hero__content__image__status"]}>
+						<p>
+							👹<span>probably breaking something on prod</span>
+						</p>
+					</div>
 					<div className={styles["hero__content__image__frame"]}>
 						<video className={styles["hero__content__image__video"]} autoPlay muted loop playsInline preload="auto" aria-hidden="true" tabIndex={-1} disablePictureInPicture>
 							<source src="/videos/hero-clip.mp4" />

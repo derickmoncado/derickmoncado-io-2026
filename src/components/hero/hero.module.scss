@@ -130,9 +130,11 @@
                 font-size: 14px;
                 background: #fff;
                 border-radius: 20px;
-                padding: 10px 10px 7px 10px;
+                padding: 7px 9px 6px 9px;
                 border: 1px solid #dbdbdb;
                 box-shadow: 0 6px 10px rgba(149, 157, 165, 0.3);
+                width: 36px;
+                height: 36px;
 
                 p {
                     display: inline;
@@ -146,6 +148,7 @@
 
                 &:hover {
                     cursor: default;
+                    width: auto;
 
                     p {
                         span {

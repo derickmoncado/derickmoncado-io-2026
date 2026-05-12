@@ -110,6 +110,7 @@
         &__image {
             display: flex;
             justify-content: flex-start;
+            position: relative;
 
             @media (width >=850px) {
                 align-items: flex-end;
@@ -119,6 +120,55 @@
                 width: 40%;
                 justify-content: flex-end;
                 align-items: center;
+            }
+
+            &__status {
+                display: none;
+                position: absolute;
+                top: 230px;
+                z-index: 100;
+                font-size: 14px;
+                background: #fff;
+                border-radius: 20px;
+                padding: 7px 9px 6px 9px;
+                border: 1px solid #dbdbdb;
+                box-shadow: 0 6px 10px rgba(149, 157, 165, 0.3);
+                width: 36px;
+                height: 36px;
+
+                p {
+                    display: inline;
+
+                    span {
+                        display: none;
+
+                        padding-left: 5px;
+                    }
+                }
+
+                &:hover {
+                    cursor: default;
+                    width: auto;
+
+                    p {
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                @media (width >=850px) {
+                    display: block;
+                    left: 12px;
+                }
+
+                @media (width >=1024px) {
+                    left: 70px;
+                }
+
+                @media (width >=1350px) {
+                    left: 56px;
+                }
             }
 
             &__frame {

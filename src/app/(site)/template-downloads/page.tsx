@@ -30,7 +30,7 @@ export default function TemplateDownloadsPage() {
 				</div>
 
 				<TemplateViewSwitch
-					viewOne={
+					junior={
 						<div className={styles["template-downloads__content__body"]}>
 							<div className={styles["template-downloads__content__body__row"]}>
 								<h3>
@@ -154,10 +154,10 @@ export default function TemplateDownloadsPage() {
 							</div>
 						</div>
 					}
-					viewTwo={
+					midSenior={
 						<div className={styles["template-downloads__placeholder"]}>
-							<p className={styles["template-downloads__placeholder__eyebrow"]}>Prototype view</p>
-							<h3>View 2 content container</h3>
+							<p className={styles["template-downloads__placeholder__eyebrow"]}>Mid / Senior</p>
+							<h3>Mid / Senior content container</h3>
 							<p>
 								This placeholder is ready for a second layout, alternate download set, or comparison view. Swap this copy for the real content whenever you are ready.
 							</p>

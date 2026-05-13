@@ -86,7 +86,6 @@ export default function Navigation() {
 				</Link>
 
 				<button type="button" className={styles["navigation__inner__toggle"]} onClick={() => setIsMenuOpen((prev) => !prev)} aria-expanded={isMenuOpen} aria-controls="site-navigation" aria-label="Toggle navigation menu">
-				<button type="button" className={styles["navigation__inner__toggle"]} onClick={() => setIsMenuOpen((prev) => !prev)} aria-expanded={isMenuOpen} aria-controls="site-navigation" aria-label="Toggle navigation menu">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -144,7 +143,6 @@ export default function Navigation() {
 						</li>
 						<li>
 							<a href="https://www.threads.com/@derickmoncado.jpg" target="_blank" rel="noopener noreferrer">
-								<AtSign />
 								<AtSign />
 								<p>Threads</p>
 								<ArrowUpRight />

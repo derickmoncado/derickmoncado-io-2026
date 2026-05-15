@@ -54,12 +54,15 @@ export default function TemplateImagePreview({ src, alt, thumbnailWidth, thumbna
 
 	return (
 		<>
-			<button type="button" className={styles["template-downloads__preview-trigger"]} onClick={() => setIsOpen(true)} aria-label={`Open larger ${alt.toLowerCase()}`}>
-				<Image src={src} alt={alt} width={thumbnailWidth} height={thumbnailHeight} />
-				<span className={styles["template-downloads__preview-trigger__overlay"]} aria-hidden="true">
-					<Maximize2 />
-				</span>
-			</button>
+			<div className={styles["template-downloads__preview"]}>
+				<p className={styles["template-downloads__preview__eyebrow"]}>Preview</p>
+				<button type="button" className={styles["template-downloads__preview-trigger"]} onClick={() => setIsOpen(true)} aria-label={`Open larger ${alt.toLowerCase()}`}>
+					<Image src={src} alt={alt} width={thumbnailWidth} height={thumbnailHeight} />
+					<span className={styles["template-downloads__preview-trigger__overlay"]} aria-hidden="true">
+						<Maximize2 />
+					</span>
+				</button>
+			</div>
 
 			{isOpen ? (
 				<dialog ref={dialogRef} className={styles["template-downloads__preview-modal"]} data-state={isClosing ? "closing" : "open"} aria-label={alt} onCancel={(event) => {

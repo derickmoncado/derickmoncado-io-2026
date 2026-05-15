@@ -23,10 +23,10 @@ export default function TemplateDownloadsPage() {
 						Downloads <Download />
 					</h2>
 					<p>
-						Choose which software engineer&rsquo;s resume template to download below, toggle by <span>Junior</span> or <span>Mid/Senior</span> level, then select which template and its style.
+						Choose which software engineer&rsquo;s resume template to download below, toggle by <span>Junior</span> or <span>Mid/Senior</span> level layouts, then select a template and it's style.
 					</p>
 					<p>
-						This is your starter template, tweak it, customize it, move things around as you see fit. All are fully editable and optimized for ATS scanners in systems like <i>Workday</i>. Enjoy 🤝 you&rsquo;ve got this.
+						This is <u>your</u> starter template, tweak it, customize it, move things around as you see fit. All are fully editable and optimized for ATS scanners in systems like <i>Workday</i>. Enjoy 🤝 you&rsquo;ve got this.
 					</p>
 				</div>
 
@@ -80,13 +80,7 @@ export default function TemplateDownloadsPage() {
 							</div>
 						</div>
 					}
-					midSenior={
-						<div className={styles["template-downloads__placeholder"]}>
-							<p className={styles["template-downloads__placeholder__eyebrow"]}>Mid / Senior</p>
-							<h3>Mid / Senior content container</h3>
-							<p>This placeholder is ready for a second layout, alternate download set, or comparison view. Swap this copy for the real content whenever you are ready.</p>
-						</div>
-					}
+					midSenior={<div className={styles["template-downloads__placeholder"]}>other stuff</div>}
 				/>
 			</div>
 		</section>

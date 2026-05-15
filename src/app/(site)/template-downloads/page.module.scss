@@ -51,79 +51,104 @@
                     }
                 }
 
-                ul {
-                    display: flex;
-                    gap: 20px;
+                &__content {
+                    border: 2px solid pink;
 
-                    li {
+                    @media (width >=1024px) {
+                        display: flex;
+                        gap: 20px;
+                    }
 
-                        &:nth-child(2) {
-                            border-right: 2px solid #f0f0f0;
-                            padding-right: 20px;
+                    &__image {
+                        border: 2px solid red;
+
+                        @media (width >=1024px) {
+                            width: 50%;
+                        }
+                    }
+
+                    &__ctas {
+                        border: 2px solid blue;
+
+                        @media (width >=1024px) {
+                            width: 50%;
                         }
 
-                        a {
+                        ul {
                             display: flex;
                             flex-direction: column;
-                            align-items: center;
-                            gap: 15px;
-                            border: 1px solid #ddd;
-                            border-radius: 30px;
-                            padding: 15px;
-                            text-align: center;
-                            background-color: #f9f9f9;
-                            transition: box-shadow 0.25s ease;
+                            gap: 20px;
 
-                            .template-downloads__card__media {
-                                position: relative;
-                                overflow: hidden;
-                                border-radius: 12px;
-                                border: 1px solid #ddd;
+                            li {
 
-                                img {
-                                    display: block;
-                                    width: 100%;
-                                    max-width: 140px;
-                                    height: auto;
-                                    transition: filter 0.25s ease;
-                                }
-                            }
+                                a {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 15px;
+                                    border: 1px solid #ddd;
+                                    border-radius: 30px;
+                                    padding: 15px;
+                                    text-align: center;
+                                    background-color: #f9f9f9;
+                                    transition: box-shadow 0.25s ease;
 
-                            .template-downloads__card__overlay {
-                                position: absolute;
-                                inset: 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                background: rgba(0, 0, 0, 0.2);
-                                color: #fff;
-                                opacity: 0;
-                                transition: opacity 0.25s ease;
-
-                                svg {
-                                    width: 32px;
-                                    height: 32px;
-                                }
-                            }
-
-                            span {
-                                display: inline-block;
-                            }
-
-                            &:hover,
-                            &:focus-visible {
-                                box-shadow: 0 6px 10px rgba(149, 157, 165, 0.3);
-                                transition: box-shadow 0.25s ease;
-
-                                .template-downloads__card__media {
-
-                                    img {
-                                        filter: brightness(0.55);
+                                    @media (width >=1024px) {
+                                        flex-direction: row;
                                     }
-                                }
 
-                                .template-downloads__card__overlay {
-                                    opacity: 1;
+                                    .template-downloads__card__media {
+                                        position: relative;
+                                        overflow: hidden;
+                                        border-radius: 12px;
+                                        border: 1px solid #ddd;
+
+                                        img {
+                                            display: block;
+                                            width: 100%;
+                                            max-width: 100px;
+                                            height: auto;
+                                            transition: filter 0.25s ease;
+                                        }
+                                    }
+
+                                    .template-downloads__card__overlay {
+                                        position: absolute;
+                                        inset: 0;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        background: rgba(0, 0, 0, 0.2);
+                                        color: #fff;
+                                        opacity: 0;
+                                        transition: opacity 0.25s ease;
+
+                                        svg {
+                                            width: 32px;
+                                            height: 32px;
+                                        }
+                                    }
+
+                                    span {
+                                        display: inline-block;
+                                    }
+
+                                    &:hover,
+                                    &:focus-visible {
+                                        box-shadow: 0 6px 10px rgba(149, 157, 165, 0.3);
+                                        transition: box-shadow 0.25s ease;
+
+                                        .template-downloads__card__media {
+
+                                            img {
+                                                filter: brightness(0.55);
+                                            }
+                                        }
+
+                                        .template-downloads__card__overlay {
+                                            opacity: 1;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -217,7 +242,7 @@
             letter-spacing: -0.8px;
         }
 
-        & > p:not(&__eyebrow) {
+        &>p:not(&__eyebrow) {
             max-width: 620px;
             color: #4d4d4d;
             line-height: 1.6;

@@ -34,17 +34,19 @@ export default function TemplateDownloadsPage() {
 					junior={
 						<div className={styles["template-downloads__content__body"]}>
 							<div className={styles["template-downloads__content__body__row"]}>
-								<h3>Stanford Classic — Serif | Junior</h3>
+								<h3>
+									Stanford Classic — <span>Serif</span> | Junior
+								</h3>
 								<div className={styles["template-downloads__content__body__row__content"]}>
 									<div className={styles["template-downloads__content__body__row__content__image"]}>
-										<TemplateImagePreview src="/images/clean-and-modern-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
+										<TemplateImagePreview src="/images/resumes/junior_stanford-template_serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
 									</div>
 									<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 										<ul>
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -55,7 +57,7 @@ export default function TemplateDownloadsPage() {
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -66,7 +68,7 @@ export default function TemplateDownloadsPage() {
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -80,17 +82,19 @@ export default function TemplateDownloadsPage() {
 							</div>
 
 							<div className={styles["template-downloads__content__body__row"]}>
-								<h3>Stanford Classic — Sans Serif | Junior</h3>
+								<h3>
+									Stanford Classic — <span>Sans Serif</span> | Junior
+								</h3>
 								<div className={styles["template-downloads__content__body__row__content"]}>
 									<div className={styles["template-downloads__content__body__row__content__image"]}>
-										<TemplateImagePreview src="/images/clean-and-modern-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
+										<TemplateImagePreview src="/images/resumes/junior_stanford-template_sans-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
 									</div>
 									<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 										<ul>
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -101,7 +105,7 @@ export default function TemplateDownloadsPage() {
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -112,7 +116,7 @@ export default function TemplateDownloadsPage() {
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -126,17 +130,19 @@ export default function TemplateDownloadsPage() {
 							</div>
 
 							<div className={styles["template-downloads__content__body__row"]}>
-								<h3>Clean and Modern — Serif | Junior</h3>
+								<h3>
+									Clean and Modern — <span>Serif</span> | Junior
+								</h3>
 								<div className={styles["template-downloads__content__body__row__content"]}>
 									<div className={styles["template-downloads__content__body__row__content__image"]}>
-										<TemplateImagePreview src="/images/clean-and-modern-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
+										<TemplateImagePreview src="/images/resumes/junior_clean-modern_serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
 									</div>
 									<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 										<ul>
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_clean-modern_serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -147,7 +153,7 @@ export default function TemplateDownloadsPage() {
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_clean-modern_serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -158,7 +164,7 @@ export default function TemplateDownloadsPage() {
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_clean-modern_serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -172,17 +178,19 @@ export default function TemplateDownloadsPage() {
 							</div>
 
 							<div className={styles["template-downloads__content__body__row"]}>
-								<h3>Clean and Modern — Sans Serif | Junior</h3>
+								<h3>
+									Clean and Modern — <span>Sans Serif</span> | Junior
+								</h3>
 								<div className={styles["template-downloads__content__body__row__content"]}>
 									<div className={styles["template-downloads__content__body__row__content__image"]}>
-										<TemplateImagePreview src="/images/clean-and-modern-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
+										<TemplateImagePreview src="/images/resumes/junior_stanford-template_sans-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
 									</div>
 									<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 										<ul>
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -193,7 +201,7 @@ export default function TemplateDownloadsPage() {
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -204,7 +212,7 @@ export default function TemplateDownloadsPage() {
 											<li>
 												<a href="#" download>
 													<div className={styles["template-downloads__card__media"]}>
-														<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+														<Image src="/images/resumes/junior_stanford-template_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 															<Download />
 														</div>
@@ -222,17 +230,19 @@ export default function TemplateDownloadsPage() {
 						<div className={styles["template-downloads__placeholder"]}>
 							<div className={styles["template-downloads__content__body"]}>
 								<div className={styles["template-downloads__content__body__row"]}>
-									<h3>Stanford Classic — Serif | Mid/Senior</h3>
+									<h3>
+										Stanford Classic — <span>Serif</span> | Mid/Senior
+									</h3>
 									<div className={styles["template-downloads__content__body__row__content"]}>
 										<div className={styles["template-downloads__content__body__row__content__image"]}>
-											<TemplateImagePreview src="/images/clean-and-modern-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
+											<TemplateImagePreview src="/images/resumes/senior_stanford-template_serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
 										</div>
 										<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 											<ul>
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_stanford-template_serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -243,7 +253,7 @@ export default function TemplateDownloadsPage() {
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_stanford-template_serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -254,7 +264,7 @@ export default function TemplateDownloadsPage() {
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_stanford-template_serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -268,17 +278,19 @@ export default function TemplateDownloadsPage() {
 								</div>
 
 								<div className={styles["template-downloads__content__body__row"]}>
-									<h3>Stanford Classic — Sans Serif | Mid/Senior</h3>
+									<h3>
+										Stanford Classic — <span>Sans Serif</span> | Mid/Senior
+									</h3>
 									<div className={styles["template-downloads__content__body__row__content"]}>
 										<div className={styles["template-downloads__content__body__row__content__image"]}>
-											<TemplateImagePreview src="/images/clean-and-modern-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
+											<TemplateImagePreview src="/images/resumes/senior_clean-modern_sans-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
 										</div>
 										<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 											<ul>
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_clean-modern_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -289,7 +301,7 @@ export default function TemplateDownloadsPage() {
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_clean-modern_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -300,7 +312,7 @@ export default function TemplateDownloadsPage() {
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_clean-modern_sans-serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -314,17 +326,19 @@ export default function TemplateDownloadsPage() {
 								</div>
 
 								<div className={styles["template-downloads__content__body__row"]}>
-									<h3>Clean and Modern — Serif | Mid/Senior</h3>
+									<h3>
+										Clean and Modern — <span>Serif</span> | Mid/Senior
+									</h3>
 									<div className={styles["template-downloads__content__body__row__content"]}>
 										<div className={styles["template-downloads__content__body__row__content__image"]}>
-											<TemplateImagePreview src="/images/clean-and-modern-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
+											<TemplateImagePreview src="/images/resumes/senior_clean-modern_serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />
 										</div>
 										<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 											<ul>
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_clean-modern_serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -335,7 +349,7 @@ export default function TemplateDownloadsPage() {
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_clean-modern_serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -346,7 +360,7 @@ export default function TemplateDownloadsPage() {
 												<li>
 													<a href="#" download>
 														<div className={styles["template-downloads__card__media"]}>
-															<Image src="/images/clean-and-modern-serif.jpg" alt="Resume preview" width={140} height={220} />
+															<Image src="/images/resumes/senior_clean-modern_serif.jpg" alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
 																<Download />
 															</div>
@@ -360,7 +374,9 @@ export default function TemplateDownloadsPage() {
 								</div>
 
 								<div className={styles["template-downloads__content__body__row"]}>
-									<h3>Clean and Modern — Sans Serif | Mid/Senior</h3>
+									<h3>
+										Clean and Modern — <span>Sans Serif</span> | Mid/Senior
+									</h3>
 									<div className={styles["template-downloads__content__body__row__content"]}>
 										<div className={styles["template-downloads__content__body__row__content__image"]}>
 											<TemplateImagePreview src="/images/clean-and-modern-serif.jpg" alt="Stanford Classic Serif resume preview" thumbnailWidth={140} thumbnailHeight={220} previewWidth={1244} previewHeight={1604} />

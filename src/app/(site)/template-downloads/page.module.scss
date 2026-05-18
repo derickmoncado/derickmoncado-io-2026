@@ -55,7 +55,6 @@
                 }
 
                 &__content {
-                    //border: 1px solid pink;
 
                     @media (width >=1024px) {
                         display: flex;
@@ -63,7 +62,6 @@
                     }
 
                     &__image {
-                        //border: 1px solid red;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -80,7 +78,6 @@
                     }
 
                     &__ctas {
-                        //border: 1px solid blue;
 
                         @media (width >=1024px) {
                             width: 50%;

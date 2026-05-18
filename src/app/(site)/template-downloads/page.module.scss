@@ -70,9 +70,12 @@
                         background: #f9f9f9;
                         border: 1px solid #ddd;
                         border-radius: 30px;
+                        padding: 20px;
+                        margin-bottom: 20px;
 
                         @media (width >=1024px) {
                             width: 50%;
+                            margin-bottom: 0;
                         }
                     }
 
@@ -105,16 +108,26 @@
 
                                     &::before {
                                         content: '';
-                                        width: 20px;
-                                        height: 2px;
+                                        width: 2px;
+                                        height: 21px;
                                         background-color: #ddd;
                                         position: absolute;
-                                        top: 50%;
-                                        left: -21px;
+                                        top: -21px;
+                                        left: 50%;
                                     }
 
                                     @media (width >=1024px) {
                                         flex-direction: row;
+
+                                        &::before {
+                                            content: '';
+                                            width: 20px;
+                                            height: 2px;
+                                            background-color: #ddd;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: -21px;
+                                        }
                                     }
 
                                     .template-downloads__card__media {

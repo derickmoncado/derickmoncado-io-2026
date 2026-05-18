@@ -55,7 +55,7 @@ export default function TemplateDownloadsPage() {
 									<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 										<ul>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_stanford-template_serif.docx" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorStanfordSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -66,7 +66,7 @@ export default function TemplateDownloadsPage() {
 												</a>
 											</li>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_stanford-template_serif.pages" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorStanfordSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -77,7 +77,7 @@ export default function TemplateDownloadsPage() {
 												</a>
 											</li>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_stanford-template_serif.pdf" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorStanfordSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -103,7 +103,7 @@ export default function TemplateDownloadsPage() {
 									<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 										<ul>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_stanford-template_sans-serif.docx" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorStanfordSansSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -114,7 +114,7 @@ export default function TemplateDownloadsPage() {
 												</a>
 											</li>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_stanford-template_sans-serif.pages" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorStanfordSansSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -125,7 +125,7 @@ export default function TemplateDownloadsPage() {
 												</a>
 											</li>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_stanford-template_sans-serif.pdf" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorStanfordSansSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -151,7 +151,7 @@ export default function TemplateDownloadsPage() {
 									<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 										<ul>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_clean-modern_serif.docx" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorCleanModernSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -162,7 +162,7 @@ export default function TemplateDownloadsPage() {
 												</a>
 											</li>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_clean-modern_serif.pages" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorCleanModernSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -173,7 +173,7 @@ export default function TemplateDownloadsPage() {
 												</a>
 											</li>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_clean-modern_serif.pdf" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorCleanModernSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -199,7 +199,7 @@ export default function TemplateDownloadsPage() {
 									<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 										<ul>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_clean-modern_sans-serif.docx" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorCleanModernSansSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -210,7 +210,7 @@ export default function TemplateDownloadsPage() {
 												</a>
 											</li>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_clean-modern_sans-serif.pages" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorCleanModernSansSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -221,7 +221,7 @@ export default function TemplateDownloadsPage() {
 												</a>
 											</li>
 											<li>
-												<a href="#" download>
+												<a href="/downloadables/junior_clean-modern_sans-serif.pdf" download>
 													<div className={styles["template-downloads__card__media"]}>
 														<Image src={templatePreviewImages.juniorCleanModernSansSerif} alt="Resume preview" width={140} height={220} />
 														<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -251,7 +251,7 @@ export default function TemplateDownloadsPage() {
 										<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 											<ul>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_stanford-template_serif.docx" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorStanfordSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -262,7 +262,7 @@ export default function TemplateDownloadsPage() {
 													</a>
 												</li>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_stanford-template_serif.pages" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorStanfordSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -273,7 +273,7 @@ export default function TemplateDownloadsPage() {
 													</a>
 												</li>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_stanford-template_serif.pdf" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorStanfordSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -299,7 +299,7 @@ export default function TemplateDownloadsPage() {
 										<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 											<ul>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_stanford-template_sans-serif.docx" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorStanfordSansSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -310,7 +310,7 @@ export default function TemplateDownloadsPage() {
 													</a>
 												</li>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_stanford-template_sans-serif.pages" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorStanfordSansSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -321,7 +321,7 @@ export default function TemplateDownloadsPage() {
 													</a>
 												</li>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_stanford-template_sans-serif.pdf" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorStanfordSansSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -347,7 +347,7 @@ export default function TemplateDownloadsPage() {
 										<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 											<ul>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_clean-modern_serif.docx" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorCleanModernSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -358,7 +358,7 @@ export default function TemplateDownloadsPage() {
 													</a>
 												</li>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_clean-modern_serif.pages" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorCleanModernSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -369,7 +369,7 @@ export default function TemplateDownloadsPage() {
 													</a>
 												</li>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_clean-modern_serif.pdf" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorCleanModernSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -395,7 +395,7 @@ export default function TemplateDownloadsPage() {
 										<div className={styles["template-downloads__content__body__row__content__ctas"]}>
 											<ul>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_clean-modern_sans-serif.docx" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorCleanModernSansSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -406,7 +406,7 @@ export default function TemplateDownloadsPage() {
 													</a>
 												</li>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_clean-modern_sans-serif.pages" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorCleanModernSansSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">
@@ -417,7 +417,7 @@ export default function TemplateDownloadsPage() {
 													</a>
 												</li>
 												<li>
-													<a href="#" download>
+													<a href="/downloadables/senior_clean-modern_sans-serif.pdf" download>
 														<div className={styles["template-downloads__card__media"]}>
 															<Image src={templatePreviewImages.seniorCleanModernSansSerif} alt="Resume preview" width={140} height={220} />
 															<div className={styles["template-downloads__card__overlay"]} aria-hidden="true">

@@ -34,14 +34,24 @@
             }
 
             form {
-                display: flex;
-                gap: 20px;
+
+                @media (width >=1024px) {
+                    display: flex;
+                    gap: 20px;
+                }
 
                 input {
                     padding: 8px 16px;
+                    margin-bottom: 15px;
                     border: 1px solid #E4E4E4;
                     border-radius: 23px;
-                    flex-grow: 1;
+                    width: 100%;
+
+                    @media (width >=1024px) {
+                        flex-grow: 1;
+                        width: auto;
+                        margin-bottom: 0;
+                    }
                 }
 
                 button {
@@ -50,6 +60,11 @@
                     place-items: center;
                     flex-shrink: 0;
                     transition: opacity 0.2s ease, background-color 0.2s ease;
+                    width: 100%;
+
+                    @media (width >=1024px) {
+                        width: auto;
+                    }
 
                     span {
                         grid-area: 1 / 1;
@@ -91,6 +106,7 @@
     .downloads {
         &__content {
             &__form {
+
                 .error-message,
                 .success-message {
                     animation: none;

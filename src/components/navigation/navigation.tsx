@@ -6,7 +6,7 @@ import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign, Download } from "lucide-react";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
 
@@ -69,6 +69,7 @@ export default function Navigation() {
 	}, []);
 
 	const getActiveClass = (hash: string) => (currentPath === "/" && activeHash === hash ? styles["is-active"] : undefined);
+	const getSectionHref = (hash: (typeof SECTION_HASHES)[number]) => `/${hash}`;
 
 	// condensed version just for reference
 	// const getActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
@@ -93,32 +94,32 @@ export default function Navigation() {
 				<nav id="site-navigation" className={`${styles["navigation__inner__nav"]} ${isMenuOpen ? styles["is-open"] : ""}`}>
 					<ul className={styles["main-nav"]}>
 						<li className={getActiveClass("#home")}>
-							<a href="#home" onClick={() => setIsMenuOpen(false)}>
+							<Link href={getSectionHref("#home")} onClick={() => setIsMenuOpen(false)}>
 								<House />
 								<p>Home</p>
 								<ChevronRight />
-							</a>
+							</Link>
 						</li>
 						<li className={getActiveClass("#about-me")}>
-							<a href="#about-me" onClick={() => setIsMenuOpen(false)}>
+							<Link href={getSectionHref("#about-me")} onClick={() => setIsMenuOpen(false)}>
 								<CircleUser />
 								<p>About</p>
 								<ChevronRight />
-							</a>
+							</Link>
 						</li>
-						{/* <li className={getActiveClass("#downloads")}>
-							<a href="#downloads">
+						<li className={getActiveClass("#downloads")}>
+							<Link href={getSectionHref("#downloads")} onClick={() => setIsMenuOpen(false)}>
 								<Download />
 								<p>Downloads</p>
 								<ChevronRight />
-							</a>
-						</li> */}
+							</Link>
+						</li>
 						<li className={getActiveClass("#contact-me")}>
-							<a href="#contact-me" onClick={() => setIsMenuOpen(false)}>
+							<Link href={getSectionHref("#contact-me")} onClick={() => setIsMenuOpen(false)}>
 								<Mail />
 								<p>Contact</p>
 								<ChevronRight />
-							</a>
+							</Link>
 						</li>
 						{/* <li className={getActiveClass("/my-gear")}>
 							<Link href="/my-gear">

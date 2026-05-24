@@ -69,6 +69,8 @@ export default function Navigation() {
 	}, []);
 
 	const getActiveClass = (hash: string) => (currentPath === "/" && activeHash === hash ? styles["is-active"] : undefined);
+	const getPathActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
+	const getDownloadsActiveClass = () => getPathActiveClass("/downloads") || getActiveClass("#downloads");
 	const getSectionHref = (hash: (typeof SECTION_HASHES)[number]) => `/${hash}`;
 
 	// condensed version just for reference
@@ -107,8 +109,8 @@ export default function Navigation() {
 								<ChevronRight />
 							</Link>
 						</li>
-						<li className={getActiveClass("#downloads")}>
-							<Link href={getSectionHref("#downloads")} onClick={() => setIsMenuOpen(false)}>
+						<li className={getDownloadsActiveClass()}>
+							<Link href="/downloads" onClick={() => setIsMenuOpen(false)}>
 								<Download />
 								<p>Downloads</p>
 								<ChevronRight />

@@ -31,7 +31,7 @@ export default function TemplateDownloadsPage() {
 			<div className={styles["template-downloads__content"]}>
 				<div className={styles["template-downloads__content__heading"]}>
 					<h2>
-						Downloads <Download />
+						Resume Template Downloads <Download />
 					</h2>
 					<p>
 						Choose which software engineer&rsquo;s resume template to download below, toggle by <span>Junior</span> or <span>Mid/Senior</span> level layouts, then select a template and its style.

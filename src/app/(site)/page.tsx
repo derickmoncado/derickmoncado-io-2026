@@ -12,8 +12,8 @@ export default function Home() {
 		<>
 			<Hero />
 			<AboutMe />
-			<RecentContent />
 			<Downloads />
+			<RecentContent />
 			<Recommendations />
 			<ContactMe />
 		</>

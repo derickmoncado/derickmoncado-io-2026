@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const resumeExamples = [
 	{
-		title: "Junior Resume Template",
+		title: "Junior Resume Templates",
 		images: [
 			{
 				src: "/images/resumes/junior_stanford-template_serif_preview.jpg",
@@ -35,7 +35,7 @@ const resumeExamples = [
 		],
 	},
 	{
-		title: "Senior Resume Template",
+		title: "Senior Resume Templates",
 		images: [
 			{
 				src: "/images/resumes/senior_stanford-template_serif_preview.jpg",

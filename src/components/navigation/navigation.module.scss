@@ -292,9 +292,15 @@
                             text-decoration: none;
                             font-weight: 500;
                             padding: 8px 16px;
+                            border-radius: 30px;
                             display: flex;
                             align-items: center;
                             gap: 12px;
+
+                            &:hover {
+                                color: $primary-color;
+                                background-color: color.adjust(#E9EAEF, $lightness: 4%);
+                            }
 
                             p {
                                 margin-right: auto;
@@ -303,15 +309,6 @@
 
                             svg:last-child {
                                 display: none;
-                            }
-                        }
-
-                        &:hover {
-                            background-color: color.adjust(#E9EAEF, $lightness: 4%);
-                            border-radius: 30px;
-
-                            a {
-                                color: $primary-color;
                             }
                         }
 

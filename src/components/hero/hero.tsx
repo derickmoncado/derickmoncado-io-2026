@@ -29,9 +29,12 @@ export default function Hero() {
 							Watch Me
 							<ArrowUpRight />
 						</Link>
-						<a href="mailto:hello@derickmoncado.io">
+						<a className={styles["hero__content__details__ctas__contact"]} href="mailto:hello@derickmoncado.io" aria-describedby="hero-contact-tooltip">
 							Contact Me
 							<Mail />
+							<span id="hero-contact-tooltip" role="tooltip">
+								yes, I actually check my biz email regularly
+							</span>
 						</a>
 					</div>
 				</div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.scss";
 import ContactMe from "@/components/contact-me/contact-me";
+import Footer from "@/components/footer/footer";
 import { ChevronLeft } from "lucide-react";
 import RecentContent from "@/components/recent-content/recent-content";
 
@@ -58,6 +59,7 @@ export default function LinksPage() {
 					<RecentContent limit={1} className={styles["links__content__recent-content__feed"]} />
 				</div>
 			</div>
+			<Footer />
 		</main>
 	);
 }

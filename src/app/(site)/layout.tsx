@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import Navigation from "@/components/navigation/navigation";
 import styles from "../page.module.scss";
 
@@ -14,6 +15,7 @@ export default function SiteLayout({
 				</aside>
 				<div className={styles["body-content"]}>{children}</div>
 			</div>
+			<Footer />
 		</main>
 	);
 }

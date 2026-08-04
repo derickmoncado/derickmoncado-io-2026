@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
+import Footer from "@/components/footer/footer";
 import styles from "./page.module.scss";
 
 export default function MoncadoMediaPage() {
@@ -20,6 +21,7 @@ export default function MoncadoMediaPage() {
 					For partnerships, collabs, or inquiries, reach out at <a href="mailto:hello@derickmoncado.io">hello@derickmoncado.io</a>.
 				</p>
 			</div>
+			<Footer />
 		</main>
 	);
 }

@@ -1,0 +1,45 @@
+@use "../../styles/partials/mixins"as *;
+
+.moncadomedia {
+	padding-top: 160px;
+
+	&__content {
+		@include container(992px);
+		@include bg;
+		border-radius: 40px;
+		padding: 40px;
+		position: relative;
+
+		@media (width >=1350px) {
+			padding: 60px;
+		}
+
+		&__logo {
+			height: auto;
+			max-width: 250px;
+			margin-bottom: 40px;
+		}
+
+		&__back {
+			a {
+				@include secondary-cta;
+				border: none;
+				left: 0;
+				padding: 8px 16px 8px 0;
+				position: absolute;
+				top: -100px;
+
+				&:hover {
+					background: none !important;
+					box-shadow: none !important;
+				}
+
+				svg {
+					margin-right: 5px;
+					padding-left: 0;
+					width: 20px;
+				}
+			}
+		}
+	}
+}

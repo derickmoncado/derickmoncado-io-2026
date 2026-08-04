@@ -8,7 +8,7 @@ import Footer from "@/components/footer/footer";
 import { ChevronLeft } from "lucide-react";
 import RecentContent from "@/components/recent-content/recent-content";
 
-export default function LinksPage() {
+export default function LinkInBioPage() {
 	return (
 		<main className={styles["links"]}>
 			<div className={styles["links__content"]}>

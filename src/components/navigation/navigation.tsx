@@ -9,11 +9,22 @@ import { useEffect, useState } from "react";
 import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign, Download } from "lucide-react";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
+const PROFILE_TITLES = ["Software Engineer", "Visual Designer", "Creator"] as const;
+const PROFILE_TITLE_INTERVAL = 6000;
 
 export default function Navigation() {
 	const currentPath = usePathname();
 	const [activeHash, setActiveHash] = useState<string>("");
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [profileTitleIndex, setProfileTitleIndex] = useState(0);
+
+	useEffect(() => {
+		const titleInterval = window.setInterval(() => {
+			setProfileTitleIndex((currentIndex) => (currentIndex + 1) % PROFILE_TITLES.length);
+		}, PROFILE_TITLE_INTERVAL);
+
+		return () => window.clearInterval(titleInterval);
+	}, []);
 
 	useEffect(() => {
 		if (currentPath !== "/") {
@@ -83,7 +94,9 @@ export default function Navigation() {
 					<div className={styles["navigation__inner__profile__img"]}></div>
 					<div className={styles["navigation__inner__profile__name"]}>
 						<h1>Derick Moncado</h1>
-						<p>Software Engineer</p>
+						<p key={PROFILE_TITLES[profileTitleIndex]} className={styles["profile-title"]}>
+							{PROFILE_TITLES[profileTitleIndex]}
+						</p>
 					</div>
 				</Link>
 

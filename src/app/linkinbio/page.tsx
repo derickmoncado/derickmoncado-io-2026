@@ -21,9 +21,7 @@ export default function LinkInBioPage() {
 				<div className={styles["links__content__hero"]}>
 					<div className={styles["links__content__hero__image"]}>
 						<div className={styles["links__content__hero__image__frame"]}>
-							<video className={styles["links__content__hero__image__video"]} autoPlay muted loop playsInline preload="auto" aria-hidden="true" tabIndex={-1} disablePictureInPicture>
-								<source src="/videos/hero-clip.mp4" />
-							</video>
+							<Image className={styles["links__content__hero__image__photo"]} src="/images/headshot.jpg" alt="Derick Moncado" fill sizes="(min-width: 600px) 250px, 180px" priority />
 						</div>
 					</div>
 					<div className={styles["links__content__hero__headline"]}>

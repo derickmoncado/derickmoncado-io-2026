@@ -121,22 +121,22 @@
                     }
                 }
 
-                &__video {
+                &__image {
                     background: #e9eaef;
                     border: 1px solid #dbdbdb;
                     border-radius: 30px;
                     position: relative;
                     overflow: hidden;
-                    height: 250px;
+                    height: 380px;
                     width: 100%;
                     aspect-ratio: 3 / 4;
 
                     @media (width >=768px) {
-                        height: 400px;
+                        height: 650px;
                     }
 
                     @media (width >=1350px) {
-                        width: 40%;
+                        width: 34%;
                         height: 300px;
                     }
 

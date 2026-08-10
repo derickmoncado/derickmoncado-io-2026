@@ -1,6 +1,7 @@
 "use client";
 
 import { Linkedin, Instagram, Youtube, AtSign } from "lucide-react";
+import Image from "next/image";
 import styles from "./about-me.module.scss";
 
 export default function AboutMe() {
@@ -77,10 +78,8 @@ export default function AboutMe() {
 								</li>
 							</ul>
 						</div>
-						<div className={styles["about-me__content__details__para2__video"]}>
-							<video className={styles["about-me__content__details__para2__video__media"]} autoPlay muted loop playsInline preload="auto" aria-hidden="true" tabIndex={-1} disablePictureInPicture>
-								<source src="/videos/about-me-video.mp4" type="video/mp4" />
-							</video>
+						<div className={styles["about-me__content__details__para2__image"]}>
+							<Image className={styles["about-me__content__details__para2__image__media"]} src="/images/headshot.jpg" alt="Derick Moncado" fill sizes="(min-width: 1350px) 40vw, 100vw" />
 						</div>
 					</div>
 				</div>

@@ -16,9 +16,9 @@ export default function MoncadoMediaPage() {
 
 				<Image className={styles["moncadomedia__content__logo"]} src="/images/moncadomedia-logo.png" alt="Moncado Media" width={600} height={153} priority />
 				<p>
-					MoncadoMedia LLC owns and operates a small collection of internet businesses and ventures created by <Link href="/">Derick Moncado</Link>, spanning YouTube, eCommerce, and affiliate marketing. <br />
+					MoncadoMedia LLC owns and operates a small collection of internet businesses and ventures operated by <Link href="/">Derick Moncado</Link>, spanning YouTube, eCommerce, freelancing, affiliate marketing and brand collaborations. <br />
 					<br />
-					For partnerships, collabs, or inquiries, reach out at <a href="mailto:hello@derickmoncado.io">hello@derickmoncado.io</a>.
+					For partnerships or inquiries, reach out at <a href="mailto:hello@derickmoncado.io">hello@derickmoncado.io</a>.
 				</p>
 			</div>
 			<Footer />

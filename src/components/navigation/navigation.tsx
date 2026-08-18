@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign, Download } from "lucide-react";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
@@ -17,6 +17,8 @@ export default function Navigation() {
 	const [activeHash, setActiveHash] = useState<string>("");
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [profileTitleIndex, setProfileTitleIndex] = useState(0);
+	const menuToggleRef = useRef<HTMLButtonElement>(null);
+	const navigationRef = useRef<HTMLElement>(null);
 
 	useEffect(() => {
 		const titleInterval = window.setInterval(() => {
@@ -79,6 +81,28 @@ export default function Navigation() {
 		};
 	}, []);
 
+	useEffect(() => {
+		if (!isMenuOpen) {
+			return;
+		}
+
+		const closeOnOutsideClick = (event: PointerEvent) => {
+			const target = event.target;
+
+			if (!(target instanceof Node) || navigationRef.current?.contains(target) || menuToggleRef.current?.contains(target)) {
+				return;
+			}
+
+			setIsMenuOpen(false);
+		};
+
+		document.addEventListener("pointerdown", closeOnOutsideClick);
+
+		return () => {
+			document.removeEventListener("pointerdown", closeOnOutsideClick);
+		};
+	}, [isMenuOpen]);
+
 	const getActiveClass = (hash: string) => (currentPath === "/" && activeHash === hash ? styles["is-active"] : undefined);
 	const getPathActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
 	const getDownloadsActiveClass = () => getPathActiveClass("/downloads") || getActiveClass("#downloads");
@@ -100,13 +124,13 @@ export default function Navigation() {
 					</div>
 				</Link>
 
-				<button type="button" className={styles["navigation__inner__toggle"]} onClick={() => setIsMenuOpen((prev) => !prev)} aria-expanded={isMenuOpen} aria-controls="site-navigation" aria-label="Toggle navigation menu">
+				<button ref={menuToggleRef} type="button" className={styles["navigation__inner__toggle"]} onClick={() => setIsMenuOpen((prev) => !prev)} aria-expanded={isMenuOpen} aria-controls="site-navigation" aria-label="Toggle navigation menu">
 					<span></span>
 					<span></span>
 					<span></span>
 				</button>
 
-				<nav id="site-navigation" className={`${styles["navigation__inner__nav"]} ${isMenuOpen ? styles["is-open"] : ""}`}>
+				<nav ref={navigationRef} id="site-navigation" className={`${styles["navigation__inner__nav"]} ${isMenuOpen ? styles["is-open"] : ""}`}>
 					<ul className={styles["main-nav"]}>
 						<li className={getActiveClass("#home")}>
 							<Link href={getSectionHref("#home")} onClick={() => setIsMenuOpen(false)}>

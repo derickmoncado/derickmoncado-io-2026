@@ -52,7 +52,9 @@ export default function Downloads() {
 		<section className={styles["downloads"]} id="downloads">
 			<div className={styles["downloads__content"]}>
 				<div className={styles["downloads__content__heading"]}>
-					<h2>Downloads</h2>
+					<h2>
+						Downloads <Download />
+					</h2>
 				</div>
 
 				<div className={styles["downloads__content__form"]}>

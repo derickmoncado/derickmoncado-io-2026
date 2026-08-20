@@ -34,7 +34,7 @@ export default function TemplateDownloadsPage() {
 						Resume Template Downloads <Download />
 					</h2>
 					<p>
-						Choose which software engineer&rsquo;s resume template to download below, toggle by <span>Junior</span> or <span>Mid/Senior</span> level layouts, then select a template and its style.
+						Choose which resume templates to download below, toggle by <span>Junior</span> or <span>Mid/Senior</span> level layouts, then select a template and its style.
 					</p>
 					<p>
 						This is <u>your</u> starter template, tweak it, customize it, move things around as you see fit. All are fully editable and optimized for ATS scanners in systems like <i>Workday</i>. Enjoy 🤝 you&rsquo;ve got this.

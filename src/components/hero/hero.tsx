@@ -33,7 +33,7 @@ export default function Hero() {
 							Contact Me
 							<Mail />
 							<span id="hero-contact-tooltip" role="tooltip">
-								yes, I actually check my biz email regularly
+								yes, I actually check my email regularly
 							</span>
 						</a>
 					</div>

@@ -7,6 +7,7 @@ import ContactMe from "@/components/contact-me/contact-me";
 import Footer from "@/components/footer/footer";
 import { ChevronLeft } from "lucide-react";
 import RecentContent from "@/components/recent-content/recent-content";
+import Downloads from "@/components/downloads/downloads";
 
 export default function LinkInBioPage() {
 	return (
@@ -51,6 +52,10 @@ export default function LinkInBioPage() {
 
 				<div className={styles["links__content__contact-form"]}>
 					<ContactMe />
+				</div>
+
+				<div className={styles["links__content__downloads"]}>
+					<Downloads />
 				</div>
 
 				<div className={styles["links__content__recent-content"]}>

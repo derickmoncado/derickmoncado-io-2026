@@ -11,7 +11,7 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__intro"]}>
 					<h2>About Me</h2>
 					<p>
-						I&apos;m a <span>designer-turned-developer</span> who&apos;s passionate about <span>coding</span>, visual <span>design</span>, online <span>gaming</span>, <span>self-development</span>, and <span>videography</span>.
+						I&apos;m a <span>designer-turned-developer</span> who&apos;s passionate about <span>coding</span>, visual <span>design</span>, online <span>gaming</span>, <span>self-development</span>, <span>videography</span>, and <span>creativity</span>.
 					</p>
 				</div>
 
@@ -38,7 +38,7 @@ export default function AboutMe() {
 				<div className={styles["about-me__content__details"]}>
 					<div className={styles["about-me__content__details__para1"]}>
 						<p>
-							Based out of Southern California and currently working in the gaming industry, I enjoy covering topics such as, tech, lifestyle, gaming, self-development, and anything else I find interesting on my 
+							Based out of Southern California where I worked in the gaming industry for over 5 years, I enjoy covering topics such as, tech, lifestyle, gaming, self-development, and anything else I find interesting on my 
 							<a href="https://www.youtube.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								YouTube channel
 							</a>

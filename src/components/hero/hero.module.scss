@@ -218,18 +218,13 @@
             }
 
             &__frame {
-                width: 200px;
-                height: 200px;
+                width: 300px;
+                height: 300px;
                 position: relative;
                 overflow: hidden;
                 border-radius: 50%;
                 background-color: #E9EAEF;
                 border: 1px solid #dbdbdb;
-
-                @media (width >=850px) {
-                    width: 250px;
-                    height: 250px;
-                }
 
                 @media (width >=1024px) {
                     width: 300px;

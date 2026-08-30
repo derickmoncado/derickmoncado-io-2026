@@ -1,0 +1,22 @@
+.codecademy-promo {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: auto;
+
+    p {
+        letter-spacing: normal;
+        margin: 0;
+    }
+
+    a {
+        display: block;
+
+        img {
+            width: 185px;
+            height: auto;
+            margin: 10px auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 4px -1px, rgba(0, 0, 0, 0.3) 0px 1px 2px -1px;
+        }
+    }
+}

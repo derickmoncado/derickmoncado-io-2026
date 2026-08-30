@@ -2,11 +2,10 @@
 
 import styles from "./navigation.module.scss";
 import Link from "next/link";
-import Image from "next/image";
-import CodecademyLogo from "../../../public/images/codecademy-logo.jpg";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign, Download } from "lucide-react";
+import CodecademyPromo from "@/components/codecademy-promo/codecademy-promo";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
 const PROFILE_TITLES = ["Software Engineer", "Visual Designer", "Creator"] as const;
@@ -168,7 +167,6 @@ export default function Navigation() {
 							</Link>
 						</li> */}
 					</ul>
-
 					<ul className={styles["socials"]}>
 						<li className={styles["preheading"]}>
 							<p>Connect</p>
@@ -203,13 +201,7 @@ export default function Navigation() {
 						</li>
 					</ul>
 
-					<div className={styles["navigation__inner__codecademy"]}>
-						<p>Learn to code with</p>
-						<Link href="https://www.pntra.com/t/8-12462-377154-213588" target="_blank">
-							<Image src={CodecademyLogo} alt="Codecademy Logo" priority />
-						</Link>
-						<p>Click for 50% OFF of all plans!</p>
-					</div>
+					<CodecademyPromo priority />
 				</nav>
 			</div>
 		</div>

@@ -191,6 +191,7 @@
         &__recent-content {
             margin-top: 10px;
             text-align: left;
+            margin-bottom: 60px;
 
             &__feed {
                 margin: 0 auto;
@@ -200,5 +201,7 @@
                 }
             }
         }
+
+        &__codecademy-promo {}
     }
 }

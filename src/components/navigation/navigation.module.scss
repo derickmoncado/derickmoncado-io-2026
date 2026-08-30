@@ -204,31 +204,6 @@
             }
         }
 
-        &__codecademy {
-            display: block;
-            border-top: 1px solid #eef0f4;
-            padding: 14px 16px 16px;
-            text-align: center;
-            font-size: 12px;
-            margin-top: auto;
-
-            p {
-                letter-spacing: normal;
-                margin: 0;
-            }
-
-            a {
-                display: block;
-
-                img {
-                    width: 65%;
-                    height: auto;
-                    margin: 10px auto;
-                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-                }
-            }
-        }
-
         @media (width >=1350px) {
             display: flex;
             flex-direction: column;
@@ -351,9 +326,10 @@
                     }
 
                     &.socials {
-                        border: none;
-                        margin: 0;
-                        padding: 0;
+                        border-top: none;
+                        //border-bottom: 2px solid #f0f0f0;
+                        padding-bottom: 22px;
+                        margin-bottom: 22px;
 
                         li {
 
@@ -380,7 +356,7 @@
                 }
             }
 
-            &__codecademy {
+            &__codecademy-promo {
                 text-align: center;
                 font-size: 12px;
                 border: none;

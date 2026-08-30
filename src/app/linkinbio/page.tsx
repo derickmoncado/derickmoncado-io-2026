@@ -8,6 +8,7 @@ import Footer from "@/components/footer/footer";
 import { ChevronLeft } from "lucide-react";
 import RecentContent from "@/components/recent-content/recent-content";
 import Downloads from "@/components/downloads/downloads";
+import CodecademyPromo from "@/components/codecademy-promo/codecademy-promo";
 
 export default function LinkInBioPage() {
 	return (
@@ -60,6 +61,10 @@ export default function LinkInBioPage() {
 
 				<div className={styles["links__content__recent-content"]}>
 					<RecentContent limit={1} className={styles["links__content__recent-content__feed"]} />
+				</div>
+
+				<div className={styles["links__content__codecademy-promo"]}>
+					<CodecademyPromo />
 				</div>
 			</div>
 			<Footer />

@@ -4,7 +4,8 @@ const API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;
 
 const YT_API_BASE = "https://www.googleapis.com/youtube/v3";
-const MIN_DURATION_SECONDS = 61; // exclude shorts (<= 60s)
+const MAX_SHORT_DURATION_SECONDS = 180;
+const UPLOADS_TO_CHECK = 50;
 
 function durationToSeconds(iso: string): number {
 	// ISO 8601 duration like PT1H2M10S
@@ -26,10 +27,7 @@ async function fetchJson<T>(url: string): Promise<T> {
 
 export async function GET() {
 	if (!API_KEY || !CHANNEL_ID) {
-		return NextResponse.json(
-			{ error: "Missing YOUTUBE_API_KEY or YOUTUBE_CHANNEL_ID" },
-			{ status: 500 }
-		);
+		return NextResponse.json({ error: "Missing YOUTUBE_API_KEY or YOUTUBE_CHANNEL_ID" }, { status: 500 });
 	}
 
 	try {
@@ -43,7 +41,7 @@ export async function GET() {
 			return NextResponse.json({ error: "Uploads playlist not found" }, { status: 404 });
 		}
 
-		const playlistUrl = `${YT_API_BASE}/playlistItems?part=snippet,contentDetails&playlistId=${uploadsPlaylistId}&maxResults=12&key=${API_KEY}`;
+		const playlistUrl = `${YT_API_BASE}/playlistItems?part=snippet,contentDetails&playlistId=${uploadsPlaylistId}&maxResults=${UPLOADS_TO_CHECK}&key=${API_KEY}`;
 		const playlistData = await fetchJson<{
 			items: {
 				contentDetails: { videoId: string };
@@ -77,27 +75,19 @@ export async function GET() {
 
 		const byId = new Map(videosData.items.map((item) => [item.id, item]));
 
-		const ordered = videoIds
-			.map((id) => byId.get(id))
-			.filter((item): item is NonNullable<typeof item> => Boolean(item));
+		const ordered = videoIds.map((id) => byId.get(id)).filter((item): item is NonNullable<typeof item> => Boolean(item));
 
 		const filtered = ordered.filter((item) => {
 			const durationSeconds = durationToSeconds(item.contentDetails.duration);
 			const title = item.snippet.title.toLowerCase();
-			return durationSeconds >= MIN_DURATION_SECONDS && !title.includes("#shorts");
+			return durationSeconds > MAX_SHORT_DURATION_SECONDS && !title.includes("#shorts");
 		});
 
 		const items = filtered.slice(0, 3).map((item) => ({
 			id: item.id,
 			title: item.snippet.title,
 			publishedAt: item.snippet.publishedAt,
-			thumbnail:
-				item.snippet.thumbnails.maxres?.url ||
-				item.snippet.thumbnails.standard?.url ||
-				item.snippet.thumbnails.high?.url ||
-				item.snippet.thumbnails.medium?.url ||
-				item.snippet.thumbnails.default?.url ||
-				`https://i.ytimg.com/vi/${item.id}/hqdefault.jpg`,
+			thumbnail: item.snippet.thumbnails.maxres?.url || item.snippet.thumbnails.standard?.url || item.snippet.thumbnails.high?.url || item.snippet.thumbnails.medium?.url || item.snippet.thumbnails.default?.url || `https://i.ytimg.com/vi/${item.id}/hqdefault.jpg`,
 			url: `https://www.youtube.com/watch?v=${item.id}`,
 		}));
 

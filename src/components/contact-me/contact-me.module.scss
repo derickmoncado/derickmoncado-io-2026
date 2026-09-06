@@ -16,7 +16,7 @@
         &__form {
             border-radius: 30px;
             padding: 60px;
-            border: 1px solid #E4E4E4;
+            @include borders;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -80,7 +80,7 @@
                     textarea {
                         width: 100%;
                         padding: 8px 16px;
-                        border: 1px solid #E4E4E4;
+                        @include borders;
                         border-radius: 23px;
                         font: inherit;
                     }

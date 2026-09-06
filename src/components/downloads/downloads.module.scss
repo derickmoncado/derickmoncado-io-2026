@@ -1,4 +1,5 @@
 @use "../../styles/partials/mixins"as *;
+@use "../../styles/partials/variables"as *;
 
 @keyframes fade-in-up {
     from {
@@ -27,7 +28,7 @@
         &__form {
             border-radius: 30px;
             padding: 30px;
-            border: 1px solid #E4E4E4;
+            @include borders;
 
             p:first-child {
                 margin-bottom: 20px;
@@ -43,9 +44,16 @@
                 input {
                     padding: 8px 16px;
                     margin-bottom: 15px;
-                    border: 1px solid #E4E4E4;
+                    @include borders;
                     border-radius: 23px;
                     width: 100%;
+                    background-color: #222222;
+                    color: #fff;
+                    outline: none;
+
+                    &::placeholder {
+                        color: $secondary-color;
+                    }
 
                     @media (width >=1024px) {
                         flex-grow: 1;

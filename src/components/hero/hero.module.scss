@@ -30,7 +30,7 @@
                     color: $primary-color;
                     font-size: 12px;
                     padding: 6px 14px;
-                    border: 1px solid #ddd;
+                    @include borders;
                     border-radius: 16px;
                     display: inline-flex;
                     align-items: center;
@@ -116,9 +116,9 @@
                         z-index: 10;
                         padding: 6px 9px;
                         border-radius: 7px;
-                        background: $primary-color;
+                        background: rgb(48, 48, 48);
                         color: #fff;
-                        box-shadow: 0 4px 12px rgba(17, 24, 39, 0.16);
+                        box-shadow: 0 4px 12px rgba(48, 48, 48, 0.16);
                         font-size: 11px;
                         font-weight: 400;
                         line-height: 1.2;
@@ -136,7 +136,7 @@
                             top: 100%;
                             left: 50%;
                             border: 5px solid transparent;
-                            border-top-color: $primary-color;
+                            border-top-color: rgb(48, 48, 48);
                             transform: translateX(-50%);
                         }
                     }
@@ -174,11 +174,11 @@
                 top: 230px;
                 z-index: 100;
                 font-size: 14px;
-                background: #fff;
+                background: #000;
+                color: #fff;
                 border-radius: 20px;
                 padding: 7px 9px 6px 9px;
-                border: 1px solid #dbdbdb;
-                box-shadow: 0 6px 10px rgba(149, 157, 165, 0.3);
+                @include borders;
                 width: 36px;
                 height: 36px;
 
@@ -223,8 +223,8 @@
                 position: relative;
                 overflow: hidden;
                 border-radius: 50%;
-                background-color: #E9EAEF;
-                border: 1px solid #dbdbdb;
+                background-color: #000;
+                @include borders;
 
                 @media (width >=1024px) {
                     width: 300px;
@@ -253,7 +253,7 @@
     }
 
     70% {
-        transform: scale(1.1);
+        transform: scale(1.2);
         box-shadow: 0 0 0 8px rgba(46, 204, 113, 0);
     }
 

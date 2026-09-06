@@ -1,5 +1,6 @@
+@use "../../styles/partials/variables"as *;
+
 .footer {
-    color: #737783;
     font-size: 14px;
     letter-spacing: -.2px;
     padding: 30px 0 15px;
@@ -13,7 +14,7 @@
         }
 
         span {
-            color: #000;
+            color: $secondary-color;
         }
     }
 }

@@ -1,5 +1,6 @@
 @use "sass:color";
 @use "../../styles/partials/variables"as *;
+@use "../../styles/partials/mixins"as *;
 
 @keyframes profile-title-fade-in-up {
     from {
@@ -37,6 +38,7 @@
                 background-repeat: no-repeat;
                 position: relative;
                 flex-shrink: 0;
+                @include borders;
 
                 &::after {
                     content: '';
@@ -78,7 +80,8 @@
             height: 46px;
             border: 0;
             border-radius: 12px;
-            background: #e9eaef;
+            background: none;
+            @include borders;
             display: inline-flex;
             flex-direction: column;
             justify-content: center;
@@ -97,7 +100,7 @@
             }
 
             &:hover {
-                background: color.adjust(#e9eaef, $lightness: 3%);
+                background: #2d2d2d;
             }
 
             &:focus-visible {
@@ -111,10 +114,9 @@
             top: calc(100% + 12px);
             right: 0;
             width: min(320px, 100%);
-            background: #fff;
             border-radius: 24px;
             box-shadow: rgba(17, 24, 39, 0.15) 0px 12px 30px;
-            border: 1px solid #eef0f4;
+            @include borders;
             max-height: calc(100dvh - 126px - env(safe-area-inset-bottom, 0px));
             overflow: auto;
             overscroll-behavior: contain;
@@ -139,7 +141,6 @@
                     position: relative;
 
                     a {
-                        color: #737783;
                         text-decoration: none;
                         font-weight: 500;
                         padding: 12px 14px;
@@ -166,12 +167,12 @@
 
                     &:hover {
                         a {
-                            color: $primary-color;
-                            background-color: #f4f5f8;
+                            background-color: #373737;
                         }
                     }
 
                     &.is-active {
+
                         a {
                             color: $primary-color;
                         }
@@ -179,7 +180,6 @@
                 }
 
                 &.socials {
-                    border-top: 1px solid #eef0f4;
                     margin-top: 4px;
                     padding-top: 10px;
 
@@ -202,6 +202,9 @@
                 visibility: visible;
                 transform: translateY(0);
                 padding-bottom: 30px;
+                @include bg;
+                backdrop-filter: blur(15px);
+                background-color: #222222;
             }
         }
 
@@ -214,7 +217,7 @@
             }
 
             &__profile {
-                border-bottom: 2px solid #f0f0f0;
+                border-bottom: 1px solid #2d2d2d;
                 display: flex;
                 gap: 20px;
                 padding-bottom: 35px;
@@ -239,8 +242,6 @@
                         position: absolute;
                         top: 0;
                         left: 0;
-                        border: 3px solid rgba(244, 219, 16, 0.7);
-                        //border: 3px solid rgba(244, 219, 16, 0.7);
                     }
                 }
 
@@ -264,7 +265,7 @@
                 top: auto;
                 right: auto;
                 width: 100%;
-                background: transparent;
+                //background: transparent;
                 border-radius: 0;
                 box-shadow: none;
                 border: 0;
@@ -299,7 +300,7 @@
 
                             &:hover {
                                 color: $primary-color;
-                                background-color: color.adjust(#E9EAEF, $lightness: 4%);
+                                background-color: #2d2d2d;
                             }
 
                             p {
@@ -313,7 +314,7 @@
                         }
 
                         &.is-active {
-                            background-color: #E9EAEF;
+                            background-color: #2d2d2d;
                             border-radius: 30px;
 
                             a {
@@ -328,7 +329,6 @@
 
                     &.socials {
                         border-top: none;
-                        //border-bottom: 2px solid #f0f0f0;
                         padding-bottom: 22px;
                         margin-bottom: 22px;
 

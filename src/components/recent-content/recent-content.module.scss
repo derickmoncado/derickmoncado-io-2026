@@ -22,7 +22,7 @@
 		grid-template-rows: auto 1fr;
 		//gap: 15px;
 		overflow: hidden;
-		border: 1px solid #ddd;
+		@include borders;
 		border-radius: 30px;
 		text-decoration: none;
 		color: inherit;
@@ -30,7 +30,7 @@
 
 		&:hover {
 			transform: translateY(-2px);
-			box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+			box-shadow: 0 4px 14px rgba(201, 201, 201, 0.12);
 		}
 
 		&__thumb {
@@ -103,7 +103,7 @@
 				color: $primary-color;
 				font-size: 12px;
 				padding: 6px 14px;
-				border: 1px solid #ddd;
+				@include borders;
 				border-radius: 16px;
 			}
 		}

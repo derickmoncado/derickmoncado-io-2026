@@ -62,9 +62,8 @@
                     overflow: hidden;
                     border-radius: 50%;
                     background-color: #E9EAEF;
-                    border: 1px solid #dbdbdb;
+                    @include borders;
                     position: absolute;
-                    box-shadow: 0 6px 10px rgba(149, 157, 165, 0.5);
                     left: 50%;
                     transform: translate(-50%, -150px);
 
@@ -121,7 +120,6 @@
 
             a {
                 @include secondary-cta;
-                border: none;
                 display: inline-flex;
                 gap: 8px;
                 padding: 10px 20px;
@@ -130,6 +128,7 @@
                 display: flex;
                 justify-content: center;
                 transition: background-color 0.25s ease, box-shadow 0.25s ease, background-image 0.25s ease;
+                border: none;
 
                 @media (width >=600px) {
                     width: 140px;
@@ -142,7 +141,7 @@
                 }
 
                 &:hover {
-                    box-shadow: 0 6px 10px rgba(149, 157, 165, 0.5);
+                    box-shadow: 0 6px 10px rgba(117, 117, 117, 0.5);
                     background-color: transparent;
                 }
             }
@@ -157,10 +156,7 @@
 
             &__threads {
                 background-color: #000;
-
-                &:hover {
-                    background-color: color.adjust(#000, $lightness: 15%) !important;
-                }
+                border: 1px solid #2d2d2d !important;
             }
 
             &__instagram {

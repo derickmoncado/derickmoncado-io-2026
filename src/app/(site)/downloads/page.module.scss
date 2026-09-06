@@ -15,7 +15,7 @@
         color: $primary-color;
 
         span {
-            color: #858585;
+            color: $secondary-color;
         }
     }
 
@@ -47,15 +47,15 @@
             display: block;
             width: 100%;
             height: auto;
-            border: 1px solid #ddd;
+            @include borders;
             border-radius: 12px;
-            background: #fff;
+            //background: #fff;
             box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
         }
 
         figcaption {
             margin-top: 12px;
-            color: #858585;
+            color: $secondary-color;
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 0;

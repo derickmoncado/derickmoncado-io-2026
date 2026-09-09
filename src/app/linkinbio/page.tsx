@@ -37,11 +37,11 @@ export default function LinkInBioPage() {
 						<Image src="/images/youtube.svg" alt="YouTube icon" width={18} height={18} />
 						Subscribe
 					</a>
-					<a href="https://www.threads.com/@derickmoncado.jpg" className={styles["links__content__links__threads"]} target="_blank" rel="noopener noreferrer">
+					<a href="https://www.threads.com/@derickmoncado" className={styles["links__content__links__threads"]} target="_blank" rel="noopener noreferrer">
 						<Image src="/images/threads.svg" alt="Threads icon" width={18} height={18} />
 						Follow
 					</a>
-					<a href="https://www.instagram.com/derickmoncado.jpg/" className={styles["links__content__links__instagram"]} target="_blank" rel="noopener noreferrer">
+					<a href="https://www.instagram.com/derickmoncado" className={styles["links__content__links__instagram"]} target="_blank" rel="noopener noreferrer">
 						<Image src="/images/instagram.svg" alt="Instagram icon" width={18} height={18} />
 						Follow
 					</a>

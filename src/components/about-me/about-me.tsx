@@ -62,12 +62,12 @@ export default function AboutMe() {
 									</a>
 								</li>
 								<li>
-									<a href="https://www.threads.com/@derickmoncado.jpg" target="_blank" title="Threads" rel="noopener noreferrer">
+									<a href="https://www.threads.com/@derickmoncado" target="_blank" title="Threads" rel="noopener noreferrer">
 										<AtSign />
 									</a>
 								</li>
 								<li>
-									<a href="https://www.instagram.com/derickmoncado.jpg/" target="_blank" title="Instagram" rel="noopener noreferrer">
+									<a href="https://www.instagram.com/derickmoncado" target="_blank" title="Instagram" rel="noopener noreferrer">
 										<Instagram />
 									</a>
 								</li>

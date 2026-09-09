@@ -179,14 +179,14 @@ export default function Navigation() {
 							</a>
 						</li>
 						<li>
-							<a href="https://www.threads.com/@derickmoncado.jpg" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.threads.com/@derickmoncado" target="_blank" rel="noopener noreferrer">
 								<AtSign />
 								<p>Threads</p>
 								<ArrowUpRight />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/derickmoncado.jpg/" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.instagram.com/derickmoncado" target="_blank" rel="noopener noreferrer">
 								<Instagram />
 								<p>Instagram</p>
 								<ArrowUpRight />

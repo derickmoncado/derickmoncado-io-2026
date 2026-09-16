@@ -4,7 +4,7 @@ import styles from "./navigation.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign, Download } from "lucide-react";
+import { House, ChevronRight, CircleUser, Mail, Linkedin, Instagram, Youtube, ArrowUpRight, AtSign, Download, BriefcaseBusiness } from "lucide-react";
 import CodecademyPromo from "@/components/codecademy-promo/codecademy-promo";
 
 const SECTION_HASHES = ["#home", "#about-me", "#downloads", "#contact-me"] as const;
@@ -105,6 +105,7 @@ export default function Navigation() {
 	const getActiveClass = (hash: string) => (currentPath === "/" && activeHash === hash ? styles["is-active"] : undefined);
 	const getPathActiveClass = (path: string) => (currentPath === path ? styles["is-active"] : undefined);
 	const getDownloadsActiveClass = () => getPathActiveClass("/downloads") || getActiveClass("#downloads");
+	const isFeaturedWorkActive = currentPath === "/featured-work" || currentPath.startsWith("/featured-work/");
 	const getSectionHref = (hash: (typeof SECTION_HASHES)[number]) => `/${hash}`;
 
 	// condensed version just for reference
@@ -149,6 +150,13 @@ export default function Navigation() {
 							<Link href="/downloads" onClick={() => setIsMenuOpen(false)}>
 								<Download />
 								<p>Downloads</p>
+								<ChevronRight />
+							</Link>
+						</li>
+						<li className={isFeaturedWorkActive ? styles["is-active"] : undefined}>
+							<Link href="/featured-work" onClick={() => setIsMenuOpen(false)} aria-current={isFeaturedWorkActive ? (currentPath === "/featured-work" ? "page" : "true") : undefined}>
+								<BriefcaseBusiness />
+								<p>Featured Work</p>
 								<ChevronRight />
 							</Link>
 						</li>

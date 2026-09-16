@@ -1,0 +1,51 @@
+@use "../../styles/partials/mixins"as *;
+@use "../../styles/partials/variables"as *;
+
+.project {
+	&__back {
+		margin-bottom: 20px;
+
+		a {
+			@include secondary-cta;
+			display: inline-flex;
+			padding: 8px 16px 8px 0;
+			border: none;
+
+			&:hover {
+				background: none;
+				box-shadow: none;
+			}
+
+			svg {
+				width: 20px;
+				margin-right: 5px;
+				padding-left: 0;
+			}
+		}
+	}
+
+	&__heading {
+		margin-bottom: 30px;
+
+		h2 {
+			@include h2;
+			margin-bottom: 30px;
+		}
+
+		&>p {
+			font-size: 22px;
+			letter-spacing: -0.8px;
+			margin-bottom: 30px;
+			font-weight: 500;
+			color: $primary-color;
+
+			span {
+				color: $secondary-color;
+			}
+		}
+	}
+
+	&__body {
+		min-width: 0;
+	}
+}

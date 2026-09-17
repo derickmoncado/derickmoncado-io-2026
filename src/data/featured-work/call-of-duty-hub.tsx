@@ -3,6 +3,7 @@ import type { PortfolioProject } from "./types";
 export const callOfDutyHub: PortfolioProject = {
 	slug: "1-cod-hub",
 	title: "Call of Duty Hub",
+	listingStatus: "published",
 	year: "2026",
 	liveUrl: "https://www.callofduty.com/",
 	thumbnail: "/images/featured work/cod-hub/cod-hub-hero-1.jpg",

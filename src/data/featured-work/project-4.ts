@@ -3,6 +3,7 @@ import type { PortfolioProject } from "./types";
 export const project4: PortfolioProject = {
 	slug: "project-4",
 	title: "Project 4",
+	listingStatus: "hidden",
 	description: "A closer look at the ideas, process, and details behind this project. More coming soon.",
 	highlights: [
 		{ stat: "01", heading: "My role", blurb: "More details about my role in this project coming soon." },

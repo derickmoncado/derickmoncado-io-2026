@@ -22,6 +22,8 @@ export type ProjectSection = {
 export type PortfolioProject = {
 	slug: string;
 	title: string;
+	/** Controls only the listing card; the project's detail route remains available. */
+	listingStatus: "published" | "coming-soon" | "hidden";
 	year?: string;
 	thumbnail?: string;
 	description: ReactNode;

@@ -2,6 +2,12 @@
 
 Frontend starter kit with Lucide Icons and Embla Carousel, see details below :)
 
+## Portfolio content
+
+Project content lives in `src/data/featured-work`, with a separate file for each
+portfolio entry. See the [featured-work guide](src/data/featured-work/README.md)
+for the component structure and how to customize each project's detail page.
+
 ## Updating Dependencies
 
 Keep the boilerplate current with these scripts (run these first, then fire up the dev server):

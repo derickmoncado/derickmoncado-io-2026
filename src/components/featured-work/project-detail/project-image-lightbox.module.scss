@@ -1,5 +1,5 @@
-@use "../../styles/partials/mixins" as *;
-@use "../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+@use "../../../styles/partials/variables" as *;
 
 .preview {
 	position: relative;
@@ -32,6 +32,20 @@
 		inset: 0;
 		background: linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.5) 75%, #000 100%);
 		pointer-events: none;
+	}
+
+	&[data-variant="section"] {
+		border-radius: 30px;
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			transform-origin: center;
+		}
+
+		&::after {
+			background: linear-gradient(to bottom, transparent 65%, rgba(0, 0, 0, 0.8));
+		}
 	}
 
 	&__label {
@@ -87,7 +101,7 @@
 	&[open] { animation: preview-in 180ms ease both; }
 
 	&__content {
-		width: min(100%, 900px);
+		width: min(100%, 1200px);
 		margin: 0 auto;
 		cursor: default;
 

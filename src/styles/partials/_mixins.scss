@@ -81,12 +81,12 @@
 // Back navigation: move only the chevron, keeping the label and hit area steady.
 @mixin back-chevron-motion {
     @media (prefers-reduced-motion: no-preference) {
-        > svg {
+        >svg {
             transition: transform 180ms ease;
         }
 
-        &:hover > svg,
-        &:focus-visible > svg {
+        &:hover>svg,
+        &:focus-visible>svg {
             transform: translateX(-3px);
         }
     }

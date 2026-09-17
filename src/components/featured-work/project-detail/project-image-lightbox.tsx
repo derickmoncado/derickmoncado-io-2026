@@ -3,16 +3,17 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Maximize2, X } from "lucide-react";
-import styles from "./project-image-preview.module.scss";
+import styles from "./project-image-lightbox.module.scss";
 
-type ProjectImagePreviewProps = {
+type ProjectImageLightboxProps = {
 	src: string;
 	alt: string;
 	width: number;
 	height: number;
+	variant?: "hero" | "section";
 };
 
-export default function ProjectImagePreview({ src, alt, width, height }: ProjectImagePreviewProps) {
+export default function ProjectImageLightbox({ src, alt, width, height, variant = "hero" }: ProjectImageLightboxProps) {
 	const dialogRef = useRef<HTMLDialogElement>(null);
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -30,6 +31,7 @@ export default function ProjectImagePreview({ src, alt, width, height }: Project
 			<button
 				type="button"
 				className={styles.preview}
+				data-variant={variant}
 				aria-label={`View full-size ${alt}`}
 				aria-haspopup="dialog"
 				onClick={() => {
@@ -37,7 +39,7 @@ export default function ProjectImagePreview({ src, alt, width, height }: Project
 					dialogRef.current?.showModal();
 				}}
 			>
-				<Image src={src} alt={alt} width={width} height={height} sizes="(max-width: 767px) 90vw, 45vw" priority />
+				<Image src={src} alt={alt} width={width} height={height} sizes="(max-width: 767px) 90vw, 45vw" priority={variant === "hero"} />
 				<span className={styles.preview__label} aria-hidden="true"><Maximize2 /> View full image</span>
 			</button>
 			<dialog
@@ -51,7 +53,7 @@ export default function ProjectImagePreview({ src, alt, width, height }: Project
 			>
 				<div className={styles.modal__content}>
 					<button type="button" className={styles.modal__close} onClick={() => dialogRef.current?.close()} aria-label="Close image preview"><X /></button>
-					{isOpen ? <Image src={src} alt={alt} width={width} height={height} sizes="(min-width: 1024px) 900px, 92vw" priority /> : null}
+					{isOpen ? <Image src={src} alt={alt} width={width} height={height} sizes="(min-width: 1248px) 1200px, calc(100vw - 48px)" priority /> : null}
 				</div>
 			</dialog>
 		</>

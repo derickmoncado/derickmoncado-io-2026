@@ -55,7 +55,7 @@ button {
 }
 
 p {
-    color: #737783;
+    color: $secondary-color;
     letter-spacing: -0.3px;
 
     a {
@@ -64,6 +64,15 @@ p {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+// Shared introduction colors for paragraphs directly after section headings.
+h2 + p {
+    color: $secondary-color;
+
+    span {
+        color: $primary-color;
     }
 }
 

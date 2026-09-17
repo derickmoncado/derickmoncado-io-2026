@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import Project from "@/components/project/project";
+import ProjectDetailPage from "@/components/featured-work/project-detail/project-detail-page";
+import { project4 } from "@/data/featured-work/project-4";
 
 export const metadata: Metadata = {
-	title: "Project 4 | Derick Moncado",
+	title: `${project4.title} | Derick Moncado`,
 };
 
-export default function ProjectFourPage() {
-	return <Project title="Project 4" />;
+export default function Project4Page() {
+	return <ProjectDetailPage project={project4} />;
 }

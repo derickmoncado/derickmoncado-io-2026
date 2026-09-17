@@ -73,7 +73,7 @@ export default function TemplateImagePreview({ src, alt, thumbnailWidth, thumbna
 						<button type="button" className={styles["template-downloads__preview-modal__close"]} onClick={closeModal} aria-label="Close image preview">
 							<X />
 						</button>
-						<Image src={src} alt={alt} width={previewWidth} height={previewHeight} sizes="(width >= 1024px) 70vw, 92vw" priority />
+						<Image src={src} alt={alt} width={previewWidth} height={previewHeight} sizes="(min-width: 1305px) 1200px, 92vw" priority />
 					</div>
 				</dialog>
 			) : null}

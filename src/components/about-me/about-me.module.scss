@@ -17,11 +17,7 @@
                 letter-spacing: -0.8px;
                 margin-bottom: 30px;
                 font-weight: 500;
-                color: $secondary-color;
 
-                span {
-                    color: $primary-color;
-                }
             }
         }
 
@@ -53,11 +49,13 @@
                 }
 
                 .stat {
-                    font-size: 32px;
                     letter-spacing: -1.2px;
-                    margin-bottom: 10px;
-                    font-weight: 600;
                     color: inherit;
+                    margin-bottom: 10px;
+                    font-size: 48px;
+                    font-weight: 600;
+                    opacity: 0.1;
+                    line-height: normal;
                 }
 
                 .heading {

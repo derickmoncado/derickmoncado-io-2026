@@ -10,7 +10,6 @@
 
             h2 {
                 @include h2;
-                margin-bottom: 30px;
             }
 
             p:first-of-type {
@@ -18,11 +17,7 @@
                 letter-spacing: -0.8px;
                 margin-bottom: 30px;
                 font-weight: 500;
-                color: $primary-color;
 
-                span {
-                    color: $secondary-color;
-                }
             }
         }
 
@@ -285,7 +280,7 @@
 
         &__content {
             position: relative;
-            width: min(92vw, 900px);
+            width: min(92vw, 1200px);
             margin: 0 auto;
             cursor: default;
             animation: template-preview-scale-in 0.18s ease forwards;

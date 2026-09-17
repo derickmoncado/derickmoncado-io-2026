@@ -6,7 +6,7 @@ import { useState } from "react";
 import styles from "./about-me.module.scss";
 
 const funFacts = [
-	{ title: "A random statistic", text: "I have over 800 hours played in Call of Duty: Warzone and Multiplayer matches" },
+	{ title: "A random statistic", text: "I have over 800 hours played in Call of Duty: Warzone and Multiplayer matches 🎮" },
 	{
 		title: "New skill unlocked",
 		text: (
@@ -15,11 +15,11 @@ const funFacts = [
 				<a href="https://www.google.com/search?sca_esv=89264749a61b36b1&rlz=1C5OZZY_enUS1224US1224&sxsrf=APpeQnu3qLiXQNlwnTBXcWg_K5jywH3A9Q:1789492681190&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxso-ey9S3qvKmp2OvfKTwGXnqiRiLAcb3Xgx8-u8mgVxAMDJFdONarzBGs3du8CoSZYf0ESmBI9jPWuGqAz_toRbI-czKhyl0P2SVTkVoIv0Jqcyg6w2mODAaSLC_kRY-KY_wkK8iac78Hw-_6C154p8X-Eg&q=l-sit&sa=X&ved=2ahUKEwjpmtzci_GWAxWcIEQIHRZcCUgQtKgLegQIHxAB&biw=1800&bih=1009&dpr=2" target="_blank" rel="noopener noreferrer">
 					L-sit
 				</a>{" "}
-				for almost a full 15 seconds (this is much harder to do than you think)
+				for almost a full 15 seconds (this is much harder to do than you think) 🤸‍♂️
 			</>
 		),
 	},
-	{ title: "A true cinephile", text: "I read the Wikipedia page of every new movie I watch while listening to it's film score" },
+	{ title: "A true cinephile", text: "I read the Wikipedia page of every new movie I watch while listening to it's film score 🍿" },
 ];
 
 export default function AboutMe() {

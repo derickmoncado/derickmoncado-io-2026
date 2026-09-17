@@ -78,6 +78,20 @@
     }
 }
 
+// Back navigation: move only the chevron, keeping the label and hit area steady.
+@mixin back-chevron-motion {
+    @media (prefers-reduced-motion: no-preference) {
+        >svg {
+            transition: transform 180ms ease;
+        }
+
+        &:hover>svg,
+        &:focus-visible>svg {
+            transform: translateX(-3px);
+        }
+    }
+}
+
 // H2
 @mixin h2 {
     font-size: 24px;

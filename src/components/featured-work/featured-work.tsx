@@ -1,14 +1,8 @@
 import { BriefcaseBusiness } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import { projects } from "@/data/projects";
 import styles from "./featured-work.module.scss";
-
-const projects = [
-	{ slug: "project-1", title: "Project 1" },
-	{ slug: "project-2", title: "Project 2" },
-	{ slug: "project-3", title: "Project 3" },
-	{ slug: "project-4", title: "Project 4" },
-	{ slug: "project-5", title: "Project 5" },
-] as const;
 
 export default function FeaturedWork() {
 	return (
@@ -23,11 +17,15 @@ export default function FeaturedWork() {
 				{projects.map((project) => (
 					<Link key={project.slug} href={`/featured-work/${project.slug}`} className={styles["project-card"]}>
 						<div className={styles["project-card__thumb"]} aria-hidden="true">
-							<div className={styles["project-card__thumb-placeholder"]} />
+							{project.thumbnail ? (
+								<Image src={project.thumbnail} alt="" fill sizes="(max-width: 1024px) 100vw, 50vw" className={styles["project-card__thumb-image"]} />
+							) : (
+								<div className={styles["project-card__thumb-placeholder"]} />
+							)}
 						</div>
 						<div className={styles["project-card__meta"]}>
 							<h3>{project.title}</h3>
-							<p>Details coming soon</p>
+							<p>{project.year ?? "Details coming soon"}</p>
 						</div>
 					</Link>
 				))}

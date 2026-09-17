@@ -25,6 +25,7 @@
 
             a {
                 @include secondary-cta;
+                @include back-chevron-motion;
                 position: absolute;
                 top: -150px;
                 left: 0;

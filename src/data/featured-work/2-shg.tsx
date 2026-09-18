@@ -13,7 +13,7 @@ export const shg: PortfolioProject = {
 		</>
 	),
 	heroImage: {
-		src: "/images/featured work/shg/shg-main.png",
+		src: "/images/featured work/shg/shg-main.jpg",
 		alt: "Sledgehammer Games studio website design",
 		width: 3600,
 		height: 22798,

@@ -7,7 +7,8 @@ Each project owns its content file here. Shared rendering lives in
 | File | Purpose |
 | --- | --- |
 | `call-of-duty-hub.tsx` | Call of Duty Hub title, year, images, highlights, and sections |
-| `project-2.ts` through `project-5.ts` | Independent placeholder content for the remaining projects |
+| `2-shg.tsx` | SHG project content |
+| `project-3.ts` through `project-5.ts` | Independent placeholder content for the remaining projects |
 | `types.ts` | The `PortfolioProject`, `ProjectImage`, `ProjectHighlight`, and `ProjectSection` shapes |
 | `index.ts` | The ordered list displayed on `/featured-work` |
 

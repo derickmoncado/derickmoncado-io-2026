@@ -2,7 +2,7 @@ import type { PortfolioProject } from "./types";
 
 export const callOfDutyHub: PortfolioProject = {
 	slug: "1-cod-hub",
-	title: "Call of Duty Hub",
+	title: "Call of Duty Homepage",
 	listingStatus: "published",
 	year: "2026",
 	liveUrl: "https://www.callofduty.com/",
@@ -14,7 +14,7 @@ export const callOfDutyHub: PortfolioProject = {
 	),
 	heroImage: {
 		src: "/images/featured work/cod-hub/cod-hub-main.jpg",
-		alt: "Call of Duty Hub website design",
+		alt: "Call of Duty Homepage",
 		width: 2000,
 		height: 6082,
 	},

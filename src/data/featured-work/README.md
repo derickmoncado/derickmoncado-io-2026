@@ -8,7 +8,8 @@ Each project owns its content file here. Shared rendering lives in
 | --- | --- |
 | `call-of-duty-hub.tsx` | Call of Duty Hub title, year, images, highlights, and sections |
 | `2-shg.tsx` | SHG project content |
-| `project-3.ts` through `project-5.ts` | Independent placeholder content for the remaining projects |
+| `3-bo7-lp.ts` | Black Ops 7 landing page content |
+| `project-4.ts` and `project-5.ts` | Independent placeholder content for the remaining projects |
 | `types.ts` | The `PortfolioProject`, `ProjectImage`, `ProjectHighlight`, and `ProjectSection` shapes |
 | `index.ts` | The ordered list displayed on `/featured-work` |
 
@@ -17,11 +18,14 @@ Each project owns its content file here. Shared rendering lives in
 Set `listingStatus` in the project's content file to control its grid card:
 
 - `published`: show its linked project card.
-- `coming-soon`: show a non-clickable “More coming soon” teaser.
+- `coming-soon`: omit its linked card while the project is in progress.
 - `hidden`: omit it from the grid while keeping its data and detail route.
 
 When a project is ready, change its status to `published`. This setting only
 affects the listing; existing detail URLs remain accessible for previewing work.
+
+The grid always ends with one non-clickable “More coming soon” teaser,
+independent of project statuses.
 
 Edit the project's own file. The grid and detail page read the same title and
 year. `thumbnail` is the grid image; `heroImage` is the cropped, clickable detail

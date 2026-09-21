@@ -4,7 +4,19 @@
 // global styles
 html {
     background-color: #000;
+    isolation: isolate;
     scroll-behavior: smooth;
+
+    &::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background:
+            linear-gradient(rgb(0 0 0 / 90%), rgb(0 0 0 / 80%)),
+            url("/images/la.jpg") center / cover no-repeat;
+    }
 }
 
 body {
@@ -68,7 +80,7 @@ p {
 }
 
 // Shared introduction colors for paragraphs directly after section headings.
-h2 + p {
+h2+p {
     color: $secondary-color;
 
     span {
@@ -85,7 +97,12 @@ svg {
     display: inline-block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     svg {
         position: relative;
         top: 4px;

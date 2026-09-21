@@ -16,7 +16,7 @@ export const bo7LandingPage: PortfolioProject = {
 	},
 	highlights: [
 		{ stat: "01", heading: "My role", blurb: "Owner and lead developer reporting directly to studio stakeholders" },
-		{ stat: "02", heading: "The approach", blurb: "Developer a compelling landing page showcasing the AAA title" },
+		{ stat: "02", heading: "The approach", blurb: "Develop a compelling landing page showcasing the highlights of the AAA title" },
 		{ stat: "03", heading: "The outcome", blurb: "A media landing page with dynamic components marketing the game" },
 	],
 	sections: [
@@ -42,7 +42,7 @@ export const bo7LandingPage: PortfolioProject = {
 		},
 		{
 			heading: "Game modes",
-			text: "Reusable image/text components highlighting the 3 main games modes of the title",
+			text: "Reusable image/text components highlighting the 3 main games modes of the title with calls to action leading to their respective blog articles",
 			image: {
 				src: "/images/featured work/bo7-LP/bo7-LP-gamemodes-3.jpg",
 				alt: "Black Ops 7 game modes section",
@@ -52,7 +52,7 @@ export const bo7LandingPage: PortfolioProject = {
 		},
 		{
 			heading: "Progression and media gallery",
-			text: "More re-usable media based components featuring rich key art, and video content served from a CDN",
+			text: "More reusable media components featuring rich key art, and video content that is fetched and served from a CDN",
 			image: {
 				src: "/images/featured work/bo7-LP/bo7-LP-progressionmediagallery-4.jpg",
 				alt: "Black Ops 7 progression and media gallery section",

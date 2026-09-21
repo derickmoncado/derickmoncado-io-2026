@@ -17,30 +17,27 @@ export default function FeaturedWorkGrid() {
 			</div>
 			<div className={styles["featured-work__body"]}>
 				{featuredProjects
-					.filter((project) => project.listingStatus !== "hidden")
-					.map((project) =>
-						project.listingStatus === "coming-soon" ? (
-							<article key={project.slug} className={styles["project-card"]} data-coming-soon="true">
-								<div className={styles["project-card__thumb"]} aria-hidden="true">
-									<CodeXml />
-								</div>
-								<div className={styles["project-card__meta"]}>
-									<h3>More coming soon</h3>
-									<p>Work in progress</p>
-								</div>
-							</article>
-						) : (
-							<Link key={project.slug} href={`/featured-work/${project.slug}`} className={styles["project-card"]}>
-								<div className={styles["project-card__thumb"]} aria-hidden="true">
-									{project.thumbnail ? <Image src={project.thumbnail} alt="" fill sizes="(max-width: 1024px) 100vw, 50vw" className={styles["project-card__thumb-image"]} /> : <div className={styles["project-card__thumb-placeholder"]} />}
-								</div>
-								<div className={styles["project-card__meta"]}>
-									<h3>{project.title}</h3>
-									<p>{project.year ?? "Details coming soon"}</p>
-								</div>
-							</Link>
-						),
-					)}
+					.filter((project) => project.listingStatus === "published")
+					.map((project) => (
+						<Link key={project.slug} href={`/featured-work/${project.slug}`} className={styles["project-card"]}>
+							<div className={styles["project-card__thumb"]} aria-hidden="true">
+								{project.thumbnail ? <Image src={project.thumbnail} alt="" fill sizes="(max-width: 1024px) 100vw, 50vw" className={styles["project-card__thumb-image"]} /> : <div className={styles["project-card__thumb-placeholder"]} />}
+							</div>
+							<div className={styles["project-card__meta"]}>
+								<h3>{project.title}</h3>
+								<p>{project.year ?? "Details coming soon"}</p>
+							</div>
+						</Link>
+					))}
+				<article className={styles["project-card"]} data-coming-soon="true">
+					<div className={styles["project-card__thumb"]} aria-hidden="true">
+						<CodeXml />
+					</div>
+					<div className={styles["project-card__meta"]}>
+						<h3>More coming soon</h3>
+						<p>Work in progress</p>
+					</div>
+				</article>
 			</div>
 		</section>
 	);

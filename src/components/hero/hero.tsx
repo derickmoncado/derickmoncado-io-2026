@@ -11,7 +11,7 @@ export default function Hero() {
 				<div className={styles["hero__content__details"]}>
 					<div className={styles["hero__content__details__collab"]}>
 						<p className={styles.status}>
-							<span></span>Open to Collaborations
+							<span></span>Open to Work / Collaborations
 						</p>
 						<p>last updated July 2026</p>
 					</div>

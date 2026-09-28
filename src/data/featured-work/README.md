@@ -10,6 +10,7 @@ Each project owns its content file here. Shared rendering lives in
 | `2-shg.tsx` | SHG project content |
 | `3-bo7-lp.ts` | Black Ops 7 landing page content |
 | `4-treyarch.ts` | Treyarch Studios project content |
+| `5-tac-atlas.ts` | Warzone Tac Atlas project content (2025) |
 | `project-5.ts` | Placeholder content for the remaining project |
 | `types.ts` | The `PortfolioProject`, `ProjectImage`, `ProjectHighlight`, and `ProjectSection` shapes |
 | `index.ts` | The ordered list displayed on `/featured-work` |

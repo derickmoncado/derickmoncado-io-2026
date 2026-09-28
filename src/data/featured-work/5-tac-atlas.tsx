@@ -5,6 +5,7 @@ export const warzoneTacAtlas: PortfolioProject = {
 	title: "Warzone Tac Atlas",
 	listingStatus: "published",
 	year: "2025",
+	liveUrl: "https://www.callofduty.com/guides/tac-atlas-verdansk",
 	thumbnail: "/images/featured work/tac-atlast/tac-atlas-main.jpg",
 	description: (
 		<>

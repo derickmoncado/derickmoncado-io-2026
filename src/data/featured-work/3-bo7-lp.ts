@@ -19,6 +19,15 @@ export const bo7LandingPage: PortfolioProject = {
 		{ stat: "02", heading: "The approach", blurb: "Develop a compelling landing page showcasing the highlights of the AAA title" },
 		{ stat: "03", heading: "The outcome", blurb: "A media landing page with dynamic components marketing the game" },
 	],
+	techStack: [
+		{ name: "HTML", src: "/tech-stack-icons/html.svg" },
+		{ name: "SCSS / Sass", src: "/tech-stack-icons/sass.svg" },
+		{ name: "TypeScript", src: "/tech-stack-icons/typescript.svg" },
+		{ name: "React", src: "/tech-stack-icons/react.svg" },
+		{ name: "Next.js", src: "/tech-stack-icons/nextjs.svg" },
+		{ name: "Figma", src: "/tech-stack-icons/figma.svg" },
+		{ name: "Contentstack", src: "/tech-stack-icons/contentstack.svg" },
+	],
 	sections: [
 		{
 			heading: "Above the fold",

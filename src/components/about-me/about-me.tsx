@@ -30,6 +30,7 @@ const techStack: TechStackIcon[] = [
 	{ name: "Vercel", src: "/tech-stack-icons/vercel.svg" },
 	{ name: "Codex", src: "/tech-stack-icons/codex.svg" },
 	{ name: "OpenAI", src: "/tech-stack-icons/openai.svg" },
+	{ name: "Contentstack", src: "/tech-stack-icons/contentstack.svg" },
 ];
 
 const funFacts = [

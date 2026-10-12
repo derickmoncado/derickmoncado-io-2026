@@ -20,3 +20,9 @@ Lobe Icons' MIT license is included in `LOBE-ICONS-LICENSE.txt`.
 Both AI logos have white fills, transparent backgrounds, and 35 × 35 display
 dimensions. The Codex and OpenAI marks belong to OpenAI; see the
 [OpenAI brand guidelines](https://openai.com/brand/).
+
+`contentstack.svg` contains the two symbol paths from Contentstack's
+[official logo SVG](https://images.contentstack.io/v3/assets/blt77d44a06c81b1730/blt617067dddb390b21/68a5eefcf27901fe45ae92a5/New_Contentstack_Logo.svg),
+as linked on its [homepage](https://www.contentstack.com/). The symbol retains its
+original geometry and uses white fills, a transparent background, and 35 × 35px
+display dimensions. The Contentstack mark belongs to Contentstack.

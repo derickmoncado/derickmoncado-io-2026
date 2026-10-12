@@ -2,6 +2,7 @@ import { ChevronLeft, ImageIcon } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import type { PortfolioProject } from "@/data/featured-work/types";
+import TechStack from "@/components/tech-stack/tech-stack";
 import ProjectImageLightbox from "./project-image-lightbox";
 import LiveProjectCta from "./live-project-cta";
 import styles from "./project-detail.module.scss";
@@ -22,7 +23,7 @@ function ImageDescriptionBrace() {
 }
 
 export default function ProjectDetailPage({ project, children }: ProjectDetailPageProps) {
-	const { title, year, description, liveUrl, heroImage, highlights, sections } = project;
+	const { title, year, description, liveUrl, heroImage, highlights, techStack, sections } = project;
 
 	return (
 		<section className={styles["project-detail"]}>
@@ -57,6 +58,7 @@ export default function ProjectDetailPage({ project, children }: ProjectDetailPa
 						))}
 					</div>
 				) : null}
+				{techStack && techStack.length > 0 ? <TechStack icons={techStack} scrolling={false} title="Stack used for this project" className={styles["project-detail__tech-stack"]} /> : null}
 				{sections.length > 0 ? (
 					<div className={styles["project-detail__sections"]}>
 						{sections.map((section) => (

@@ -257,6 +257,12 @@
 		display: grid;
 		gap: 60px;
 		min-width: 0;
+
+		> .project-detail__tech-stack {
+			margin-block: 0;
+			margin-bottom: 15px;
+			padding-block: 0;
+		}
 	}
 
 	&__highlights {

@@ -23,6 +23,15 @@ export const shg: PortfolioProject = {
 		{ stat: "02", heading: "The approach", blurb: "A modernized facelift to replace the old site from 2021" },
 		{ stat: "03", heading: "The outcome", blurb: "A clean refresh that represents the studio's culture and energy" },
 	],
+	techStack: [
+		{ name: "HTML", src: "/tech-stack-icons/html.svg" },
+		{ name: "SCSS / Sass", src: "/tech-stack-icons/sass.svg" },
+		{ name: "TypeScript", src: "/tech-stack-icons/typescript.svg" },
+		{ name: "React", src: "/tech-stack-icons/react.svg" },
+		{ name: "Next.js", src: "/tech-stack-icons/nextjs.svg" },
+		{ name: "Figma", src: "/tech-stack-icons/figma.svg" },
+		{ name: "Contentstack", src: "/tech-stack-icons/contentstack.svg" },
+	],
 	sections: [
 		{
 			heading: "Above the fold",

@@ -10,6 +10,15 @@ export const project5: PortfolioProject = {
 		{ stat: "02", heading: "The approach", blurb: "More details about the design and development process coming soon." },
 		{ stat: "03", heading: "The outcome", blurb: "More details about the results and lessons learned coming soon." },
 	],
+	techStack: [
+		{ name: "HTML", src: "/tech-stack-icons/html.svg" },
+		{ name: "SCSS / Sass", src: "/tech-stack-icons/sass.svg" },
+		{ name: "TypeScript", src: "/tech-stack-icons/typescript.svg" },
+		{ name: "React", src: "/tech-stack-icons/react.svg" },
+		{ name: "Next.js", src: "/tech-stack-icons/nextjs.svg" },
+		{ name: "Figma", src: "/tech-stack-icons/figma.svg" },
+		{ name: "Contentstack", src: "/tech-stack-icons/contentstack.svg" },
+	],
 	sections: [
 		{ heading: "Exploring the details", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at ipsum a justo tincidunt facilisis. Integer vitae neque sed velit consequat efficitur." },
 		{ heading: "Bringing it together", text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },

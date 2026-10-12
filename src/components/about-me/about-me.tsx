@@ -5,6 +5,32 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./about-me.module.scss";
 
+const techStack = [
+	{ name: "HTML", icon: "html" },
+	{ name: "CSS", icon: "css" },
+	{ name: "SCSS / Sass", icon: "sass" },
+	{ name: "Less", icon: "less" },
+	{ name: "JavaScript", icon: "javascript" },
+	{ name: "TypeScript", icon: "typescript" },
+	{ name: "React", icon: "react" },
+	{ name: "Next.js", icon: "nextjs" },
+	{ name: "Angular", icon: "angular" },
+	{ name: "Redux", icon: "redux" },
+	{ name: "RxJS", icon: "rxjs" },
+	{ name: "Tailwind CSS", icon: "tailwindcss" },
+	{ name: "Figma", icon: "figma" },
+	{ name: "Adobe Illustrator", icon: "illustrator" },
+	{ name: "Adobe Photoshop", icon: "photoshop" },
+	{ name: "Git", icon: "git" },
+	{ name: "GitHub", icon: "github" },
+	{ name: "Storybook", icon: "storybook" },
+	{ name: "Azure", icon: "azure" },
+	{ name: "Node.js", icon: "nodejs" },
+	{ name: "Vercel", icon: "vercel" },
+	{ name: "Codex", icon: "codex" },
+	{ name: "OpenAI", icon: "openai" },
+];
+
 const funFacts = [
 	{ title: "A random statistic", text: "I have over 800 hours played in Call of Duty: Warzone and Multiplayer matches 🎮" },
 	{
@@ -54,6 +80,26 @@ export default function AboutMe() {
 						<p className={styles.blurb}>Thousands would definitely be an understatement but who&apos;s counting?</p>
 					</div>
 				</div>
+
+				<section className={styles["about-me__content__tech-stack"]} aria-labelledby="tech-stack-heading">
+					<div className={styles["about-me__content__tech-stack__heading"]}>
+						<h3 id="tech-stack-heading">My tech stack</h3>
+					</div>
+					<div id="tech-stack-marquee" className={styles["about-me__content__tech-stack__marquee"]} tabIndex={0} role="region" aria-label="Technology logos">
+						<div className={styles["about-me__content__tech-stack__track"]}>
+							{/* Matching groups, including the trailing gap, keep the loop seamless. */}
+							{[false, true].map((duplicate) => (
+								<ul key={String(duplicate)} className={styles["about-me__content__tech-stack__logos"]} aria-hidden={duplicate || undefined}>
+									{techStack.map(({ name, icon }) => (
+										<li key={icon} title={name}>
+											<Image src={`/tech-stack-icons/${icon}.svg`} alt={duplicate ? "" : name} width={35} height={35} loading="eager" draggable={false} />
+										</li>
+									))}
+								</ul>
+							))}
+						</div>
+					</div>
+				</section>
 
 				<div className={styles["about-me__content__details"]}>
 					<div className={styles["about-me__content__details__para1"]}>

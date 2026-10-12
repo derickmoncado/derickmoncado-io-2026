@@ -3,32 +3,33 @@
 import { Linkedin, Instagram, Youtube, AtSign, RefreshCw } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
+import TechStack, { type TechStackIcon } from "@/components/tech-stack/tech-stack";
 import styles from "./about-me.module.scss";
 
-const techStack = [
-	{ name: "HTML", icon: "html" },
-	{ name: "CSS", icon: "css" },
-	{ name: "SCSS / Sass", icon: "sass" },
-	{ name: "Less", icon: "less" },
-	{ name: "JavaScript", icon: "javascript" },
-	{ name: "TypeScript", icon: "typescript" },
-	{ name: "React", icon: "react" },
-	{ name: "Next.js", icon: "nextjs" },
-	{ name: "Angular", icon: "angular" },
-	{ name: "Redux", icon: "redux" },
-	{ name: "RxJS", icon: "rxjs" },
-	{ name: "Tailwind CSS", icon: "tailwindcss" },
-	{ name: "Figma", icon: "figma" },
-	{ name: "Adobe Illustrator", icon: "illustrator" },
-	{ name: "Adobe Photoshop", icon: "photoshop" },
-	{ name: "Git", icon: "git" },
-	{ name: "GitHub", icon: "github" },
-	{ name: "Storybook", icon: "storybook" },
-	{ name: "Azure", icon: "azure" },
-	{ name: "Node.js", icon: "nodejs" },
-	{ name: "Vercel", icon: "vercel" },
-	{ name: "Codex", icon: "codex" },
-	{ name: "OpenAI", icon: "openai" },
+const techStack: TechStackIcon[] = [
+	{ name: "HTML", src: "/tech-stack-icons/html.svg" },
+	{ name: "CSS", src: "/tech-stack-icons/css.svg" },
+	{ name: "SCSS / Sass", src: "/tech-stack-icons/sass.svg" },
+	{ name: "Less", src: "/tech-stack-icons/less.svg" },
+	{ name: "JavaScript", src: "/tech-stack-icons/javascript.svg" },
+	{ name: "TypeScript", src: "/tech-stack-icons/typescript.svg" },
+	{ name: "React", src: "/tech-stack-icons/react.svg" },
+	{ name: "Next.js", src: "/tech-stack-icons/nextjs.svg" },
+	{ name: "Angular", src: "/tech-stack-icons/angular.svg" },
+	{ name: "Redux", src: "/tech-stack-icons/redux.svg" },
+	{ name: "RxJS", src: "/tech-stack-icons/rxjs.svg" },
+	{ name: "Tailwind CSS", src: "/tech-stack-icons/tailwindcss.svg" },
+	{ name: "Figma", src: "/tech-stack-icons/figma.svg" },
+	{ name: "Adobe Illustrator", src: "/tech-stack-icons/illustrator.svg" },
+	{ name: "Adobe Photoshop", src: "/tech-stack-icons/photoshop.svg" },
+	{ name: "Git", src: "/tech-stack-icons/git.svg" },
+	{ name: "GitHub", src: "/tech-stack-icons/github.svg" },
+	{ name: "Storybook", src: "/tech-stack-icons/storybook.svg" },
+	{ name: "Azure", src: "/tech-stack-icons/azure.svg" },
+	{ name: "Node.js", src: "/tech-stack-icons/nodejs.svg" },
+	{ name: "Vercel", src: "/tech-stack-icons/vercel.svg" },
+	{ name: "Codex", src: "/tech-stack-icons/codex.svg" },
+	{ name: "OpenAI", src: "/tech-stack-icons/openai.svg" },
 ];
 
 const funFacts = [
@@ -81,25 +82,7 @@ export default function AboutMe() {
 					</div>
 				</div>
 
-				<section className={styles["about-me__content__tech-stack"]} aria-labelledby="tech-stack-heading">
-					<div className={styles["about-me__content__tech-stack__heading"]}>
-						<h3 id="tech-stack-heading">My tech stack</h3>
-					</div>
-					<div id="tech-stack-marquee" className={styles["about-me__content__tech-stack__marquee"]} tabIndex={0} role="region" aria-label="Technology logos">
-						<div className={styles["about-me__content__tech-stack__track"]}>
-							{/* Matching groups, including the trailing gap, keep the loop seamless. */}
-							{[false, true].map((duplicate) => (
-								<ul key={String(duplicate)} className={styles["about-me__content__tech-stack__logos"]} aria-hidden={duplicate || undefined}>
-									{techStack.map(({ name, icon }) => (
-										<li key={icon} title={name}>
-											<Image src={`/tech-stack-icons/${icon}.svg`} alt={duplicate ? "" : name} width={35} height={35} loading="eager" draggable={false} />
-										</li>
-									))}
-								</ul>
-							))}
-						</div>
-					</div>
-				</section>
+				<TechStack icons={techStack} />
 
 				<div className={styles["about-me__content__details"]}>
 					<div className={styles["about-me__content__details__para1"]}>

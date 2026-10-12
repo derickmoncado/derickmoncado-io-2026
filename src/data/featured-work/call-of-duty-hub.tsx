@@ -35,7 +35,7 @@ export const callOfDutyHub: PortfolioProject = {
 	sections: [
 		{
 			heading: "Welcome, gamerz 🎮",
-			text: "A global component to be used across any of the COD pages the features the key art, franchise logo, and a call to action",
+			text: "A global component to be used across any of the COD pages the features the key art, franchise logo, and a call to action with a vanilla JavaScript powered timer countdown",
 			image: {
 				src: "/images/featured work/cod-hub/cod-hub-hero-1.jpg",
 				alt: "Call of Duty Hub hero section",

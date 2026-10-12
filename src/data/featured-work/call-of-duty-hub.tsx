@@ -23,6 +23,15 @@ export const callOfDutyHub: PortfolioProject = {
 		{ stat: "02", heading: "The approach", blurb: "Develop global components that can be updated regularly with seasonal content" },
 		{ stat: "03", heading: "The outcome", blurb: "An evergreen batch of re-usable components that studios and stakeholders can update regularly" },
 	],
+	techStack: [
+		{ name: "HTML", src: "/tech-stack-icons/html.svg" },
+		{ name: "SCSS / Sass", src: "/tech-stack-icons/sass.svg" },
+		{ name: "TypeScript", src: "/tech-stack-icons/typescript.svg" },
+		{ name: "React", src: "/tech-stack-icons/react.svg" },
+		{ name: "Next.js", src: "/tech-stack-icons/nextjs.svg" },
+		{ name: "Figma", src: "/tech-stack-icons/figma.svg" },
+		{ name: "Contentstack", src: "/tech-stack-icons/contentstack.svg" },
+	],
 	sections: [
 		{
 			heading: "Welcome, gamerz 🎮",

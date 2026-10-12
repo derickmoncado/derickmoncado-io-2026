@@ -23,6 +23,15 @@ export const warzoneTacAtlas: PortfolioProject = {
 		{ stat: "02", heading: "The approach", blurb: "Design a interactive map to inform players of major POIs, vehicles, buy stations, and other important details" },
 		{ stat: "03", heading: "The outcome", blurb: "An infromation rich page showcasing areas of the map giving competitive players an advantage" },
 	],
+	techStack: [
+		{ name: "HTML", src: "/tech-stack-icons/html.svg" },
+		{ name: "SCSS / Sass", src: "/tech-stack-icons/sass.svg" },
+		{ name: "TypeScript", src: "/tech-stack-icons/typescript.svg" },
+		{ name: "React", src: "/tech-stack-icons/react.svg" },
+		{ name: "Next.js", src: "/tech-stack-icons/nextjs.svg" },
+		{ name: "Figma", src: "/tech-stack-icons/figma.svg" },
+		{ name: "Contentstack", src: "/tech-stack-icons/contentstack.svg" },
+	],
 	sections: [
 		{
 			heading: "Exploring the menus",

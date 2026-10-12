@@ -3,7 +3,35 @@
 import { Linkedin, Instagram, Youtube, AtSign, RefreshCw } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
+import TechStack, { type TechStackIcon } from "@/components/tech-stack/tech-stack";
 import styles from "./about-me.module.scss";
+
+const techStack: TechStackIcon[] = [
+	{ name: "HTML", src: "/tech-stack-icons/html.svg" },
+	{ name: "CSS", src: "/tech-stack-icons/css.svg" },
+	{ name: "SCSS / Sass", src: "/tech-stack-icons/sass.svg" },
+	{ name: "Less", src: "/tech-stack-icons/less.svg" },
+	{ name: "JavaScript", src: "/tech-stack-icons/javascript.svg" },
+	{ name: "TypeScript", src: "/tech-stack-icons/typescript.svg" },
+	{ name: "React", src: "/tech-stack-icons/react.svg" },
+	{ name: "Next.js", src: "/tech-stack-icons/nextjs.svg" },
+	{ name: "Angular", src: "/tech-stack-icons/angular.svg" },
+	{ name: "Redux", src: "/tech-stack-icons/redux.svg" },
+	{ name: "RxJS", src: "/tech-stack-icons/rxjs.svg" },
+	{ name: "Tailwind CSS", src: "/tech-stack-icons/tailwindcss.svg" },
+	{ name: "Figma", src: "/tech-stack-icons/figma.svg" },
+	{ name: "Adobe Illustrator", src: "/tech-stack-icons/illustrator.svg" },
+	{ name: "Adobe Photoshop", src: "/tech-stack-icons/photoshop.svg" },
+	{ name: "Git", src: "/tech-stack-icons/git.svg" },
+	{ name: "GitHub", src: "/tech-stack-icons/github.svg" },
+	{ name: "Storybook", src: "/tech-stack-icons/storybook.svg" },
+	{ name: "Azure", src: "/tech-stack-icons/azure.svg" },
+	{ name: "Node.js", src: "/tech-stack-icons/nodejs.svg" },
+	{ name: "Vercel", src: "/tech-stack-icons/vercel.svg" },
+	{ name: "Codex", src: "/tech-stack-icons/codex.svg" },
+	{ name: "OpenAI", src: "/tech-stack-icons/openai.svg" },
+	{ name: "Contentstack", src: "/tech-stack-icons/contentstack.svg" },
+];
 
 const funFacts = [
 	{ title: "A random statistic", text: "I have over 800 hours played in Call of Duty: Warzone and Multiplayer matches 🎮" },
@@ -54,6 +82,8 @@ export default function AboutMe() {
 						<p className={styles.blurb}>Thousands would definitely be an understatement but who&apos;s counting?</p>
 					</div>
 				</div>
+
+				<TechStack icons={techStack} />
 
 				<div className={styles["about-me__content__details"]}>
 					<div className={styles["about-me__content__details__para1"]}>

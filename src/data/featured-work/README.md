@@ -35,6 +35,11 @@ image. `highlights` supplies the summary cards, and `sections` supplies the
 alternating image/text rows. Each section can have an optional `image` with
 `src`, `alt`, `width`, and `height`; omitting it displays a placeholder.
 
+`techStack` is an optional array of `{ name, src }` icons owned by each project.
+The shared detail layout displays it as a static TechStack section immediately
+below the highlights. Edit each project's array independently when its technology
+choices differ; omitting the array or leaving it empty hides this section.
+
 `description` accepts a plain string or inline JSX. For JSX, use a `.tsx` content
 file and a fragment containing text, `<span>` for white emphasis, and `<br />`
 for line breaks. The description renders inside a paragraph, so keep its markup

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import type { TechStackIcon } from "@/components/tech-stack/tech-stack";
 
 export type ProjectImage = {
 	src: string;
@@ -30,5 +31,7 @@ export type PortfolioProject = {
 	liveUrl?: string;
 	heroImage?: ProjectImage;
 	highlights: readonly ProjectHighlight[];
+	/** Icons shown below this project's highlights. */
+	techStack?: readonly TechStackIcon[];
 	sections: readonly ProjectSection[];
 };

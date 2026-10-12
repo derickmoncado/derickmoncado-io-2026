@@ -1,0 +1,107 @@
+@use "../../styles/partials/variables" as *;
+
+.tech-stack {
+    width: 75%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 24px;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: -0.5px;
+        }
+    }
+
+    &__marquee:focus-visible {
+        outline: 2px solid $primary-color;
+        outline-offset: 4px;
+    }
+
+    &__marquee {
+        overflow: hidden;
+        mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+
+        &:hover {
+            .tech-stack__track {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &__track {
+        display: flex;
+        width: max-content;
+        animation: tech-stack-scroll 45s linear infinite;
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        gap: 30px;
+        margin: 0;
+        padding: 0 30px 0 0;
+        list-style: none;
+
+        li,
+        img {
+            width: 35px;
+            height: 35px;
+            flex-shrink: 0;
+        }
+
+        img {
+            display: block;
+            object-fit: contain;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        &__marquee {
+            overflow-x: auto;
+            mask-image: none;
+        }
+
+        &__track {
+            animation: none;
+        }
+
+        &__logos {
+            padding-right: 0;
+
+            &[aria-hidden="true"] {
+                display: none;
+            }
+        }
+    }
+
+    &--static {
+        .tech-stack__marquee {
+            overflow: visible;
+            mask-image: none;
+        }
+
+        .tech-stack__track {
+            width: 100%;
+            animation: none;
+        }
+
+        .tech-stack__logos {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-right: 0;
+        }
+    }
+}
+
+@keyframes tech-stack-scroll {
+    to {
+        transform: translateX(-50%);
+    }
+}

@@ -62,7 +62,7 @@ export const mediaCenter: PortfolioProject = {
 		},
 		{
 			heading: "Filtering functionality",
-			text: "The dropdown menus' let users filter by game, title, and assest type. This functionality is powered by JavaScript on the backend utilizing assets stored on a CDN",
+			text: "The dropdown menus' let users filter by game, title, and assest type. This functionality is powered by JavaScript on the backend utilizing assets stored on a CDN, and perform a 'select to download' similar to selecting photos on iOS",
 			image: {
 				src: "/images/featured work/media-center/media-center-filters-4.jpg",
 				alt: "Media center filters section",
